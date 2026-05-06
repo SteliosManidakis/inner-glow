@@ -14,14 +14,14 @@ export function Header({
 }) {
   return (
     <header className="sticky top-0 z-30 border-b border-olive/10 bg-ivory/90 backdrop-blur">
-      <div className="relative mx-auto flex min-h-20 w-full max-w-6xl items-center justify-between gap-3 px-5 py-3 sm:px-8 lg:px-10">
-        <Link className="min-w-0 max-w-[15rem] font-serif text-xl leading-tight text-charcoal sm:max-w-none sm:text-2xl" href={localizedPath(locale)}>
+      <div className="relative mx-auto flex min-h-20 w-full max-w-[95rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <Link className="shrink-0 whitespace-nowrap font-serif text-xl leading-tight text-charcoal sm:text-2xl" href={localizedPath(locale)}>
           {dictionary.common.brand}
         </Link>
-        <nav className="hidden min-w-0 flex-wrap items-center justify-end gap-x-6 gap-y-3 md:flex" aria-label="Main navigation">
+        <nav className="hidden min-w-0 flex-1 flex-wrap items-center justify-end gap-x-3 gap-y-3 lg:gap-x-4 xl:gap-x-5 md:flex" aria-label="Main navigation">
           {navRoutes.map((route) => (
             <Link
-              className="inline-flex min-h-10 items-center text-sm uppercase tracking-[0.12em] text-charcoal/75 transition hover:text-olive"
+              className="inline-flex min-h-10 items-center text-xs uppercase tracking-[0.1em] text-charcoal/75 transition hover:text-olive xl:tracking-[0.12em]"
               href={localizedPath(locale, route.href)}
               key={route.key}
             >

@@ -1,9 +1,10 @@
 import type { Locale } from "./i18n";
+import { treatmentRoutes } from "./treatments";
 
 export const navRoutes = [
   { key: "home", href: "" },
   { key: "about", href: "about" },
-  { key: "healing", href: "healing" },
+  ...treatmentRoutes.map((route) => ({ key: route.key, href: route.slug })),
   { key: "contact", href: "contact" },
 ] as const;
 

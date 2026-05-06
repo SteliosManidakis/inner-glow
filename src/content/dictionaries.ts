@@ -1,4 +1,4 @@
-import type { Locale } from "@/lib/i18n";
+﻿import type { Locale } from "@/lib/i18n";
 
 export const dictionaries = {
   el: {
@@ -7,6 +7,12 @@ export const dictionaries = {
       home: "Αρχική",
       about: "Σχετικά",
       healing: "Θεραπείες",
+      reiki: "Reiki",
+      tapping: "Tapping",
+      regressionHypnosis: "Αναδρομική Ύπνωση",
+      nlpCoaching: "NLP Coaching",
+      systemicConstellation: "Συστημική",
+      meditations: "Διαλογισμοί",
       contact: "Επικοινωνία",
       terms: "Όροι χρήσης",
       privacy: "Πολιτική απορρήτου",
@@ -62,16 +68,16 @@ export const dictionaries = {
         {
           title: "Reiki",
           body:
-            "Μια ήπια ενεργειακή συνεδρία για χαλάρωση, εσωτερική ισορροπία και βαθύτερη επαφή με το σώμα.",
+            "Το Ρέικι είναι μια ενεργειακή θεραπεία ιαπωνικής προέλευσης που βασίζεται στην ιδέα ότι μέσα μας και γύρω μας ρέει μια συμπαντική ενέργεια ζωής. Όταν αυτή η ενέργεια μπλοκάρεται — λόγω άγχους, τραύματος, εξάντλησης ή εσωτερικών συγκρούσεων — το σώμα και η ψυχή χάνουν την αρμονία τους. Το Ρέικι, μέσω απαλής επαφής, βοηθά στη ροή αυτής της ενέργειας, ενεργοποιώντας την φυσική ικανότητα του οργανισμού να θεραπευτεί.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "Τι περιλαμβάνει",
-              body: "Η συνεδρία προσαρμόζεται στις ανάγκες σου και μπορεί να περιλαμβάνει ήπια συζήτηση, ενεργειακή εργασία και πρακτικές γείωσης.",
+              title: "Τι προσφέρει",
+              body: "Μειώνει το στρες και την ένταση, επαναφέρει την εσωτερική γαλήνη, διευκολύνει τη συναισθηματική αποφόρτιση, ενισχύει τη διαύγεια και τη σύνδεση με το σώμα, προάγει την ευεξία σε όλα τα επίπεδα (σωματικό, συναισθηματικό, ενεργειακό)",
             },
             {
               title: "Για ποιον είναι",
-              body: "Για ανθρώπους που χρειάζονται ηρεμία, αποφόρτιση ή έναν υποστηρικτικό χώρο για να επανέλθουν στο κέντρο τους.",
+              body: "Το Ρέικι είναι για όλους. Δεν απαιτεί πίστη ή προετοιμασία — μόνο τη διάθεση να συνδεθείς με τον εαυτό σου. Για όσους νιώθουν μπλοκαρισμένοι ή εξαντλημένοι, για όσους βρίσκονται σε φάση αλλαγής ή μετάβασης, για όσους υποφέρουν από άγχος, υπερένταση ή αϋπνία και αναζητούν μια ήπια, υποστηρικτική πρακτική αυτοφροντίδας.",
             },
           ],
           coordinator: {
@@ -89,7 +95,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "Τι περιλαμβάνει",
+              title: "Τι προσφέρει",
               body: "Η συνεδρία περιλαμβάνει στοχευμένη συζήτηση, αναγνώριση του θέματος που σε απασχολεί και καθοδηγούμενη εφαρμογή tapping.",
             },
             {
@@ -112,7 +118,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "Τι περιλαμβάνει",
+              title: "Τι προσφέρει",
               body: "Η συνεδρία περιλαμβάνει προετοιμασία, καθοδηγούμενη χαλάρωση και ήρεμη επεξεργασία όσων αναδυθούν μέσα από την εμπειρία.",
             },
             {
@@ -135,7 +141,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "Τι περιλαμβάνει",
+              title: "Τι προσφέρει",
               body: "Η συνεδρία εστιάζει στο θέμα που φέρνεις, στη χαρτογράφηση των σχέσεων και στην παρατήρηση της δυναμικής που ζητά περισσότερη καθαρότητα.",
             },
             {
@@ -148,6 +154,52 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Systemic constellation facilitator",
             body: "Η διαδικασία συντονίζεται με σεβασμό στο σύστημα, στα όρια και στον ρυθμό με τον οποίο μπορεί να φανεί κάθε πληροφορία.",
+            image: "/images/placeholders/about.png",
+          },
+        },
+        {
+          title: "NLP Coaching",
+          body:
+            "Μια στοχευμένη συνεδρία προσωπικής καθοδήγησης που αξιοποιεί εργαλεία NLP για περισσότερη καθαρότητα, επιλογή και πρακτική αλλαγή.",
+          image: "/images/placeholders/healing.png",
+          sections: [
+            {
+              title: "Τι προσφέρει",
+              body: "Βοηθά να αναγνωρίσεις μοτίβα σκέψης, να ξεκαθαρίσεις στόχους και να δουλέψεις με πρακτικές τεχνικές πάνω σε πεποιθήσεις, συμπεριφορές και εσωτερικούς διαλόγους.",
+            },
+            {
+              title: "Για ποιον είναι",
+              body: "Για ανθρώπους που θέλουν να κινηθούν πιο συνειδητά προς μια αλλαγή, να ενισχύσουν την αυτοπεποίθησή τους ή να δουν με νέα ματιά ένα προσωπικό ή επαγγελματικό θέμα.",
+            },
+          ],
+          coordinator: {
+            title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "NLP coaching facilitator",
+            body: "Η καθοδήγηση κρατά πρακτική κατεύθυνση, με σεβασμό στον ρυθμό σου και έμφαση σε μικρά, εφαρμόσιμα βήματα.",
+            image: "/images/placeholders/about.png",
+          },
+        },
+        {
+          title: "Διαλογισμοί",
+          body:
+            "Καθοδηγούμενες πρακτικές παρουσίας και χαλάρωσης για να ηρεμήσει το νευρικό σύστημα και να ενισχυθεί η σύνδεση με τον εαυτό.",
+          image: "/images/placeholders/healing.png",
+          sections: [
+            {
+              title: "Τι προσφέρει",
+              body: "Οι διαλογισμοί δημιουργούν χώρο για παύση, αναπνοή, γείωση και εσωτερική παρατήρηση μέσα από ήπια καθοδήγηση.",
+            },
+            {
+              title: "Για ποιον είναι",
+              body: "Για ανθρώπους που αναζητούν περισσότερη ηρεμία, συγκέντρωση και καθημερινή σύνδεση με το σώμα, την αναπνοή και την εσωτερική τους αίσθηση.",
+            },
+          ],
+          coordinator: {
+            title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "Meditation facilitator",
+            body: "Ο συντονισμός είναι ήπιος και γειωμένος, ώστε η πρακτική να παραμένει προσβάσιμη, σταθερή και υποστηρικτική.",
             image: "/images/placeholders/about.png",
           },
         },
@@ -194,6 +246,12 @@ export const dictionaries = {
       home: "Home",
       about: "About",
       healing: "Therapies",
+      reiki: "Reiki",
+      tapping: "Tapping",
+      regressionHypnosis: "Regression Hypnosis",
+      nlpCoaching: "NLP Coaching",
+      systemicConstellation: "Systemic Constellation",
+      meditations: "Meditations",
       contact: "Contact",
       terms: "Terms & Conditions",
       privacy: "Privacy Policy",
@@ -253,7 +311,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "What it includes",
+              title: "What it offers",
               body: "The session adapts to your needs and may include gentle conversation, energetic work, and grounding practices.",
             },
             {
@@ -276,7 +334,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "What it includes",
+              title: "What it offers",
               body: "The session includes focused conversation, identifying the theme you want to work with, and guided tapping.",
             },
             {
@@ -299,7 +357,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "What it includes",
+              title: "What it offers",
               body: "The session includes preparation, guided relaxation, and calm integration of what emerges through the experience.",
             },
             {
@@ -322,7 +380,7 @@ export const dictionaries = {
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "What it includes",
+              title: "What it offers",
               body: "The session focuses on the theme you bring, mapping relationships, and observing the dynamic that needs more clarity.",
             },
             {
@@ -335,6 +393,52 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Systemic constellation facilitator",
             body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
+            image: "/images/placeholders/about.png",
+          },
+        },
+        {
+          title: "NLP Coaching",
+          body:
+            "A focused personal guidance session using NLP tools for more clarity, choice, and practical change.",
+          image: "/images/placeholders/healing.png",
+          sections: [
+            {
+              title: "What it offers",
+              body: "It helps you recognize thought patterns, clarify goals, and work with practical techniques around beliefs, behaviors, and inner dialogue.",
+            },
+            {
+              title: "Who it is for",
+              body: "For people who want to move more consciously toward change, strengthen confidence, or see a personal or professional theme from a new perspective.",
+            },
+          ],
+          coordinator: {
+            title: "Facilitator",
+            name: "Inner Glow",
+            role: "NLP coaching facilitator",
+            body: "Guidance stays practical and paced, with emphasis on small, applicable steps.",
+            image: "/images/placeholders/about.png",
+          },
+        },
+        {
+          title: "Meditations",
+          body:
+            "Guided presence and relaxation practices to calm the nervous system and strengthen connection with yourself.",
+          image: "/images/placeholders/healing.png",
+          sections: [
+            {
+              title: "What it offers",
+              body: "Meditations create space for pause, breath, grounding, and inner observation through gentle guidance.",
+            },
+            {
+              title: "Who it is for",
+              body: "For people seeking more calm, focus, and daily connection with the body, breath, and inner sense.",
+            },
+          ],
+          coordinator: {
+            title: "Facilitator",
+            name: "Inner Glow",
+            role: "Meditation facilitator",
+            body: "Facilitation is gentle and grounded so the practice remains accessible, steady, and supportive.",
             image: "/images/placeholders/about.png",
           },
         },

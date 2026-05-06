@@ -76,15 +76,15 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
   },
 };
 
-export function routePath(locale: Locale, route: SeoRoute) {
+export function routePath(locale: Locale, route: string) {
   return route ? `/${locale}/${route}` : `/${locale}`;
 }
 
-export function absoluteRoute(locale: Locale, route: SeoRoute) {
+export function absoluteRoute(locale: Locale, route: string) {
   return `${getSiteUrl()}${routePath(locale, route)}`;
 }
 
-export function languageAlternates(route: SeoRoute) {
+export function languageAlternates(route: string) {
   return {
     el: routePath("el", route),
     en: routePath("en", route),

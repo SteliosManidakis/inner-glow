@@ -40,7 +40,7 @@ export function PreviewSections({ dictionary, locale }: { dictionary: Dictionary
           <h2 className="mt-8 text-wrap font-serif text-3xl leading-tight text-charcoal sm:text-4xl">{dictionary.home.healingTitle}</h2>
           <p className="mt-4 text-base leading-7 text-charcoal/72">{dictionary.home.healingBody}</p>
           <div className="mt-6">
-            <Button href={localizedPath(locale, "healing")}>{dictionary.common.bookHealing}</Button>
+            <Button href={localizedPath(locale, "regression-hypnosis")}>{dictionary.common.bookHealing}</Button>
           </div>
         </article>
       </Container>
