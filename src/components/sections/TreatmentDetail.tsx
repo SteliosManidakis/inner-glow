@@ -20,8 +20,6 @@ export function TreatmentDetail({
   price: Price;
   treatment: Treatment;
 }) {
-  const hasFeaturedCoordinator = treatment.title === "Reiki";
-
   return (
     <article className="bg-ivory">
       <section className="py-14 sm:py-20 lg:py-24">
@@ -50,77 +48,41 @@ export function TreatmentDetail({
         </Container>
       </section>
       <section className="py-14 sm:py-20">
-        {hasFeaturedCoordinator ? (
-          <Container className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
-              {treatment.sections.map((section) => (
-                <section className="border-t border-olive/30 pt-6" key={section.title}>
-                  <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h2>
-                  <p className="mt-4 text-base leading-7 text-charcoal/72">{section.body}</p>
-                </section>
-              ))}
-            </div>
-            <section className="border-t border-olive/30 pt-6">
-              <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-                {treatment.coordinator.title}
-              </h2>
-              <div className="mt-5 grid gap-6 sm:grid-cols-[0.85fr_1fr] sm:items-start">
-                <div className="overflow-hidden rounded-tr-[3rem]">
-                  <Image
-                    src={treatment.coordinator.image}
-                    alt=""
-                    width={640}
-                    height={720}
-                    className="aspect-[4/5] h-full w-full object-cover"
-                  />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-                    {treatment.coordinator.name}
-                  </p>
-                  <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
-                    {treatment.coordinator.role}
-                  </p>
-                  <p className="mt-4 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
-                </div>
-              </div>
-            </section>
-          </Container>
-        ) : (
-          <Container className="grid gap-6 md:grid-cols-3">
+        <Container className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
             {treatment.sections.map((section) => (
               <section className="border-t border-olive/30 pt-6" key={section.title}>
                 <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h2>
                 <p className="mt-4 text-base leading-7 text-charcoal/72">{section.body}</p>
               </section>
             ))}
-            <section className="border-t border-olive/30 pt-6">
-              <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-                {treatment.coordinator.title}
-              </h2>
-              <div className="mt-5 flex gap-4 sm:items-start md:block">
-                <div className="h-24 w-24 shrink-0 overflow-hidden rounded-tr-[2rem] md:h-auto md:w-full">
-                  <Image
-                    src={treatment.coordinator.image}
-                    alt=""
-                    width={420}
-                    height={420}
-                    className="aspect-square h-full w-full object-cover"
-                  />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-wrap font-serif text-xl leading-tight text-charcoal md:mt-4 sm:text-2xl">
-                    {treatment.coordinator.name}
-                  </p>
-                  <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
-                    {treatment.coordinator.role}
-                  </p>
-                  <p className="mt-3 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
-                </div>
+          </div>
+          <section className="border-t border-olive/30 pt-6">
+            <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+              {treatment.coordinator.title}
+            </h2>
+            <div className="mt-5 grid gap-6 sm:grid-cols-[0.85fr_1fr] sm:items-start">
+              <div className="overflow-hidden rounded-tr-[3rem]">
+                <Image
+                  src={treatment.coordinator.image}
+                  alt=""
+                  width={640}
+                  height={720}
+                  className="aspect-[4/5] h-full w-full object-cover"
+                />
               </div>
-            </section>
-          </Container>
-        )}
+              <div className="min-w-0">
+                <p className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+                  {treatment.coordinator.name}
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
+                  {treatment.coordinator.role}
+                </p>
+                <p className="mt-4 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
+              </div>
+            </div>
+          </section>
+        </Container>
       </section>
       <section className="py-14 sm:py-20 lg:py-24">
         <Container className="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
