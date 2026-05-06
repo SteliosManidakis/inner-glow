@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\app\[locale]\[treatment]\page.tsx
+
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { TreatmentDetail } from "@/components/sections/TreatmentDetail";

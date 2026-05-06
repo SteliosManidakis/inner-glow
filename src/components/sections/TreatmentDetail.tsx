@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\components\sections\TreatmentDetail.tsx
+
 import Image from "next/image";
 import { BookingPanel } from "@/components/sections/BookingPanel";
 import { Button } from "@/components/ui/Button";

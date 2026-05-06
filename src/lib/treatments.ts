@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\lib\treatments.ts
+
 import type { Locale } from "@/lib/i18n";
 
 export const treatmentRoutes = [
