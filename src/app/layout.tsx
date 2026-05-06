@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description:
-    "Bilingual personal brand website for healing sessions, discovery calls and personal guidance with Margarita Paschali.",
+    "Bilingual personal website for healing sessions, introductory calls and calm guidance with Inner Glow.",
   openGraph: {
     siteName,
     type: "website",

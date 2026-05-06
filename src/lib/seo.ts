@@ -14,7 +14,7 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     "": {
       title: "Inner Glow | Healing & προσωπική καθοδήγηση",
       description:
-        "Ατομικές συνεδρίες healing, discovery calls και ήπια προσωπική καθοδήγηση online ή δια ζώσης στην Ελλάδα με το Inner Glow.",
+        "Ατομικές συνεδρίες healing, τηλεφωνικά ραντεβού γνωριμίας και ήπια προσωπική καθοδήγηση online ή δια ζώσης στην Ελλάδα με το Inner Glow.",
     },
     about: {
       title: "Σχετικά με την Inner Glow",
@@ -24,54 +24,54 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     healing: {
       title: "Healing Sessions",
       description:
-        "Ατομικές healing συνεδρίες με τη Μαργαρίτα για καθαρότητα, γείωση και βαθύτερη σύνδεση με τον εαυτό.",
+        "Ατομικές healing συνεδρίες με το Inner Glow για καθαρότητα, γείωση και βαθύτερη σύνδεση με τον εαυτό.",
     },
     contact: {
-      title: "Επικοινωνία & Discovery Call",
+      title: "Επικοινωνία & τηλεφωνικό ραντεβού γνωριμίας",
       description:
-        "Κλείσε ένα ραντεβού γνωριμίας Call με τη Μαργαρίτα ή ξεκίνησε την επικοινωνία για online και δια ζώσης healing συνεδρίες.",
+        "Κλείσε ένα τηλεφωνικό ραντεβού γνωριμίας με το Inner Glow ή ξεκίνησε την επικοινωνία για online και δια ζώσης healing συνεδρίες.",
     },
     terms: {
       title: "Όροι Χρήσης",
       description:
-        "Όροι χρήσης για το website, το booking, τις συνεδρίες, τις ακυρώσεις και τις υπηρεσίες της Μαργαρίτας.",
+        "Όροι χρήσης για το website, το booking, τις συνεδρίες, τις ακυρώσεις και τις υπηρεσίες του Inner Glow.",
     },
     privacy: {
       title: "Πολιτική Απορρήτου & Cookies",
       description:
-        "Πολιτική απορρήτου και cookies για το website της Μαργαρίτα Πασχάλη, το newsletter, το booking και την επεξεργασία προσωπικών δεδομένων.",
+        "Πολιτική απορρήτου και cookies για το website του Inner Glow, το newsletter, το booking και την επεξεργασία προσωπικών δεδομένων.",
     },
   },
   en: {
     "": {
       title: "Inner Glow | Healing & personal guidance",
       description:
-        "Individual healing sessions, discovery calls and gentle personal guidance online or in person in Greece with Inner Glow.",
+        "Individual healing sessions, introductory phone appointments and gentle personal guidance online or in person in Greece with Inner Glow.",
     },
     about: {
-      title: "About Margarita",
+      title: "About Inner Glow",
       description:
-        "Meet Margarita and her calm, grounded approach to healing, presence and personal care.",
+        "Meet Inner Glow and its calm, grounded approach to healing sessions, presence and personal care.",
     },
     healing: {
-      title: "Healing Sessions",
+      title: "Therapies",
       description:
-        "Individual healing sessions with Margarita for clarity, grounding and a deeper connection with yourself.",
+        "Individual healing sessions with Inner Glow for clarity, grounding and a deeper connection with yourself.",
     },
     contact: {
-      title: "Contact & Discovery Call",
+      title: "Contact & introductory phone appointment",
       description:
-        "Book a Discovery Call with Margarita or get started with online and in-person healing sessions.",
+        "Book an introductory phone appointment with Inner Glow or get started with online and in-person healing sessions.",
     },
     terms: {
       title: "Terms & Conditions",
       description:
-        "Terms for website use, booking, sessions, cancellations and services offered by Margarita.",
+        "Terms for website use, booking, sessions, cancellations and services offered by Inner Glow.",
     },
     privacy: {
       title: "Privacy Policy & Cookies",
       description:
-        "Privacy and cookies policy for Margarita Paschali's website, newsletter, booking and personal data processing.",
+        "Privacy and cookies policy for the Inner Glow website, newsletter, booking and personal data processing.",
     },
   },
 };

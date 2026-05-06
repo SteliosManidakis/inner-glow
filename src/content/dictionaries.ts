@@ -24,7 +24,7 @@ export const dictionaries = {
     seo: {
       homeTitle: "Healing sessions and personal guidance",
       homeDescription:
-        "Προσωπικό bilingual website για συνεδρίες healing, discovery calls και ήρεμη καθοδήγηση με το Inner Glow.",
+        "Προσωπικό bilingual website για συνεδρίες healing, τηλεφωνικά ραντεβού γνωριμίας και ήρεμη καθοδήγηση με το Inner Glow.",
       aboutTitle: "Σχετικά",
       healingTitle: "Healing",
       contactTitle: "Επικοινωνία",
@@ -185,7 +185,7 @@ export const dictionaries = {
     nav: {
       home: "Home",
       about: "About",
-      healing: "Healing",
+      healing: "Therapies",
       contact: "Contact",
       terms: "Terms & Conditions",
       privacy: "Privacy Policy",
@@ -193,7 +193,7 @@ export const dictionaries = {
     common: {
       brand: "Inner Glow",
       switchLanguage: "EL",
-      bookDiscovery: "Book a Discovery Call",
+      bookDiscovery: "Book an introductory appointment",
       bookHealing: "Book a healing session",
       learnMore: "Learn more",
       price: "€100",
@@ -203,9 +203,9 @@ export const dictionaries = {
     seo: {
       homeTitle: "Healing sessions and personal guidance",
       homeDescription:
-        "A bilingual personal brand website for healing sessions, discovery calls, and grounded guidance with Inner Glow.",
+        "A bilingual personal website for healing sessions, introductory calls, and calm guidance with Inner Glow.",
       aboutTitle: "About",
-      healingTitle: "Healing",
+      healingTitle: "Therapies",
       contactTitle: "Contact",
       termsTitle: "Terms & Conditions",
       privacyTitle: "Privacy Policy",
@@ -226,16 +226,15 @@ export const dictionaries = {
         "A session dedicated to you, with clear intention, practical support, and room for what needs attention.",
     },
     about: {
-      title: "About Margarita",
+      title: "About Inner\u00A0Glow",
       body:
-        "Margarita Paschali works with people who want to feel more present, calm, and connected to their inner wisdom.",
+        "Inner Glow works with people who want to feel more present, calmer, and more connected to their inner wisdom.",
       paragraphs: [
-        "Her approach is gentle, grounded, and personal. Every meeting begins with where you are now and moves respectfully toward what is ready to be seen.",
-        "This website starts with placeholder copy inspired by the reference site's structure. Final biography, credentials, and practice details can be replaced easily in the content files.",
+        "Our approach is gentle, grounded, and personal. Every meeting begins with where you are now and moves respectfully toward what is ready to be seen.",
       ],
     },
     healing: {
-      title: "Healing",
+      title: "Therapies",
       body:
         "Individual sessions for clarity, grounding, and a deeper connection with yourself.",
       treatments: [
@@ -333,10 +332,10 @@ export const dictionaries = {
     contact: {
       title: "Contact",
       body:
-        "If you would like to meet before booking a session, you can schedule a short Discovery Call.",
-      discoveryTitle: "Discovery Call",
+        "If you would like to meet us before booking a session, you can schedule a short introductory phone appointment.",
+      discoveryTitle: "Introductory phone appointment",
       discoveryBody:
-        "A simple first call to see whether this approach fits what you need right now.",
+        "A simple first call to see whether our approach fits what you need right now.",
     },
     subscribe: {
       title: "Stay in touch",
