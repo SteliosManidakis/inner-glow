@@ -24,7 +24,7 @@ export default async function HealingPage({ params }: { params: Promise<{ locale
 
   return (
     <>
-      <section className="bg-ivory py-14 sm:py-20 lg:py-24">
+      <section className="bg-sage/20 py-14 sm:py-20 lg:py-24">
         <Container>
           <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
             {dictionary.common.brand}
