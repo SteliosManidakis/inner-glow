@@ -74,6 +74,11 @@ export const dictionaries = {
               body: "Για ανθρώπους που χρειάζονται ηρεμία, αποφόρτιση ή έναν υποστηρικτικό χώρο για να επανέλθουν στο κέντρο τους.",
             },
           ],
+          coordinator: {
+            title: "Συντονιστής",
+            body: "Η συνεδρία κρατά έναν ήρεμο, ασφαλή χώρο με γειωμένη παρουσία και καθοδήγηση προσαρμοσμένη στον ρυθμό σου.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Tapping",
@@ -90,6 +95,11 @@ export const dictionaries = {
               body: "Για ανθρώπους που βιώνουν ένταση, άγχος, μπλοκαρίσματα ή επαναλαμβανόμενα μοτίβα και θέλουν έναν πρακτικό τρόπο αποφόρτισης.",
             },
           ],
+          coordinator: {
+            title: "Συντονιστής",
+            body: "Η καθοδήγηση γίνεται με απλότητα, σταθερότητα και προσοχή στο τι μπορεί να υποστηριχθεί με ασφάλεια σε κάθε βήμα.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Αναδρομική Ύπνωση",
@@ -106,6 +116,11 @@ export const dictionaries = {
               body: "Για ανθρώπους που θέλουν να εξερευνήσουν βαθύτερα εσωτερικά θέματα, επαναλαμβανόμενα μοτίβα ή συναισθηματικές συνδέσεις.",
             },
           ],
+          coordinator: {
+            title: "Συντονιστής",
+            body: "Ο συντονισμός δίνει έμφαση στην προετοιμασία, την παρουσία και την ήπια επιστροφή μετά την εμπειρία.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Συστημική Αναπαράσταση",
@@ -122,6 +137,11 @@ export const dictionaries = {
               body: "Για ανθρώπους που θέλουν να κατανοήσουν βαθύτερα οικογενειακά, επαγγελματικά ή προσωπικά μοτίβα και τη θέση τους μέσα σε αυτά.",
             },
           ],
+          coordinator: {
+            title: "Συντονιστής",
+            body: "Η διαδικασία συντονίζεται με σεβασμό στο σύστημα, στα όρια και στον ρυθμό με τον οποίο μπορεί να φανεί κάθε πληροφορία.",
+            image: "/images/placeholders/about.png",
+          },
         },
       ],
       pricingTitle: "Τιμή",
@@ -234,6 +254,11 @@ export const dictionaries = {
               body: "For people who need calm, release, or a supportive space to return to their center.",
             },
           ],
+          coordinator: {
+            title: "Facilitator",
+            body: "The session holds a calm, safe space with grounded presence and guidance adapted to your pace.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Tapping",
@@ -250,6 +275,11 @@ export const dictionaries = {
               body: "For people experiencing tension, anxiety, blocks, or repeating patterns who want a practical way to release pressure.",
             },
           ],
+          coordinator: {
+            title: "Facilitator",
+            body: "Guidance is simple, steady, and attentive to what can be supported safely at each step.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Regression Hypnosis",
@@ -266,6 +296,11 @@ export const dictionaries = {
               body: "For people who want to explore deeper inner themes, repeating patterns, or emotional connections.",
             },
           ],
+          coordinator: {
+            title: "Facilitator",
+            body: "Facilitation emphasizes preparation, presence, and a gentle return after the experience.",
+            image: "/images/placeholders/about.png",
+          },
         },
         {
           title: "Systemic Constellation",
@@ -282,6 +317,11 @@ export const dictionaries = {
               body: "For people who want to better understand family, work, or personal patterns and their place within them.",
             },
           ],
+          coordinator: {
+            title: "Facilitator",
+            body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
+            image: "/images/placeholders/about.png",
+          },
         },
       ],
       pricingTitle: "Pricing",

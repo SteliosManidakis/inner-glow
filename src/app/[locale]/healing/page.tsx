@@ -62,10 +62,11 @@ function TreatmentSection({
   treatment: Treatment;
 }) {
   const isEven = index % 2 === 0;
+  const treatmentBackground = isEven ? "bg-ivory" : "bg-sage/20";
 
   return (
-    <article>
-      <section className="bg-ivory py-14 sm:py-20 lg:py-24">
+    <article className={treatmentBackground}>
+      <section className="py-14 sm:py-20 lg:py-24">
         <Container className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
           <div className={isEven ? "" : "md:order-2"}>
             <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
@@ -90,17 +91,34 @@ function TreatmentSection({
           </div>
         </Container>
       </section>
-      <section className="bg-sage/20 py-14 sm:py-20">
-        <Container className="grid gap-6 md:grid-cols-2">
+      <section className="py-14 sm:py-20">
+        <Container className="grid gap-6 md:grid-cols-3">
           {treatment.sections.map((section) => (
             <section className="border-t border-olive/30 pt-6" key={section.title}>
               <h3 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h3>
               <p className="mt-4 text-base leading-7 text-charcoal/72">{section.body}</p>
             </section>
           ))}
+          <section className="border-t border-olive/30 pt-6">
+            <h3 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+              {treatment.coordinator.title}
+            </h3>
+            <div className="mt-5 flex gap-4 sm:items-start md:block">
+              <div className="h-24 w-24 shrink-0 overflow-hidden rounded-tr-[2rem] md:h-auto md:w-full">
+                <Image
+                  src={treatment.coordinator.image}
+                  alt=""
+                  width={420}
+                  height={420}
+                  className="aspect-square h-full w-full object-cover"
+                />
+              </div>
+              <p className="text-base leading-7 text-charcoal/72 md:mt-4">{treatment.coordinator.body}</p>
+            </div>
+          </section>
         </Container>
       </section>
-      <section className="bg-ivory py-14 sm:py-20 lg:py-24">
+      <section className="py-14 sm:py-20 lg:py-24">
         <Container className="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-olive">
