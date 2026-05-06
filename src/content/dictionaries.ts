@@ -26,6 +26,8 @@ export const dictionaries = {
       price: "100€",
       perSession: "ανά συνεδρία",
       openBooking: "Άνοιγμα booking",
+      treatmentDisclaimer:
+        "Καμία από τις πρακτικές που παρέχονται στην Inner Glow δεν αντικαθιστά την ιατρική διάγνωση, θεραπεία ή ψυχοθεραπευτική υποστήριξη, ούτε προτείνεται η διακοπή οποιασδήποτε αγωγής· λειτουργούν συμπληρωματικά, με στόχο την αυτογνωσία, τη συναισθηματική αποφόρτιση και την προσωπική ενδυνάμωση.",
     },
     seo: {
       homeTitle: "Healing sessions and personal guidance",
@@ -340,6 +342,8 @@ export const dictionaries = {
       price: "€100",
       perSession: "per session",
       openBooking: "Open booking",
+      treatmentDisclaimer:
+        "None of the practices offered at Inner Glow replaces medical diagnosis, treatment or psychotherapeutic support, nor is discontinuation of any treatment recommended; they work complementarily, with the aim of self-awareness, emotional release and personal empowerment.",
     },
     seo: {
       homeTitle: "Healing sessions and personal guidance",

@@ -56,10 +56,7 @@ export function TreatmentDetail({
         {hasWrapImageLayout ? (
           <Container>
             <div className="max-w-3xl">
-              <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
-                {dictionary.healing.title}
-              </p>
-              <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+              <h1 className="text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
                 {treatment.title}
               </h1>
             </div>
@@ -84,10 +81,7 @@ export function TreatmentDetail({
         ) : (
           <Container className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
             <div>
-              <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
-                {dictionary.healing.title}
-              </p>
-              <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+              <h1 className="text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
                 {treatment.title}
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-charcoal/72 sm:text-lg">
@@ -218,6 +212,13 @@ export function TreatmentDetail({
               />
             </>
           )}
+        </Container>
+      </section>
+      <section className="pb-14 sm:pb-20 lg:pb-24">
+        <Container>
+          <p className="border-t border-olive/20 pt-6 text-sm leading-7 text-charcoal/60 sm:text-base sm:leading-8">
+            {dictionary.common.treatmentDisclaimer}
+          </p>
         </Container>
       </section>
     </article>

@@ -20,9 +20,9 @@ export function Header({
           <Image
             src="/images/small_logo_cropped.png"
             alt=""
-            width={44}
-            height={44}
-            className="h-9 w-9 object-contain sm:h-10 sm:w-10"
+            width={66}
+            height={66}
+            className="h-14 w-14 object-contain sm:h-[3.75rem] sm:w-[3.75rem]"
             priority
           />
           <span>{dictionary.common.brand}</span>
@@ -33,8 +33,26 @@ export function Header({
               className="inline-flex min-h-10 items-center text-xs uppercase tracking-[0.1em] text-charcoal/75 transition hover:text-olive xl:tracking-[0.12em]"
               href={localizedPath(locale, route.href)}
               key={route.key}
+              title={route.key === "contact" ? dictionary.nav[route.key] : undefined}
+              aria-label={route.key === "contact" ? dictionary.nav[route.key] : undefined}
             >
-              {dictionary.nav[route.key]}
+              {route.key === "contact" ? (
+                <svg
+                  aria-hidden="true"
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.8"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M4 6h16v12H4z" />
+                  <path d="m4 7 8 6 8-6" />
+                </svg>
+              ) : (
+                dictionary.nav[route.key]
+              )}
             </Link>
           ))}
         </nav>
