@@ -6,18 +6,11 @@ import { bookingLinks } from "@/lib/booking";
 
 type Treatment = Dictionary["healing"]["treatments"][number];
 
-type Price = {
-  formatted: string;
-  label: string;
-};
-
 export function TreatmentDetail({
   dictionary,
-  price,
   treatment,
 }: {
   dictionary: Dictionary;
-  price: Price;
   treatment: Treatment;
 }) {
   return (
@@ -90,11 +83,9 @@ export function TreatmentDetail({
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-olive">
               {dictionary.healing.pricingTitle}
             </p>
-            <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{price.formatted}</p>
+            <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{treatment.pricing.price}</p>
             <p className="mt-2 text-charcoal/65">{dictionary.common.perSession}</p>
-            <p className="mt-4 max-w-xs text-sm leading-6 text-charcoal/60">
-              {dictionary.healing.pricingLocationNote} {price.label}.
-            </p>
+            <p className="mt-4 max-w-xs text-sm leading-6 text-charcoal/60">{treatment.pricing.note}</p>
           </div>
           <BookingPanel
             title={dictionary.common.bookHealing}

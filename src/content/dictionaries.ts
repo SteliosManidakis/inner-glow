@@ -87,6 +87,10 @@ export const dictionaries = {
             body: "Οι συνεδρίες στην Inner Glow γίνονται από την Μαργαρίτα Πασχάλη, Reiki Master με πολυετή εμπειρία, βαθιά ενσυναίσθηση και σεβασμό στον προσωπικό σου ρυθμό..",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
         },
         {
           title: "Tapping",
@@ -109,6 +113,10 @@ export const dictionaries = {
             role: "Tapping facilitator",
             body: "Η καθοδήγηση γίνεται με απλότητα, σταθερότητα και προσοχή στο τι μπορεί να υποστηριχθεί με ασφάλεια σε κάθε βήμα.",
             image: "/images/placeholders/about.png",
+          },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
         },
         {
@@ -133,6 +141,10 @@ export const dictionaries = {
             body: "Ο Τάκης είναι πιστοποιημένος υπνοθεραπευτής, εκπαιδευμένος στην τεχνική QHHT (Quantum Healing Hypnosis Technique), με πορεία στον χώρο από το 2011. Έχει συνοδεύσει πολλούς ανθρώπους σε βαθιά, θεραπευτικά ταξίδια εσωτερικής ανακάλυψης και μοιράζεται την εμπειρία του μέσα από εκπαιδεύσεις στο Regression Hypnosis.",
             image: "/images/valsamos.png",
           },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
         },
         {
           title: "Συστημική Αναπαράσταση",
@@ -155,6 +167,10 @@ export const dictionaries = {
             role: "Ψυχολόγος | Πιστοποιημένος Συντονιστής Συστημικής Αναπαράστασης",
             body: "Την Αναπαράσταση συντονίζει ο ψυχολόγος και πιστοποιημένος συντονιστής Συστημικής Αναπαράστασης, Κανάρης Κάραλης.",
             image: "/images/kanaris.png",
+          },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
         },
         {
@@ -179,6 +195,10 @@ export const dictionaries = {
             body: "Η καθοδήγηση κρατά πρακτική κατεύθυνση, με σεβασμό στον ρυθμό σου και έμφαση σε μικρά, εφαρμόσιμα βήματα.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
         },
         {
           title: "Διαλογισμοί",
@@ -202,13 +222,15 @@ export const dictionaries = {
             body: "Ο συντονισμός είναι ήπιος και γειωμένος, ώστε η πρακτική να παραμένει προσβάσιμη, σταθερή και υποστηρικτική.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
         },
       ],
       pricingTitle: "Τιμή",
       pricingBody:
         "Η συνεδρία γίνεται χωρίς online πληρωμή σε αυτό το στάδιο. Το booking απλώς κρατάει την ώρα σου.",
-      pricingLocationNote:
-        "Η τιμή εμφανίζεται με βάση την εκτιμώμενη τοποθεσία σου.",
     },
     contact: {
       title: "Επικοινωνία",
@@ -326,6 +348,10 @@ export const dictionaries = {
             body: "The session holds a calm, safe space with grounded presence and guidance adapted to your pace.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
+          },
         },
         {
           title: "Tapping",
@@ -348,6 +374,10 @@ export const dictionaries = {
             role: "Tapping facilitator",
             body: "Guidance is simple, steady, and attentive to what can be supported safely at each step.",
             image: "/images/placeholders/about.png",
+          },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
           },
         },
         {
@@ -372,6 +402,10 @@ export const dictionaries = {
             body: "Facilitation emphasizes preparation, presence, and a gentle return after the experience.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
+          },
         },
         {
           title: "Systemic Constellation",
@@ -394,6 +428,10 @@ export const dictionaries = {
             role: "Systemic constellation facilitator",
             body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
             image: "/images/placeholders/about.png",
+          },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
           },
         },
         {
@@ -418,6 +456,10 @@ export const dictionaries = {
             body: "Guidance stays practical and paced, with emphasis on small, applicable steps.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
+          },
         },
         {
           title: "Meditations",
@@ -441,13 +483,15 @@ export const dictionaries = {
             body: "Facilitation is gentle and grounded so the practice remains accessible, steady, and supportive.",
             image: "/images/placeholders/about.png",
           },
+          pricing: {
+            price: "50€",
+            note: "The final fee is confirmed during communication before the appointment.",
+          },
         },
       ],
       pricingTitle: "Pricing",
       pricingBody:
         "There is no online payment at this stage. Booking simply reserves your time.",
-      pricingLocationNote:
-        "The price is shown based on your estimated location.",
     },
     contact: {
       title: "Contact",

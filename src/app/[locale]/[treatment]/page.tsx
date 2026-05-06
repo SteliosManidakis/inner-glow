@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { TreatmentDetail } from "@/components/sections/TreatmentDetail";
 import { getDictionary } from "@/content/dictionaries";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
-import { getLocationPrice } from "@/lib/pricing";
 import { absoluteRoute, languageAlternates } from "@/lib/seo";
 import { getTreatmentRoute, treatmentRoutes } from "@/lib/treatments";
 
@@ -78,8 +77,7 @@ export default async function TreatmentPage({
 
   const locale = rawLocale as Locale;
   const dictionary = getDictionary(locale);
-  const price = await getLocationPrice(locale);
   const treatment = dictionary.healing.treatments[treatmentRoute.treatmentIndex];
 
-  return <TreatmentDetail dictionary={dictionary} price={price} treatment={treatment} />;
+  return <TreatmentDetail dictionary={dictionary} treatment={treatment} />;
 }

@@ -18,7 +18,7 @@ export function Header({
       <div className="relative mx-auto flex min-h-20 w-full max-w-[95rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link className="inline-flex shrink-0 items-center gap-3 whitespace-nowrap font-serif text-xl leading-tight text-charcoal sm:text-2xl" href={localizedPath(locale)}>
           <Image
-            src="/images/small_logo.png"
+            src="/images/2.svg"
             alt=""
             width={44}
             height={44}
