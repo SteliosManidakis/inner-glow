@@ -8,7 +8,7 @@ export const dictionaries = {
       about: "Σχετικά",
       healing: "Θεραπείες",
       reiki: "Reiki",
-      tapping: "Tapping",
+      tapping: "EFT",
       regressionHypnosis: "Ανάδρομη Ύπνωση",
       nlpCoaching: "NLP & Coaching",
       systemicConstellation: "Συστημική",
@@ -161,21 +161,32 @@ export const dictionaries = {
         },
         {
           title: "Συστημική Αναπαράσταση",
+          announcement: {
+            text: "ΕΠΟΜΕΝΟ ΕΡΓΑΣΤΗΡΙΟ 31/5/2026, 10:30–20:00",
+            size: "base",
+            weight: "bold",
+          },
           body:
             "Μια βιωματική μέθοδος που μας βοηθά να «δούμε» δυναμικές που δρουν υποσυνείδητα μέσα στη ζωή μας. Σχέσεις με γονείς, συντρόφους, παιδιά ή θέματα υγείας και επαναλαμβανόμενα μοτίβα συχνά συνδέονται με άγραφους «νόμους» και πιστότητες προς την οικογένεια ή το σύστημα από όπου προερχόμαστε.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "Τι προσφέρει",
-              body: "Η συνεδρία εστιάζει στο θέμα που φέρνεις, στη χαρτογράφηση των σχέσεων και στην παρατήρηση της δυναμικής που ζητά περισσότερη καθαρότητα. Στην αναπαράσταση, επιλέγεις άτομα από την ομάδα για να «εκπροσωπήσουν» μέλη ή στοιχεία του συστήματός σου· μέσα από την τοποθέτηση και την κίνηση αυτών των προσώπων στον χώρο, αποκαλύπτεται το εσωτερικό τοπίο — αυτό που συνήθως δεν λέγεται με λόγια.",
+              title: "Που βοηθά η Συστημική Αναπαράσταση",
+              items: [
+                "Σε οικογενειακές σχέσεις (γονείς, αδέλφια, παιδιά)",
+                "Σε θέματα σχέσεων και επαναλαμβανόμενων εμπλοκών",
+                "Σε σωματικά ή ψυχικά συμπτώματα χωρίς προφανή εξήγηση",
+                "Σε επαγγελματικά μπλοκαρίσματα ή αδιέξοδα ζωής",
+                "Όταν θέλεις απλώς να δεις πιο καθαρά μια κατάσταση",
+              ],
             },
             {
-              title: "Για ποιον είναι",
-              body: "Για ανθρώπους που θέλουν να κατανοήσουν βαθύτερα οικογενειακά, επαγγελματικά ή προσωπικά μοτίβα και τη θέση τους μέσα σε αυτά. Επειδή δεν βασίζεται μόνο στη λογική, αλλά μιλά απευθείας στη σοφία του συστήματος. Η εικόνα που αναδύεται φέρνει επίγνωση — και η επίγνωση φέρνει αλλαγή.",
+              title: "Γιατί Λειτουργεί",
+              body: "Επειδή δεν βασίζεται μόνο στη λογική, αλλά μιλά απευθείας στη σοφία του συστήματος. Η εικόνα που αναδύεται φέρνει επίγνωση — και η επίγνωση φέρνει αλλαγή.",
             },
           ],
           coordinator: {
-            show: true,
+            show: false,
             title: "Συντονιστής",
             name: "Κανάρης Κάραλης",
             role: "Ψυχολόγος | Πιστοποιημένος Συντονιστής Συστημικής Αναπαράστασης",
@@ -189,6 +200,13 @@ export const dictionaries = {
               { label: "Συνεδρία 90'", price: "70€" },
             ],
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
+          workshopCta: {
+            intro:
+              "Τη Συστημική Αναπαράσταση συντονίζει ο ψυχολόγος και πιστοποιημένος συντονιστής Συστημικής Αναπαράστασης, Κανάρης Κάραλης.",
+            title: "ΕΠΟΜΕΝΟ ΕΡΓΑΣΤΗΡΙΟ 31/5/2026, 10:30–20:00",
+            details: ["Απλή συμμετοχή: 60€", "Συμμετοχή με αίτημα: 100€"],
+            button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
           },
         },
         {
@@ -298,7 +316,7 @@ export const dictionaries = {
       about: "About",
       healing: "Therapies",
       reiki: "Reiki",
-      tapping: "Tapping",
+      tapping: "EFT",
       regressionHypnosis: "Regression Hypnosis",
       nlpCoaching: "NLP & Coaching",
       systemicConstellation: "Systemic Constellation",
@@ -460,17 +478,28 @@ export const dictionaries = {
         },
         {
           title: "Systemic Constellation",
+          announcement: {
+            text: "NEXT WORKSHOP 31/5/2026, 10:30–20:00",
+            size: "base",
+            weight: "bold",
+          },
           body:
             "An experiential approach for bringing relationships, dynamics, and patterns within family or personal systems into clearer view.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
-              title: "What it offers",
-              body: "The session focuses on the theme you bring, mapping relationships, and observing the dynamic that needs more clarity.",
+              title: "Where Systemic Constellation can help",
+              items: [
+                "In family relationships (parents, siblings, children)",
+                "With relationship themes and repeated entanglements",
+                "With physical or emotional symptoms without an obvious explanation",
+                "With professional blocks or life dead ends",
+                "When you simply want to see a situation more clearly",
+              ],
             },
             {
-              title: "Who it is for",
-              body: "For people who want to better understand family, work, or personal patterns and their place within them.",
+              title: "Why it works",
+              body: "Because it is not based only on logic, but speaks directly to the wisdom of the system. The image that emerges brings awareness — and awareness brings change.",
             },
           ],
           coordinator: {
@@ -488,6 +517,13 @@ export const dictionaries = {
               { label: "90-minute session", price: "70€" },
             ],
             note: "The final fee is confirmed during communication before the appointment.",
+          },
+          workshopCta: {
+            intro:
+              "The Systemic Constellation is facilitated by psychologist and certified Systemic Constellation facilitator Kanaris Karalis.",
+            title: "NEXT WORKSHOP 31/5/2026, 10:30–20:00",
+            details: ["Simple participation: 60€", "Participation with request: 100€"],
+            button: "REGISTER INTEREST",
           },
         },
         {
@@ -597,3 +633,9 @@ export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
 }
 
+
+
+
+
+//Τα διαθέσιμα size είναι: "sm", "base", "lg", "xl".
+//Το weight μπορεί να είναι "bold" ή "normal".
