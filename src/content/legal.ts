@@ -16,73 +16,99 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
   el: {
     terms: {
       intro:
-        "Καλώς ήρθατε στον ιστότοπο της Inner Glow - ένας χώρος εσωτερικής εργασίας, σύνδεσης και μεταμόρφωσης. Με την πρόσβασή σας στον παρόντα ιστότοπο και τη χρήση των υπηρεσιών μας, αποδέχεστε τους παρακάτω όρους χρήσης. Παρακαλούμε να τους διαβάσετε προσεκτικά.",
-      lastUpdated: "Τελευταία ενημέρωση: 6 Μαΐου 2026",
-      note: "",
+        "Οι παρόντες όροι περιγράφουν τη χρήση του website και των υπηρεσιών που παρέχονται από τη Μαργαρίτα Πασχάλη.",
+      lastUpdated: "Τελευταία ενημέρωση: 5 Μαΐου 2026",
+      note:
+        "Το κείμενο είναι πρακτικό draft για το website και δεν αποτελεί νομική συμβουλή. Πριν από επίσημο launch, συνιστάται έλεγχος από νομικό σύμβουλο.",
       sections: [
         {
-          title: "1. Περιγραφή Υπηρεσιών",
+          title: "1. Ποιοι είμαστε",
           body: [
-            "Η Inner Glow προσφέρει ατομικές προσωπικές και ενεργειακές συνεδρίες, καθώς και ομαδικές δράσεις.",
-            "Βιωματικά workshops προσωπικής εξέλιξης",
-            "Συστημική αναπαράσταση",
-            "Διαλογισμός & ενεργειακές πρακτικές",
-            "Reiki και άλλες φυσικές θεραπείες",
-            "Μαθήματα yoga (ομαδικά ή ατομικά)",
-            "Retreats σε φυσικά περιβάλλοντα υψηλής ενέργειας",
+            "Το website ανήκει στο προσωπικό brand Μαργαρίτα Πασχάλη. Για οποιαδήποτε ερώτηση σχετικά με το website ή τις υπηρεσίες, μπορείς να επικοινωνήσεις στο margaritapaschali@gmail.com.",
           ],
         },
         {
-          title: "2. Δήλωση Συμμετοχής",
+          title: "2. Βασικοί όροι",
           body: [
-            "Η συμμετοχή σε workshops και retreats γίνεται κατόπιν αίτησης ενδιαφέροντος. Η κράτηση θεωρείται έγκυρη έπειτα από επιβεβαίωση και, όπου απαιτείται, καταβολή προκαταβολής.",
-            "Η δήλωση συμμετοχής δεν είναι μεταβιβάσιμη. Η Inner Glow διατηρεί το δικαίωμα επιλογής συμμετεχόντων, καθώς και ακύρωσης ή αλλαγής ημερομηνιών.",
+            "Οι λέξεις «εμείς», «μας» ή «η Μαργαρίτα» αναφέρονται στη Μαργαρίτα Πασχάλη.",
+            "Οι λέξεις «εσύ», «σου» ή «πελάτης» αναφέρονται στο άτομο που χρησιμοποιεί το website, εγγράφεται στο newsletter ή κλείνει discovery call ή συνεδρία.",
           ],
         },
         {
-          title: "3. Χρήση του Ιστότοπου",
+          title: "3. Χρήση του website",
           body: [
-            "Ο παρών ιστότοπος προορίζεται για προσωπική και μη εμπορική χρήση.",
-            "Απαγορεύεται η αντιγραφή, αναπαραγωγή ή διανομή περιεχομένου χωρίς προηγούμενη έγγραφη άδεια της Inner Glow.",
+            "Το περιεχόμενο του website παρέχεται για ενημερωτικούς σκοπούς και για την παρουσίαση των υπηρεσιών της Μαργαρίτας Πασχάλη.",
+            "Δεν επιτρέπεται η χρήση του website με τρόπο παράνομο, παραπλανητικό, επιβλαβή ή που παρεμβαίνει στη λειτουργία του.",
           ],
         },
         {
-          title: "4. Πνευματικά Δικαιώματα",
+          title: "4. Υπηρεσίες και διαθεσιμότητα",
           body: [
-            "Όλο το περιεχόμενο του ιστοτόπου (κείμενα, φωτογραφίες, λογότυπα κ.λπ.) αποτελεί πνευματική ιδιοκτησία της Inner Glow και προστατεύεται από την ελληνική και ευρωπαϊκή νομοθεσία.",
-            "Η χρήση του περιεχομένου για εμπορικούς σκοπούς ή η αλλοίωσή του χωρίς άδεια απαγορεύεται.",
+            "Οι υπηρεσίες αφορούν ατομικές συνεδρίες healing και discovery calls. Για πελάτες στο εξωτερικό, οι συνεδρίες παρέχονται μόνο online. Για πελάτες στην Ελλάδα, οι συνεδρίες μπορούν να γίνουν online ή δια ζώσης, κατόπιν συνεννόησης.",
+            "Η διαθεσιμότητα, η διάρκεια και ο τρόπος διεξαγωγής των συνεδριών μπορεί να αλλάζουν και επιβεβαιώνονται κατά τη διαδικασία booking.",
           ],
         },
         {
-          title: "5. Υπευθυνότητα",
+          title: "5. Booking, τιμή και ακυρώσεις",
           body: [
-            "Οι πληροφορίες και οι υπηρεσίες που παρέχονται στον ιστότοπο ή στις δράσεις μας δεν αποτελούν ιατρική ή ψυχολογική συμβουλή και δεν αντικαθιστούν οποιαδήποτε ιατρική ή ψυχοθεραπευτική αγωγή.",
-            "Οι συμμετέχοντες είναι υπεύθυνοι για την προσωπική τους υγεία και ευημερία. Η Inner Glow δεν ευθύνεται για τυχόν άμεσες ή έμμεσες συνέπειες από την εφαρμογή πρακτικών χωρίς την κατάλληλη καθοδήγηση.",
+            "Η ενδεικτική τιμή για συνεδρία healing είναι 100 ευρώ ανά συνεδρία, εκτός αν συμφωνηθεί διαφορετικά.",
+            "Το booking γίνεται μέσω Cal.com, όπου μπορείς να επιλέξεις διαθέσιμη ημερομηνία και ώρα. Μετά την κράτηση θα λάβεις email επιβεβαίωσης από την πλατφόρμα ή/και από τη Μαργαρίτα.",
+            "Σε αυτό το στάδιο δεν πραγματοποιείται online πληρωμή μέσω του website.",
+            "Ακύρωση ή αλλαγή ραντεβού μπορεί να γίνει έως 24 ώρες πριν από την προγραμματισμένη ώρα. Για ακυρώσεις σε μικρότερο διάστημα, ενδέχεται να χρειαστεί νέα συνεννόηση για επαναπρογραμματισμό.",
           ],
         },
         {
-          title: "6. Προσωπικά Δεδομένα",
+          title: "6. Καθυστερήσεις και μη εμφάνιση",
           body: [
-            "Η Inner Glow διαχειρίζεται τα προσωπικά δεδομένα των χρηστών με σεβασμό και σύμφωνα με την Πολιτική Απορρήτου.",
-            "Με τη χρήση του παρόντος ιστότοπου δηλώνετε ότι έχετε διαβάσει και αποδέχεστε την Πολιτική Απορρήτου.",
+            "Για online συνεδρίες, συνιστάται να συνδεθείς λίγα λεπτά πριν από την προγραμματισμένη ώρα. Για δια ζώσης συνεδρίες, συνιστάται να προσέλθεις στην ώρα σου.",
+            "Αν καθυστερήσεις, η διάρκεια της συνεδρίας μπορεί να μειωθεί ώστε να μην επηρεαστούν επόμενα ραντεβού. Αν δεν εμφανιστείς χωρίς ενημέρωση, η συνεδρία μπορεί να θεωρηθεί ολοκληρωμένη ή να χρειαστεί νέα συνεννόηση.",
           ],
         },
         {
-          title: "7. Τροποποίηση Όρων",
+          title: "7. Πληροφορίες υγείας και προσωπική ευθύνη",
           body: [
-            "Η Inner Glow διατηρεί το δικαίωμα να τροποποιεί τους παρόντες όρους χρήσης οποτεδήποτε και χωρίς προειδοποίηση. Οι αλλαγές ισχύουν από τη δημοσίευσή τους στον ιστότοπο.",
+            "Αν υπάρχει κατάσταση υγείας, εγκυμοσύνη, φαρμακευτική αγωγή ή άλλο θέμα που θεωρείς σχετικό με τη συνεδρία, παρακαλείσαι να το αναφέρεις πριν ή κατά τη διαδικασία booking, όπου ζητείται.",
+            "Η παροχή ακριβών πληροφοριών βοηθά ώστε η συνεδρία να οργανωθεί με υπευθυνότητα. Η μη γνωστοποίηση σημαντικών πληροφοριών μπορεί να επηρεάσει την καταλληλότητα ή τον τρόπο διεξαγωγής της συνεδρίας.",
           ],
         },
         {
-          title: "8. Δικαιοδοσία",
+          title: "8. Συμπεριφορά και δικαίωμα άρνησης υπηρεσίας",
           body: [
-            "Οι παρόντες όροι διέπονται από το ελληνικό δίκαιο. Οποιαδήποτε διαφορά υπάγεται στην αποκλειστική αρμοδιότητα των δικαστηρίων Αθηνών.",
+            "Κατά τη διάρκεια της συνεδρίας ζητείται σεβασμός, συνέπεια και αποφυγή παρεμβολών, ώστε να διατηρείται ασφαλές και ήρεμο πλαίσιο.",
+            "Η Μαργαρίτα διατηρεί το δικαίωμα να αρνηθεί ή να διακόψει συνεδρία σε περίπτωση επιθετικής, προσβλητικής, ανάρμοστης, σεξουαλικής, απειλητικής ή άλλης συμπεριφοράς που παραβιάζει το ασφαλές πλαίσιο συνεργασίας.",
           ],
         },
         {
-          title: "9. Επικοινωνία",
+          title: "9. Όχι ιατρική ή ψυχολογική συμβουλή",
           body: [
-            "Για οποιαδήποτε ερώτηση ή διευκρίνιση, μπορείτε να επικοινωνήσετε μαζί μας στο: info@inner-glow.gr",
+            "Οι υπηρεσίες και το περιεχόμενο του website δεν αποτελούν ιατρική, ψυχολογική, ψυχιατρική ή άλλη επαγγελματική διάγνωση, θεραπεία ή συμβουλή.",
+            "Αν αντιμετωπίζεις επείγον ή σοβαρό θέμα υγείας, πρέπει να απευθυνθείς σε κατάλληλο επαγγελματία υγείας ή στις αρμόδιες υπηρεσίες έκτακτης ανάγκης.",
+          ],
+        },
+        {
+          title: "10. Feedback",
+          body: [
+            "Για σχόλια, ερωτήσεις ή αιτήματα σχετικά με εμπειρία συνεδρίας ή χρήση του website, μπορείς να επικοινωνήσεις στο margaritapaschali@gmail.com.",
+          ],
+        },
+        {
+          title: "11. Πνευματική ιδιοκτησία",
+          body: [
+            "Τα κείμενα, η δομή, το design και το οπτικό υλικό του website προστατεύονται από δικαιώματα πνευματικής ιδιοκτησίας, εκτός αν αναφέρεται διαφορετικά.",
+            "Δεν επιτρέπεται η αντιγραφή, αναδημοσίευση ή εμπορική χρήση περιεχομένου χωρίς προηγούμενη γραπτή άδεια.",
+          ],
+        },
+        {
+          title: "12. Περιορισμός ευθύνης",
+          body: [
+            "Καταβάλλεται προσπάθεια ώστε οι πληροφορίες του website να είναι ακριβείς και ενημερωμένες, όμως δεν παρέχεται εγγύηση ότι το περιεχόμενο είναι πάντα πλήρες, αδιάλειπτο ή χωρίς σφάλματα.",
+            "Η χρήση του website και η απόφαση συμμετοχής σε υπηρεσίες γίνεται με προσωπική ευθύνη του χρήστη.",
+          ],
+        },
+        {
+          title: "13. Εφαρμοστέο δίκαιο",
+          body: [
+            "Οι παρόντες όροι διέπονται από το ελληνικό δίκαιο. Για οποιαδήποτε διαφορά, τα αρμόδια δικαστήρια θα καθορίζονται σύμφωνα με την ισχύουσα ελληνική νομοθεσία.",
           ],
         },
       ],
@@ -115,7 +141,6 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
           body: [
             "Χρησιμοποιούμε τα στοιχεία newsletter για να σου στέλνουμε ενημερώσεις, νέα ή άλλο σχετικό περιεχόμενο. Η νομική βάση είναι η συγκατάθεσή σου.",
             "Χρησιμοποιούμε booking δεδομένα για να οργανώνουμε discovery calls και συνεδρίες. Η νομική βάση είναι η λήψη μέτρων πριν από πιθανή παροχή υπηρεσίας ή η εκτέλεση συμφωνίας.",
-            "Χρησιμοποιούμε εκτιμώμενη χώρα για να εμφανίζουμε τιμή με βάση την τοποθεσία. Η νομική βάση είναι το έννομο συμφέρον να παρουσιάζεται σχετική πληροφορία τιμολόγησης στους επισκέπτες.",
             "Χρησιμοποιούμε τεχνικά δεδομένα για τη λειτουργία και ασφάλεια του website, βάσει έννομου συμφέροντος.",
           ],
         },
@@ -131,7 +156,7 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
         {
           title: "5. Προωθητικές επικοινωνίες",
           body: [
-            "Αν εγγραφείς στο newsletter, μπορείς να λαμβάνεις ενημερώσεις, νέα ή προσκλήσεις σχετικές με τη δουλειά της Μαργαρίτα.",
+            "Αν εγγραφείς στο newsletter, μπορείς να λαμβάνεις ενημερώσεις, νέα ή προσκλήσεις σχετικές με τη δραστηριότητα της Inner Glow.",
             "Μπορείς να διαγραφείς οποιαδήποτε στιγμή μέσω του unsubscribe link στο email ή στέλνοντας μήνυμα στο margaritapaschali@gmail.com.",
           ],
         },
@@ -185,73 +210,99 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
   en: {
     terms: {
       intro:
-        "Welcome to the Inner Glow website - a space for inner work, connection and transformation. By accessing this website and using our services, you accept the following terms of use. Please read them carefully.",
-      lastUpdated: "Last updated: May 6, 2026",
-      note: "",
+        "These terms describe the use of this website and the services offered by Margarita Paschali.",
+      lastUpdated: "Last updated: May 5, 2026",
+      note:
+        "This is a practical website draft and does not constitute legal advice. Before official launch, review by a qualified legal professional is recommended.",
       sections: [
         {
-          title: "1. Description of Services",
+          title: "1. Who we are",
           body: [
-            "Inner Glow offers individual personal and energetic sessions, as well as group activities.",
-            "Experiential personal development workshops",
-            "Systemic constellation",
-            "Meditation & energetic practices",
-            "Reiki and other natural therapies",
-            "Yoga classes (group or individual)",
-            "Retreats in natural high-energy environments",
+            "This website belongs to the personal brand Margarita Paschali. For questions about the website or services, contact margaritapaschali@gmail.com.",
           ],
         },
         {
-          title: "2. Participation Registration",
+          title: "2. Key terms",
           body: [
-            "Participation in workshops and retreats takes place after an expression of interest. A booking is considered valid after confirmation and, where required, payment of a deposit.",
-            "Participation registration is not transferable. Inner Glow reserves the right to select participants, as well as to cancel or change dates.",
+            "The words “we”, “us”, “our” or “Margarita” refer to Margarita Paschali.",
+            "The words “you”, “your” or “client” refer to the person using the website, subscribing to the newsletter, or booking a discovery call or session.",
           ],
         },
         {
           title: "3. Website use",
           body: [
-            "This website is intended for personal and non-commercial use.",
-            "Copying, reproducing or distributing content without prior written permission from Inner Glow is prohibited.",
+            "The website content is provided for informational purposes and to present Margarita Paschali's services.",
+            "You may not use the website in an unlawful, misleading, harmful way or in a way that interferes with its operation.",
           ],
         },
         {
-          title: "4. Intellectual Property",
+          title: "4. Services and availability",
           body: [
-            "All website content (texts, photographs, logos, etc.) is the intellectual property of Inner Glow and is protected by Greek and European legislation.",
-            "The use of content for commercial purposes or its alteration without permission is prohibited.",
+            "Services include individual healing sessions and discovery calls. For clients outside Greece, sessions are provided online only. For clients in Greece, sessions may take place online or in person by agreement.",
+            "Availability, duration and session format may change and are confirmed during the booking process.",
           ],
         },
         {
-          title: "5. Responsibility",
+          title: "5. Booking, price and cancellations",
           body: [
-            "The information and services provided on the website or through our activities do not constitute medical or psychological advice and do not replace any medical or psychotherapeutic treatment.",
-            "Participants are responsible for their personal health and wellbeing. Inner Glow is not liable for any direct or indirect consequences arising from the application of practices without appropriate guidance.",
+            "The indicative price for a healing session is EUR 100 per session, unless otherwise agreed.",
+            "Bookings are handled through Cal.com, where you can choose an available date and time. After booking, you will receive a confirmation email from the platform and/or Margarita.",
+            "At this stage, no online payment is processed through the website.",
+            "Cancellations or rescheduling may be made up to 24 hours before the scheduled time. For shorter notice cancellations, rescheduling may require further agreement.",
           ],
         },
         {
-          title: "6. Personal Data",
+          title: "6. Late arrivals and no-shows",
           body: [
-            "Inner Glow manages users' personal data with respect and in accordance with the Privacy Policy.",
-            "By using this website, you declare that you have read and accept the Privacy Policy.",
+            "For online sessions, you are encouraged to join a few minutes before the scheduled time. For in-person sessions, you are encouraged to arrive on time.",
+            "If you are late, the session time may be reduced so that later appointments are not affected. If you do not attend without notice, the session may be treated as completed or rescheduling may require further agreement.",
           ],
         },
         {
-          title: "7. Changes to Terms",
+          title: "7. Health information and personal responsibility",
           body: [
-            "Inner Glow reserves the right to modify these terms of use at any time and without notice. Changes apply from the moment they are published on the website.",
+            "If you have a health condition, are pregnant, take medication or have any other matter you consider relevant to the session, you are encouraged to disclose this before or during the booking process where requested.",
+            "Providing accurate information helps the session be arranged responsibly. Failure to disclose important information may affect the suitability or format of the session.",
           ],
         },
         {
-          title: "8. Jurisdiction",
+          title: "8. Conduct and right to refuse service",
           body: [
-            "These terms are governed by Greek law. Any dispute falls under the exclusive jurisdiction of the courts of Athens.",
+            "During a session, respectful conduct, punctuality and avoidance of interruptions are requested so that a safe and calm setting can be maintained.",
+            "Margarita reserves the right to refuse or end a session in the event of aggressive, abusive, inappropriate, sexual, threatening or other conduct that violates the safe working setting.",
           ],
         },
         {
-          title: "9. Contact",
+          title: "9. No medical or psychological advice",
           body: [
-            "For any question or clarification, you can contact us at: info@inner-glow.gr",
+            "The services and website content do not constitute medical, psychological, psychiatric or other professional diagnosis, treatment or advice.",
+            "If you are facing an urgent or serious health issue, you should contact an appropriate health professional or emergency service.",
+          ],
+        },
+        {
+          title: "10. Feedback",
+          body: [
+            "For feedback, questions or requests about a session experience or website use, you may contact margaritapaschali@gmail.com.",
+          ],
+        },
+        {
+          title: "11. Intellectual property",
+          body: [
+            "The text, structure, design and visual material of the website are protected by intellectual property rights unless stated otherwise.",
+            "Copying, republication or commercial use of content is not permitted without prior written permission.",
+          ],
+        },
+        {
+          title: "12. Limitation of liability",
+          body: [
+            "We aim to keep website information accurate and updated, but no guarantee is given that content will always be complete, uninterrupted or error-free.",
+            "Use of the website and the decision to participate in services remain the user's responsibility.",
+          ],
+        },
+        {
+          title: "13. Governing law",
+          body: [
+            "These terms are governed by Greek law. Any dispute will be handled by the competent courts as determined under applicable Greek legislation.",
           ],
         },
       ],
