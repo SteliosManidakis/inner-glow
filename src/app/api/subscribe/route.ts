@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 const BREVO_ENDPOINT = "https://api.brevo.com/v3/contacts";
+const BREVO_LIST_ID = 6;
 
 export async function POST(request: Request) {
   const { email, firstName, lastName } = (await request.json().catch(() => ({}))) as {
@@ -22,7 +23,7 @@ export async function POST(request: Request) {
   }
 
   const apiKey = process.env.BREVO_API_KEY;
-  const listId = Number(process.env.BREVO_LIST_ID);
+  const listId = Number(process.env.BREVO_LIST_ID ?? BREVO_LIST_ID);
 
   if (!apiKey || !Number.isFinite(listId)) {
     return NextResponse.json(
