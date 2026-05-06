@@ -39,11 +39,15 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             {dictionary.about.title}
           </h1>
           <p className="mt-6 text-base leading-8 text-charcoal/72 sm:text-lg">{dictionary.about.body}</p>
-          <div className="mt-8 space-y-5 text-base leading-8 text-charcoal/72">
-            {dictionary.about.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+          <ul className="mt-8 space-y-3 text-base leading-8 text-charcoal/72">
+            {dictionary.about.items.map((item) => (
+              <li className="flex gap-3" key={item}>
+                <span className="mt-[0.8em] h-1.5 w-1.5 shrink-0 rounded-full bg-olive" />
+                <span>{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
+          <p className="mt-8 text-base leading-8 text-charcoal/72">{dictionary.about.closing}</p>
           <div className="mt-8">
             <Button href={localizedPath(locale, "contact")} variant="secondary">
               {dictionary.common.bookDiscovery}

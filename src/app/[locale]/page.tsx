@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { IntroSection } from "@/components/sections/IntroSection";
-import { PreviewSections } from "@/components/sections/PreviewSections";
 import { getDictionary } from "@/content/dictionaries";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { getSeoMetadata } from "@/lib/seo";
@@ -24,8 +22,6 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <HeroSection dictionary={dictionary} locale={locale} />
-      <IntroSection dictionary={dictionary} />
-      <PreviewSections dictionary={dictionary} locale={locale} />
     </>
   );
 }

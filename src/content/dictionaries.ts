@@ -39,26 +39,22 @@ export const dictionaries = {
     },
     home: {
       heroKicker: "Healing, presence, inner clarity",
-      heroTitle: "Ένας ήρεμος χώρος για να επιστρέψεις στον εαυτό σου.",
+      heroTitle: "ΕΝΑ ΒΗΜΑ ΠΙΟ ΚΟΝΤΑ ΣΤΗ ΖΩΗ ΠΟΥ ΣΟΥ ΤΑΙΡΙΑΖΕΙ.",
       heroBody:
-        "Η Inner Glow προσφέρει ατομικές συνεδρίες Tapping & Reiki σε συνδυασμό με ήπια καθοδήγηση για ανθρώπους που αναζητούν περισσότερη σύνδεση, γείωση και καθαρότητα στην καθημερινότητά τους.",
-      introTitle: "Μια προσέγγιση που τιμά τον ρυθμό σου.",
-      introBody:
-        "Οι συνεδρίες συνδυάζουν παρουσία, ενεργειακή εργασία και στοχαστική συζήτηση. Δεν πρόκειται για γρήγορες λύσεις, αλλά για έναν ασφαλή τρόπο να ακούσεις τι χρειάζεται το σώμα, η καρδιά και η διαίσθησή σου.",
-      aboutTitle: "Γνώρισε την Inner Glow",
-      aboutBody:
-        "Με ήρεμη, ανθρώπινη προσέγγιση, το Inner Glow δημιουργεί χώρο για βαθύτερη ακρόαση, προσωπική φροντίδα και ουσιαστική αλλαγή.",
-      healingTitle: "Θεραπείες και καθοδηγούμενες πρακτικές",
-      healingBody:
-        "Reiki, Tapping, αναδρομική ύπνωση, NLP coaching, συστημική αναπαράσταση και διαλογισμοί για καθαρότητα, γείωση και βαθύτερη σύνδεση με τον εαυτό.",
+        "Ένας χώρος εσωτερικής εργασίας, σύνδεσης και μεταμόρφωσης. Στην Inner Glow δημιουργούμε εμπειρίες που σε βοηθούν να επιστρέψεις στον εαυτό σου. Μέσα από βιωματικά workshops, ύπνωση, διαλογισμό, συστημική αναπαράσταση και ενεργειακές πρακτικές, προσφέρουμε ένα ασφαλές και υποστηρικτικό περιβάλλον για όσους αναζητούν ουσιαστική σύνδεση με την αλήθεια τους. Δεν δίνουμε έτοιμες απαντήσεις. Δημιουργούμε χώρο για να ακούσεις τις δικές σου.",
     },
     about: {
-        title: "Ένας χώρος εσωτερικής εργασίας και μεταμόρφωσης.",
-      body:
-        "Στην Inner Glow δημιουργούμε εμπειρίες που σε βοηθούν να επιστρέψεις στον εαυτό σου. Μέσα από βιωματικά workshops, ύπνωση, διαλογισμό, συστημική αναπαράσταση και ενεργειακές πρακτικές, προσφέρουμε ένα ασφαλές και υποστηρικτικό περιβάλλον για όσους αναζητούν ουσιαστική σύνδεση με την αλήθεια τους.",
-      paragraphs: [
-        "",
+      title: "ΤΙ ΠΡΟΣΦΕΡΟΥΜΕ",
+      items: [
+        "Ατομικές θεραπείες Ρέικι",
+        "Ατομικές συνεδρίες EFT (Emotional Freedom Technique)",
+        "Ατομικές συνεδρίες ύπνωσης",
+        "Ατομικές συνεδρίες NLP & Coaching",
+        "Εργαστήρια Συστημικής αναπαράστασης",
+        "Διαλογισμούς",
       ],
+      closing:
+        "Οι πρακτικές και οι συνεδρίες της Inner Glow δεν αντικαθιστούν ιατρική, ψυχολογική ή ψυχοθεραπευτική φροντίδα. Δημιουργούν όμως έναν ασφαλή και υποστηρικτικό χώρο αυτογνωσίας, συναισθηματικής αποφόρτισης και εσωτερικής σύνδεσης, βοηθώντας κάθε άνθρωπο να έρθει πιο κοντά στον εαυτό του και στον δικό του ρυθμό.",
     },
     healing: {
       title: "Θεραπείες",
@@ -86,6 +82,7 @@ export const dictionaries = {
             role: "Reiki Master",
             body: "Οι συνεδρίες στην Inner Glow γίνονται από την Μαργαρίτα Πασχάλη, Reiki Master με πολυετή εμπειρία, βαθιά ενσυναίσθηση και σεβασμό στον προσωπικό σου ρυθμό..",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -113,6 +110,7 @@ export const dictionaries = {
             role: "Tapping facilitator",
             body: "Η καθοδήγηση γίνεται με απλότητα, σταθερότητα και προσοχή στο τι μπορεί να υποστηριχθεί με ασφάλεια σε κάθε βήμα.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -140,6 +138,7 @@ export const dictionaries = {
             role: "Υπνοθεραπευτής",
             body: "Ο Τάκης είναι πιστοποιημένος υπνοθεραπευτής, εκπαιδευμένος στην τεχνική QHHT (Quantum Healing Hypnosis Technique), με πορεία στον χώρο από το 2011. Έχει συνοδεύσει πολλούς ανθρώπους σε βαθιά, θεραπευτικά ταξίδια εσωτερικής ανακάλυψης και μοιράζεται την εμπειρία του μέσα από εκπαιδεύσεις στο Regression Hypnosis.",
             image: "/images/valsamos.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -167,6 +166,7 @@ export const dictionaries = {
             role: "Ψυχολόγος | Πιστοποιημένος Συντονιστής Συστημικής Αναπαράστασης",
             body: "Την Αναπαράσταση συντονίζει ο ψυχολόγος και πιστοποιημένος συντονιστής Συστημικής Αναπαράστασης, Κανάρης Κάραλης.",
             image: "/images/kanaris.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -194,6 +194,7 @@ export const dictionaries = {
             role: "NLP coaching facilitator",
             body: "Η καθοδήγηση κρατά πρακτική κατεύθυνση, με σεβασμό στον ρυθμό σου και έμφαση σε μικρά, εφαρμόσιμα βήματα.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -221,6 +222,7 @@ export const dictionaries = {
             role: "Meditation facilitator",
             body: "Ο συντονισμός είναι ήπιος και γειωμένος, ώστε η πρακτική να παραμένει προσβάσιμη, σταθερή και υποστηρικτική.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -316,10 +318,17 @@ export const dictionaries = {
     about: {
       title: "About Inner\u00A0Glow",
       body:
-        "Inner Glow works with people who want to feel more present, calmer, and more connected to their inner wisdom.",
-      paragraphs: [
-        "Our approach is gentle, grounded, and personal. Every meeting begins with where you are now and moves respectfully toward what is ready to be seen.",
+        "At Inner Glow, we create experiences that help you return to yourself. Through experiential workshops, hypnosis, meditation, systemic constellation and energetic practices, we offer a safe and supportive environment for those seeking meaningful connection with their truth.",
+      items: [
+        "Individual Reiki treatments",
+        "Individual EFT (Emotional Freedom Technique) sessions",
+        "Individual hypnosis sessions",
+        "Individual NLP & Coaching sessions",
+        "Systemic constellation workshops",
+        "Meditations",
       ],
+      closing:
+        "The practices and sessions at Inner Glow do not replace medical, psychological or psychotherapeutic care. They do, however, create a safe and supportive space for self-awareness, emotional release and inner connection, helping each person come closer to themselves and their own rhythm.",
     },
     healing: {
       title: "Therapies",
@@ -347,6 +356,7 @@ export const dictionaries = {
             role: "Reiki Master",
             body: "The session holds a calm, safe space with grounded presence and guidance adapted to your pace.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -374,6 +384,7 @@ export const dictionaries = {
             role: "Tapping facilitator",
             body: "Guidance is simple, steady, and attentive to what can be supported safely at each step.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -401,6 +412,7 @@ export const dictionaries = {
             role: "Regression hypnosis facilitator",
             body: "Facilitation emphasizes preparation, presence, and a gentle return after the experience.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -428,6 +440,7 @@ export const dictionaries = {
             role: "Systemic constellation facilitator",
             body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -455,6 +468,7 @@ export const dictionaries = {
             role: "NLP coaching facilitator",
             body: "Guidance stays practical and paced, with emphasis on small, applicable steps.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -482,6 +496,7 @@ export const dictionaries = {
             role: "Meditation facilitator",
             body: "Facilitation is gentle and grounded so the practice remains accessible, steady, and supportive.",
             image: "/images/placeholders/about.png",
+            showImage: false,
           },
           pricing: {
             price: "50€",
@@ -529,3 +544,4 @@ export type Dictionary = (typeof dictionaries)[Locale];
 export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
 }
+

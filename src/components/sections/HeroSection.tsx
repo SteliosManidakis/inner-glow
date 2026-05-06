@@ -23,7 +23,7 @@ export function HeroSection({ dictionary, locale }: { dictionary: Dictionary; lo
             <Button href={bookingLinks.discovery} external>
               {dictionary.common.bookDiscovery}
             </Button>
-            <Button href={localizedPath(locale, "healing")} variant="secondary">
+            <Button href={localizedPath(locale, "about")} variant="secondary">
               {dictionary.common.learnMore}
             </Button>
           </div>

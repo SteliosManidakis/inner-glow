@@ -54,16 +54,18 @@ export function TreatmentDetail({
             <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
               {treatment.coordinator.title}
             </h2>
-            <div className="mt-5 grid gap-6 sm:grid-cols-[0.85fr_1fr] sm:items-start">
-              <div className="overflow-hidden rounded-tr-[3rem]">
-                <Image
-                  src={treatment.coordinator.image}
-                  alt=""
-                  width={640}
-                  height={720}
-                  className="aspect-[4/5] h-full w-full object-cover"
-                />
-              </div>
+            <div className={`mt-5 grid gap-6 sm:items-start ${treatment.coordinator.showImage ? "sm:grid-cols-[0.85fr_1fr]" : ""}`}>
+              {treatment.coordinator.showImage ? (
+                <div className="overflow-hidden rounded-tr-[3rem]">
+                  <Image
+                    src={treatment.coordinator.image}
+                    alt=""
+                    width={640}
+                    height={720}
+                    className="aspect-[4/5] h-full w-full object-cover"
+                  />
+                </div>
+              ) : null}
               <div className="min-w-0">
                 <p className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
                   {treatment.coordinator.name}
