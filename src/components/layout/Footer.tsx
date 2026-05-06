@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SubscribeForm } from "@/components/sections/SubscribeForm";
 import type { Dictionary } from "@/content/dictionaries";
@@ -11,6 +12,13 @@ export function Footer({ locale, dictionary }: { locale: Locale; dictionary: Dic
         <div>
           <p className="font-serif text-3xl leading-tight">{dictionary.common.brand}</p>
           <p className="mt-4 max-w-xl text-base leading-7 text-ivory/70">{dictionary.subscribe.body}</p>
+          <Image
+            src="/images/small_logo_cropped.png"
+            alt=""
+            width={96}
+            height={96}
+            className="mt-6 h-16 w-16 object-contain opacity-90"
+          />
         </div>
         <div className="[&_button]:bg-clay [&_button]:text-charcoal [&_button:hover]:bg-sage [&_input]:bg-ivory [&_input]:text-charcoal [&_p]:text-clay">
           <SubscribeForm copy={dictionary.subscribe} />

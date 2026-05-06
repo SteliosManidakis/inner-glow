@@ -10,7 +10,7 @@ export const dictionaries = {
       reiki: "Reiki",
       tapping: "Tapping",
       regressionHypnosis: "Ανάδρομη Ύπνωση",
-      nlpCoaching: "NLP Coaching",
+      nlpCoaching: "NLP & Coaching",
       systemicConstellation: "Συστημική",
       meditations: "Διαλογισμοί",
       contact: "Επικοινωνία",
@@ -45,6 +45,8 @@ export const dictionaries = {
     },
     about: {
       title: "ΤΙ ΠΡΟΣΦΕΡΟΥΜΕ",
+      body:
+        "Στην Inner Glow δημιουργούμε εμπειρίες που σε βοηθούν να επιστρέψεις στον εαυτό σου. Μέσα από βιωματικά workshops, ύπνωση, διαλογισμό, συστημική αναπαράσταση και ενεργειακές πρακτικές, προσφέρουμε ένα ασφαλές και υποστηρικτικό περιβάλλον για όσους αναζητούν ουσιαστική σύνδεση με την αλήθεια τους.",
       items: [
         "Ατομικές θεραπείες Ρέικι",
         "Ατομικές συνεδρίες EFT (Emotional Freedom Technique)",
@@ -77,6 +79,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: false,
             title: "Συντονιστής",
             name: "Μαργαρίτα Πασχάλη",
             role: "Reiki Master",
@@ -85,8 +88,11 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
-            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+            options: [
+              { label: "Θεραπεία 60'", price: "50€" },
+              { label: "Θεραπεία 90'", price: "70€" },
+            ],
+            note: "",
           },
         },
         {
@@ -105,6 +111,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: false,
             title: "Συντονιστής",
             name: "Inner Glow",
             role: "Tapping facilitator",
@@ -113,7 +120,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "Συνεδρία 60'", price: "50€" },
+              { label: "Συνεδρία 90'", price: "70€" },
+            ],
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
         },
@@ -133,6 +143,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: false,
             title: "Συντονιστής",
             name: "Τάκης Βάλσαμος",
             role: "Υπνοθεραπευτής",
@@ -141,8 +152,11 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
-            note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+            options: [
+              { label: "1 συνεδρία (3 ώρες)", price: "150€" },
+              { label: "Συνεδρία (1,5 ώρα)", price: "85€" },
+            ],
+            note: "",
           },
         },
         {
@@ -161,6 +175,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Συντονιστής",
             name: "Κανάρης Κάραλης",
             role: "Ψυχολόγος | Πιστοποιημένος Συντονιστής Συστημικής Αναπαράστασης",
@@ -174,24 +189,29 @@ export const dictionaries = {
           },
         },
         {
-          title: "NLP Coaching",
+          title: "NLP & Coaching",
           body:
-            "Μια στοχευμένη συνεδρία προσωπικής καθοδήγησης που αξιοποιεί εργαλεία NLP για περισσότερη καθαρότητα, επιλογή και πρακτική αλλαγή.",
+            "Το NLP (Νευρο-Γλωσσικός Προγραμματισμός) σε συνδυασμό με το Coaching αποτελεί μια σύγχρονη, δυναμική προσέγγιση προσωπικής ανάπτυξης που εστιάζει στο πώς σκεφτόμαστε, πώς επικοινωνούμε και πώς δημιουργούμε την πραγματικότητά μας. Μέσα από στοχευμένες τεχνικές και καθοδήγηση, βοηθά να αναγνωρίσεις περιοριστικές πεποιθήσεις, να επαναπροσδιορίσεις τον εσωτερικό σου διάλογο και να ενεργοποιήσεις τη δύναμη που ήδη υπάρχει μέσα σου. Όταν ο νους «μπλοκάρεται» από φόβο, αμφιβολία ή παλιά μοτίβα, η εξέλιξη μοιάζει δύσκολη. Το NLP &amp; Coaching έρχεται να ξεκλειδώσει αυτές τις εσωτερικές διεργασίες, δημιουργώντας χώρο για αλλαγή, αυτοπεποίθηση και συνειδητές επιλογές.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
               title: "Τι προσφέρει",
-              body: "Βοηθά να αναγνωρίσεις μοτίβα σκέψης, να ξεκαθαρίσεις στόχους και να δουλέψεις με πρακτικές τεχνικές πάνω σε πεποιθήσεις, συμπεριφορές και εσωτερικούς διαλόγους.",
+              body: "Μια συνεδρία είναι ένας ασφαλής και υποστηρικτικός χώρος, όπου μπορείς να εξερευνήσεις τον εαυτό σου και να επανασυνδεθείς με τη δύναμή σου. Συγκεκριμένα: ενισχύει την αυτοπεποίθηση και την αυτοεκτίμηση, βοηθά στη διαχείριση άγχους και συναισθημάτων, απελευθερώνει από περιοριστικές πεποιθήσεις, καλλιεργεί ξεκάθαρους στόχους και κατεύθυνση, βελτιώνει την επικοινωνία με τον εαυτό και τους άλλους, ενδυναμώνει τη λήψη αποφάσεων",
             },
             {
               title: "Για ποιον είναι",
-              body: "Για ανθρώπους που θέλουν να κινηθούν πιο συνειδητά προς μια αλλαγή, να ενισχύσουν την αυτοπεποίθησή τους ή να δουν με νέα ματιά ένα προσωπικό ή επαγγελματικό θέμα.",
+              body: "Το NLP &amp; Coaching απευθύνεται σε κάθε γυναίκα που επιθυμεί να εξελιχθεί και να ζήσει πιο συνειδητά. Δεν απαιτεί προηγούμενη εμπειρία, μόνο τη διάθεση για αλλαγή και προσωπική εξέλιξη. Ιδανικό για γυναίκες που: νιώθουν μπλοκαρισμένες ή αμφιβάλλουν για τον εαυτό τους, βρίσκονται σε περίοδο αλλαγής (προσωπικής ή επαγγελματικής), δυσκολεύονται να θέσουν όρια ή να εκφραστούν, θέλουν να ενισχύσουν την αυτοεκτίμηση και τη φωνή τους, αναζητούν ουσιαστική σύνδεση με τον εαυτό τους",
+            },
+            {
+              title: "Γυναικεία ενδυνάμωση & NLP",
+              body: "Κάθε γυναίκα κουβαλά μέσα της δύναμη, σοφία και διαίσθηση. Ωστόσο, κοινωνικά πρότυπα, εμπειρίες και εσωτερικές φωνές συχνά την απομακρύνουν από την αυθεντική της έκφραση. Το NLP & Coaching υποστηρίζει τη γυναίκα να αναγνωρίσει την αξία και τα όριά της, να απελευθερωθεί από ενοχές και “πρέπει”, να επανασυνδεθεί με τη θηλυκότητα και τη δύναμή της και να δημιουργήσει τη ζωή που επιθυμεί, με αυτοπεποίθηση και επίγνωση.",
             },
           ],
           coordinator: {
+            show: false,
             title: "Συντονιστής",
             name: "Inner Glow",
-            role: "NLP coaching facilitator",
+            role: "NLP & coaching facilitator",
             body: "Η καθοδήγηση κρατά πρακτική κατεύθυνση, με σεβασμό στον ρυθμό σου και έμφαση σε μικρά, εφαρμόσιμα βήματα.",
             image: "/images/placeholders/about.png",
             showImage: false,
@@ -217,6 +237,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Συντονιστής",
             name: "Inner Glow",
             role: "Meditation facilitator",
@@ -273,7 +294,7 @@ export const dictionaries = {
       reiki: "Reiki",
       tapping: "Tapping",
       regressionHypnosis: "Regression Hypnosis",
-      nlpCoaching: "NLP Coaching",
+      nlpCoaching: "NLP & Coaching",
       systemicConstellation: "Systemic Constellation",
       meditations: "Meditations",
       contact: "Contact",
@@ -351,6 +372,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Facilitator",
             name: "Margarita Paschali",
             role: "Reiki Master",
@@ -359,7 +381,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "60-minute session", price: "50€" },
+              { label: "90-minute session", price: "70€" },
+            ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
         },
@@ -379,6 +404,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Tapping facilitator",
@@ -387,7 +413,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "60-minute session", price: "50€" },
+              { label: "90-minute session", price: "70€" },
+            ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
         },
@@ -407,6 +436,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Regression hypnosis facilitator",
@@ -415,7 +445,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "1 session (3 hours)", price: "150€" },
+              { label: "Session (1.5 hours)", price: "85€" },
+            ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
         },
@@ -435,6 +468,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Systemic constellation facilitator",
@@ -448,7 +482,7 @@ export const dictionaries = {
           },
         },
         {
-          title: "NLP Coaching",
+          title: "NLP & Coaching",
           body:
             "A focused personal guidance session using NLP tools for more clarity, choice, and practical change.",
           image: "/images/placeholders/healing.png",
@@ -461,11 +495,16 @@ export const dictionaries = {
               title: "Who it is for",
               body: "For people who want to move more consciously toward change, strengthen confidence, or see a personal or professional theme from a new perspective.",
             },
+            {
+              title: "Women’s empowerment & NLP",
+              body: "Every woman carries strength, wisdom and intuition within her. However, social standards, experiences and inner voices often move her away from her authentic expression. NLP & Coaching supports a woman to recognize her worth and boundaries, release guilt and “shoulds”, reconnect with her femininity and strength, and create the life she desires with confidence and awareness.",
+            },
           ],
           coordinator: {
+            show: false,
             title: "Facilitator",
             name: "Inner Glow",
-            role: "NLP coaching facilitator",
+            role: "NLP & coaching facilitator",
             body: "Guidance stays practical and paced, with emphasis on small, applicable steps.",
             image: "/images/placeholders/about.png",
             showImage: false,
@@ -491,6 +530,7 @@ export const dictionaries = {
             },
           ],
           coordinator: {
+            show: true,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Meditation facilitator",

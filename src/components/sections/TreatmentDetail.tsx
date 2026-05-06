@@ -41,8 +41,8 @@ export function TreatmentDetail({
         </Container>
       </section>
       <section className="py-14 sm:py-20">
-        <Container className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1">
+        <Container className={treatment.coordinator.show ? "grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start" : "grid gap-8 sm:grid-cols-2"}>
+          <div className={treatment.coordinator.show ? "grid gap-8 sm:grid-cols-2 lg:grid-cols-1" : "contents"}>
             {treatment.sections.map((section) => (
               <section className="border-t border-olive/30 pt-6" key={section.title}>
                 <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h2>
@@ -50,33 +50,35 @@ export function TreatmentDetail({
               </section>
             ))}
           </div>
-          <section className="border-t border-olive/30 pt-6">
-            <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-              {treatment.coordinator.title}
-            </h2>
-            <div className={`mt-5 grid gap-6 sm:items-start ${treatment.coordinator.showImage ? "sm:grid-cols-[0.85fr_1fr]" : ""}`}>
-              {treatment.coordinator.showImage ? (
-                <div className="overflow-hidden rounded-tr-[3rem]">
-                  <Image
-                    src={treatment.coordinator.image}
-                    alt=""
-                    width={640}
-                    height={720}
-                    className="aspect-[4/5] h-full w-full object-cover"
-                  />
+          {treatment.coordinator.show ? (
+            <section className="border-t border-olive/30 pt-6">
+              <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+                {treatment.coordinator.title}
+              </h2>
+              <div className={`mt-5 grid gap-6 sm:items-start ${treatment.coordinator.showImage ? "sm:grid-cols-[0.85fr_1fr]" : ""}`}>
+                {treatment.coordinator.showImage ? (
+                  <div className="overflow-hidden rounded-tr-[3rem]">
+                    <Image
+                      src={treatment.coordinator.image}
+                      alt=""
+                      width={640}
+                      height={720}
+                      className="aspect-[4/5] h-full w-full object-cover"
+                    />
+                  </div>
+                ) : null}
+                <div className="min-w-0">
+                  <p className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+                    {treatment.coordinator.name}
+                  </p>
+                  <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
+                    {treatment.coordinator.role}
+                  </p>
+                  <p className="mt-4 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
                 </div>
-              ) : null}
-              <div className="min-w-0">
-                <p className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-                  {treatment.coordinator.name}
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
-                  {treatment.coordinator.role}
-                </p>
-                <p className="mt-4 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
               </div>
-            </div>
-          </section>
+            </section>
+          ) : null}
         </Container>
       </section>
       <section className="py-14 sm:py-20 lg:py-24">
@@ -85,8 +87,21 @@ export function TreatmentDetail({
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-olive">
               {dictionary.healing.pricingTitle}
             </p>
-            <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{treatment.pricing.price}</p>
-            <p className="mt-2 text-charcoal/65">{dictionary.common.perSession}</p>
+            {"options" in treatment.pricing ? (
+              <div className="mt-4 space-y-4">
+                {treatment.pricing.options.map((option) => (
+                  <div className="border-t border-olive/20 pt-4" key={option.label}>
+                    <p className="text-sm font-semibold uppercase tracking-[0.12em] text-charcoal/60">{option.label}</p>
+                    <p className="mt-2 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{option.price}</p>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <>
+                <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{treatment.pricing.price}</p>
+                <p className="mt-2 text-charcoal/65">{dictionary.common.perSession}</p>
+              </>
+            )}
             <p className="mt-4 max-w-xs text-sm leading-6 text-charcoal/60">{treatment.pricing.note}</p>
           </div>
           <BookingPanel
