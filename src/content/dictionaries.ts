@@ -9,7 +9,7 @@ export const dictionaries = {
       healing: "Θεραπείες",
       reiki: "Reiki",
       tapping: "Tapping",
-      regressionHypnosis: "Αναδρομική Ύπνωση",
+      regressionHypnosis: "Ανάδρομη Ύπνωση",
       nlpCoaching: "NLP Coaching",
       systemicConstellation: "Συστημική",
       meditations: "Διαλογισμοί",
