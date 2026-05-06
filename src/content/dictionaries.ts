@@ -76,6 +76,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "Reiki facilitator",
             body: "Η συνεδρία κρατά έναν ήρεμο, ασφαλή χώρο με γειωμένη παρουσία και καθοδήγηση προσαρμοσμένη στον ρυθμό σου.",
             image: "/images/placeholders/about.png",
           },
@@ -97,12 +99,14 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "Tapping facilitator",
             body: "Η καθοδήγηση γίνεται με απλότητα, σταθερότητα και προσοχή στο τι μπορεί να υποστηριχθεί με ασφάλεια σε κάθε βήμα.",
             image: "/images/placeholders/about.png",
           },
         },
         {
-          title: "Αναδρομική Ύπνωση",
+          title: "Ανάδρομη Ύπνωση",
           body:
             "Μια καθοδηγούμενη εμπειρία βαθιάς χαλάρωσης για διερεύνηση μνήμης, συμβολισμών και εσωτερικών μοτίβων.",
           image: "/images/placeholders/healing.png",
@@ -118,6 +122,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "Regression hypnosis facilitator",
             body: "Ο συντονισμός δίνει έμφαση στην προετοιμασία, την παρουσία και την ήπια επιστροφή μετά την εμπειρία.",
             image: "/images/placeholders/about.png",
           },
@@ -139,6 +145,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Συντονιστής",
+            name: "Inner Glow",
+            role: "Systemic constellation facilitator",
             body: "Η διαδικασία συντονίζεται με σεβασμό στο σύστημα, στα όρια και στον ρυθμό με τον οποίο μπορεί να φανεί κάθε πληροφορία.",
             image: "/images/placeholders/about.png",
           },
@@ -255,6 +263,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Facilitator",
+            name: "Inner Glow",
+            role: "Reiki facilitator",
             body: "The session holds a calm, safe space with grounded presence and guidance adapted to your pace.",
             image: "/images/placeholders/about.png",
           },
@@ -276,6 +286,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Facilitator",
+            name: "Inner Glow",
+            role: "Tapping facilitator",
             body: "Guidance is simple, steady, and attentive to what can be supported safely at each step.",
             image: "/images/placeholders/about.png",
           },
@@ -297,6 +309,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Facilitator",
+            name: "Inner Glow",
+            role: "Regression hypnosis facilitator",
             body: "Facilitation emphasizes preparation, presence, and a gentle return after the experience.",
             image: "/images/placeholders/about.png",
           },
@@ -318,6 +332,8 @@ export const dictionaries = {
           ],
           coordinator: {
             title: "Facilitator",
+            name: "Inner Glow",
+            role: "Systemic constellation facilitator",
             body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
             image: "/images/placeholders/about.png",
           },

@@ -100,9 +100,9 @@ function TreatmentSection({
             </section>
           ))}
           <section className="border-t border-olive/30 pt-6">
-            <h3 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
-              {treatment.coordinator.title}
-            </h3>
+              <h3 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">
+                {treatment.coordinator.title}
+              </h3>
             <div className="mt-5 flex gap-4 sm:items-start md:block">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-tr-[2rem] md:h-auto md:w-full">
                 <Image
@@ -113,7 +113,15 @@ function TreatmentSection({
                   className="aspect-square h-full w-full object-cover"
                 />
               </div>
-              <p className="text-base leading-7 text-charcoal/72 md:mt-4">{treatment.coordinator.body}</p>
+              <div className="min-w-0">
+                <p className="text-wrap font-serif text-xl leading-tight text-charcoal md:mt-4 sm:text-2xl">
+                  {treatment.coordinator.name}
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive">
+                  {treatment.coordinator.role}
+                </p>
+                <p className="mt-3 text-base leading-7 text-charcoal/72">{treatment.coordinator.body}</p>
+              </div>
             </div>
           </section>
         </Container>
