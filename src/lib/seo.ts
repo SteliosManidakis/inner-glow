@@ -12,14 +12,14 @@ type SeoCopy = {
 const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
   el: {
     "": {
-      title: "Μαργαρίτα Πασχάλη | Healing & προσωπική καθοδήγηση",
+      title: "Inner Glow | Healing & προσωπική καθοδήγηση",
       description:
-        "Ατομικές συνεδρίες healing, discovery calls και ήπια προσωπική καθοδήγηση online ή δια ζώσης στην Ελλάδα με τη Margarita Paschali.",
+        "Ατομικές συνεδρίες healing, discovery calls και ήπια προσωπική καθοδήγηση online ή δια ζώσης στην Ελλάδα με το Inner Glow.",
     },
     about: {
-      title: "Σχετικά με τη Μαργαρίτα",
+      title: "Σχετικά με την Inner Glow",
       description:
-        "Γνώρισε τη Μαργαρίτα και την ήρεμη, γειωμένη προσέγγισή της σε healing, παρουσία και προσωπική φροντίδα.",
+        "Γνώρισε την Inner Glow και την ήρεμη, γειωμένη προσέγγισή της σε θεραπείες, παρουσία και προσωπική φροντίδα.",
     },
     healing: {
       title: "Healing Sessions",
@@ -44,9 +44,9 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
   },
   en: {
     "": {
-      title: "Margarita Paschali | Healing & personal guidance",
+      title: "Inner Glow | Healing & personal guidance",
       description:
-        "Individual healing sessions, discovery calls and gentle personal guidance online or in person in Greece with Margarita Paschali.",
+        "Individual healing sessions, discovery calls and gentle personal guidance online or in person in Greece with Inner Glow.",
     },
     about: {
       title: "About Margarita",

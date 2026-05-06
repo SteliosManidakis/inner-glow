@@ -8,6 +8,8 @@ import { isLocale, type Locale } from "@/lib/i18n";
 import { getLocationPrice } from "@/lib/pricing";
 import { getSeoMetadata } from "@/lib/seo";
 
+type Treatment = ReturnType<typeof getDictionary>["healing"]["treatments"][number];
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const safeLocale = isLocale(locale) ? locale : "el";
@@ -23,37 +25,78 @@ export default async function HealingPage({ params }: { params: Promise<{ locale
   return (
     <>
       <section className="bg-ivory py-14 sm:py-20 lg:py-24">
+        <Container>
+          <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
+            {dictionary.common.brand}
+          </p>
+          <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+            {dictionary.healing.title}
+          </h1>
+          <p className="mt-6 max-w-3xl text-base leading-8 text-charcoal/72 sm:text-lg">
+            {dictionary.healing.body}
+          </p>
+        </Container>
+      </section>
+      {dictionary.healing.treatments.map((treatment, index) => (
+        <TreatmentSection
+          dictionary={dictionary}
+          index={index}
+          key={treatment.title}
+          price={price}
+          treatment={treatment}
+        />
+      ))}
+    </>
+  );
+}
+
+function TreatmentSection({
+  dictionary,
+  index,
+  price,
+  treatment,
+}: {
+  dictionary: ReturnType<typeof getDictionary>;
+  index: number;
+  price: Awaited<ReturnType<typeof getLocationPrice>>;
+  treatment: Treatment;
+}) {
+  const isEven = index % 2 === 0;
+
+  return (
+    <article>
+      <section className="bg-ivory py-14 sm:py-20 lg:py-24">
         <Container className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
-          <div>
+          <div className={isEven ? "" : "md:order-2"}>
             <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
-              {dictionary.common.brand}
-            </p>
-            <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
               {dictionary.healing.title}
-            </h1>
+            </p>
+            <h2 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+              {treatment.title}
+            </h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-charcoal/72 sm:text-lg">
-              {dictionary.healing.body}
+              {treatment.body}
             </p>
           </div>
-          <div className="overflow-hidden rounded-bl-[3rem] sm:rounded-bl-[6rem]">
+          <div className={`overflow-hidden ${isEven ? "rounded-bl-[3rem] sm:rounded-bl-[6rem]" : "rounded-br-[3rem] sm:rounded-br-[6rem]"}`}>
             <Image
-              src="/images/placeholders/healing.png"
+              src={treatment.image}
               alt=""
               width={1000}
               height={750}
               className="aspect-[4/3] h-full w-full object-cover"
-              priority
+              priority={index === 0}
             />
           </div>
         </Container>
       </section>
       <section className="bg-sage/20 py-14 sm:py-20">
         <Container className="grid gap-6 md:grid-cols-2">
-          {dictionary.healing.sections.map((section) => (
-            <article className="border-t border-olive/30 pt-6" key={section.title}>
-              <h2 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h2>
+          {treatment.sections.map((section) => (
+            <section className="border-t border-olive/30 pt-6" key={section.title}>
+              <h3 className="text-wrap font-serif text-2xl leading-tight text-charcoal sm:text-3xl">{section.title}</h3>
               <p className="mt-4 text-base leading-7 text-charcoal/72">{section.body}</p>
-            </article>
+            </section>
           ))}
         </Container>
       </section>
@@ -77,6 +120,6 @@ export default async function HealingPage({ params }: { params: Promise<{ locale
           />
         </Container>
       </section>
-    </>
+    </article>
   );
 }
