@@ -21,9 +21,10 @@ export function SubscribeForm({ copy }: { copy: SubscribeCopy }) {
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setLoading(true);
     setMessage(null);
-    const formData = new FormData(event.currentTarget);
+    const formData = new FormData(form);
 
     const response = await fetch("/api/subscribe", {
       method: "POST",
@@ -37,7 +38,7 @@ export function SubscribeForm({ copy }: { copy: SubscribeCopy }) {
 
     setLoading(false);
     setMessage(response.ok ? copy.success : copy.error);
-    if (response.ok) event.currentTarget.reset();
+    if (response.ok) form.reset();
   }
 
   return (
