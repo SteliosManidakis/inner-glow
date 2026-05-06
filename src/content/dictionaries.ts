@@ -96,20 +96,12 @@ export const dictionaries = {
           },
         },
         {
-          title: "Tapping",
+          title: "EFT — Emotional Freedom Techniques",
+          layout: "wrapImage",
           body:
-            "Μια πρακτική προσέγγιση που συνδυάζει ήπια καθοδήγηση και tapping σημεία για συναισθηματική αποφόρτιση.",
+            "Το EFT (Emotional Freedom Technique), γνωστό και ως tapping, είναι μια ήπια μέθοδος συναισθηματικής αποφόρτισης που συνδυάζει στοιχεία από τη σύγχρονη ψυχολογία με την ενεργειακή προσέγγιση του σώματος.\n\nΚατά τη διάρκεια της συνεδρίας, ο άνθρωπος εστιάζει σε ένα συγκεκριμένο συναίσθημα, σκέψη, ανάμνηση ή σωματική αίσθηση, ενώ ταυτόχρονα κάνει απαλό χτύπημα με τα δάχτυλα σε συγκεκριμένα σημεία του σώματος. Τα σημεία αυτά σχετίζονται με τα ενεργειακά κανάλια που χρησιμοποιούνται και στην παραδοσιακή κινεζική ιατρική.\n\nΣτόχος του EFT δεν είναι να πιέσουμε το συναίσθημα να φύγει, ούτε να το αγνοήσουμε. Αντίθετα, δημιουργούμε έναν ασφαλή χώρο όπου μπορούμε να το παρατηρήσουμε, να το αναγνωρίσουμε και σταδιακά να μειώσουμε την έντασή του.\n\nΤο EFT μπορεί να υποστηρίξει ανθρώπους που βιώνουν άγχος, έντονη συναισθηματική φόρτιση, φόβους, περιοριστικές πεποιθήσεις, εσωτερικές συγκρούσεις ή δυσκολία στη διαχείριση συγκεκριμένων καταστάσεων. Μέσα από τη διαδικασία, το σώμα και το νευρικό σύστημα προσκαλούνται να χαλαρώσουν, ενώ ο άνθρωπος αποκτά περισσότερη σύνδεση με τον εαυτό του και με αυτό που πραγματικά νιώθει.\n\nΣτην Inner Glow, το EFT προσεγγίζεται με σεβασμό, απαλότητα και προσοχή στον προσωπικό ρυθμό κάθε ανθρώπου. Η συνεδρία μπορεί να περιλαμβάνει σύντομη χαλάρωση ή διαλογισμό, συζήτηση για το θέμα που θέλεις να δουλέψεις και καθοδηγούμενο tapping, ώστε να νιώσεις περισσότερη ηρεμία, γείωση και εσωτερική ασφάλεια.\n\nΤο EFT δεν αντικαθιστά ιατρική ή ψυχοθεραπευτική φροντίδα, μπορεί όμως να λειτουργήσει υποστηρικτικά ως ένα εργαλείο αυτογνωσίας, συναισθηματικής ρύθμισης και προσωπικής ενδυνάμωσης.\n\nΣυνεδρίες γίνονται δια ζώσης και online.",
           image: "/images/placeholders/healing.png",
-          sections: [
-            {
-              title: "Τι προσφέρει",
-              body: "Η συνεδρία περιλαμβάνει στοχευμένη συζήτηση, αναγνώριση του θέματος που σε απασχολεί και καθοδηγούμενη εφαρμογή tapping.",
-            },
-            {
-              title: "Για ποιον είναι",
-              body: "Για ανθρώπους που βιώνουν ένταση, άγχος, μπλοκαρίσματα ή επαναλαμβανόμενα μοτίβα και θέλουν έναν πρακτικό τρόπο αποφόρτισης.",
-            },
-          ],
+          sections: [],
           coordinator: {
             show: false,
             title: "Συντονιστής",
@@ -121,8 +113,10 @@ export const dictionaries = {
           },
           pricing: {
             options: [
-              { label: "Συνεδρία 60'", price: "50€" },
-              { label: "Συνεδρία 90'", price: "70€" },
+              { label: "Δια ζώσης · 60’ συνεδρία", price: "70€" },
+              { label: "Δια ζώσης · 90’ συνεδρία", price: "100€" },
+              { label: "Online · 60’ συνεδρία", price: "50€" },
+              { label: "Online · 90’ συνεδρία", price: "80€" },
             ],
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
@@ -247,21 +241,18 @@ export const dictionaries = {
         },
         {
           title: "Διαλογισμοί",
+          announcement: {
+            text: "Επόμενος διαλογισμός 20/5/2026, 19:00.",
+            size: "base",
+            weight: "bold",
+          },
+          layout: "wrapImage",
           body:
-            "Καθοδηγούμενες πρακτικές παρουσίας και χαλάρωσης για να ηρεμήσει το νευρικό σύστημα και να ενισχυθεί η σύνδεση με τον εαυτό.",
+            "Οι διαλογισμοί μας πραγματοποιούνται σε μικρές ομάδες, μία φορά την εβδομάδα, σε έναν ήρεμο και ασφαλή χώρο εσωτερικής σύνδεσης και μοιράσματος.\n\nΚάθε συνάντηση διαρκεί περίπου 1,5 ώρα και περιλαμβάνει έναν θεματικό καθοδηγούμενο διαλογισμό, σχεδιασμένο να μας βοηθήσει να χαλαρώσουμε, να στραφούμε προς τα μέσα και να έρθουμε πιο κοντά σε αυτό που νιώθουμε, χρειαζόμαστε ή είμαστε έτοιμοι να απελευθερώσουμε.\n\nΜετά τον διαλογισμό ακολουθεί χρόνος συζήτησης και μοιράσματος, όπου όποιος επιθυμεί μπορεί να εκφράσει την εμπειρία του: τι ένιωσε, τι παρατήρησε, τι μήνυμα ή επίγνωση παίρνει μαζί του. Η διαδικασία αυτή δημιουργεί ένα υποστηρικτικό πεδίο σύνδεσης, κατανόησης και προσωπικής εξέλιξης.\n\nΔεν χρειάζεται προηγούμενη εμπειρία στον διαλογισμό. Αρκεί η πρόθεση να αφιερώσουμε λίγο χρόνο στον εαυτό μας, να ηρεμήσουμε τον νου και να ακούσουμε πιο καθαρά την εσωτερική μας φωνή.\n\nΜια εβδομαδιαία παύση. Ένας χώρος αναπνοής, σύνδεσης και επιστροφής στον εαυτό.",
           image: "/images/placeholders/healing.png",
-          sections: [
-            {
-              title: "Τι προσφέρει",
-              body: "Οι διαλογισμοί δημιουργούν χώρο για παύση, αναπνοή, γείωση και εσωτερική παρατήρηση μέσα από ήπια καθοδήγηση.",
-            },
-            {
-              title: "Για ποιον είναι",
-              body: "Για ανθρώπους που αναζητούν περισσότερη ηρεμία, συγκέντρωση και καθημερινή σύνδεση με το σώμα, την αναπνοή και την εσωτερική τους αίσθηση.",
-            },
-          ],
+          sections: [],
           coordinator: {
-            show: true,
+            show: false,
             title: "Συντονιστής",
             name: "Inner Glow",
             role: "Meditation facilitator",
@@ -272,6 +263,11 @@ export const dictionaries = {
           pricing: {
             price: "50€",
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
+          },
+          workshopCta: {
+            title: "Επόμενος διαλογισμός 20/5/2026, 19:00.",
+            details: ["Θέμα:", "Κόστος συμμετοχής 15€"],
+            button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
           },
         },
       ],
@@ -413,22 +409,14 @@ export const dictionaries = {
           },
         },
         {
-          title: "Tapping",
+          title: "EFT — Emotional Freedom Techniques",
+          layout: "wrapImage",
           body:
-            "A practical approach that combines gentle guidance and tapping points for emotional release.",
+            "EFT (Emotional Freedom Technique), also known as tapping, is a gentle method for emotional release that combines elements of modern psychology with an energetic understanding of the body.\n\nDuring the session, the person focuses on a specific emotion, thought, memory or physical sensation while gently tapping with the fingers on specific points of the body. These points are related to the energy channels also used in traditional Chinese medicine.\n\nThe aim of EFT is not to force the emotion to disappear or ignore it. Instead, we create a safe space where we can observe it, acknowledge it and gradually reduce its intensity.\n\nEFT can support people experiencing anxiety, intense emotional charge, fears, limiting beliefs, inner conflicts or difficulty managing specific situations. Through the process, the body and nervous system are invited to relax, while the person gains more connection with themselves and with what they truly feel.\n\nAt Inner Glow, EFT is approached with respect, softness and attention to each person’s personal pace. A session may include brief relaxation or meditation, discussion around the theme you want to work on and guided tapping, so you can feel more calm, grounded and internally safe.\n\nEFT does not replace medical or psychotherapeutic care, but it can work supportively as a tool for self-awareness, emotional regulation and personal empowerment.\n\nSessions take place in person and online.",
           image: "/images/placeholders/healing.png",
-          sections: [
-            {
-              title: "What it offers",
-              body: "The session includes focused conversation, identifying the theme you want to work with, and guided tapping.",
-            },
-            {
-              title: "Who it is for",
-              body: "For people experiencing tension, anxiety, blocks, or repeating patterns who want a practical way to release pressure.",
-            },
-          ],
+          sections: [],
           coordinator: {
-            show: true,
+            show: false,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Tapping facilitator",
@@ -438,8 +426,10 @@ export const dictionaries = {
           },
           pricing: {
             options: [
-              { label: "60-minute session", price: "50€" },
-              { label: "90-minute session", price: "70€" },
+              { label: "In person · 60-minute session", price: "70€" },
+              { label: "In person · 90-minute session", price: "100€" },
+              { label: "Online · 60-minute session", price: "50€" },
+              { label: "Online · 90-minute session", price: "80€" },
             ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
@@ -564,21 +554,18 @@ export const dictionaries = {
         },
         {
           title: "Meditations",
+          announcement: {
+            text: "Next meditation 20/5/2026, 19:00.",
+            size: "base",
+            weight: "bold",
+          },
+          layout: "wrapImage",
           body:
-            "Guided presence and relaxation practices to calm the nervous system and strengthen connection with yourself.",
+            "Our meditations take place in small groups, once a week, in a calm and safe space for inner connection and sharing.\n\nEach meeting lasts approximately 1.5 hours and includes a themed guided meditation, designed to help us relax, turn inward and come closer to what we feel, need or are ready to release.\n\nAfter the meditation there is time for discussion and sharing, where anyone who wishes can express their experience: what they felt, what they noticed, what message or awareness they are taking with them. This process creates a supportive field of connection, understanding and personal growth.\n\nNo previous meditation experience is needed. All that is needed is the intention to dedicate a little time to ourselves, calm the mind and listen more clearly to our inner voice.\n\nA weekly pause. A space for breath, connection and return to the self.",
           image: "/images/placeholders/healing.png",
-          sections: [
-            {
-              title: "What it offers",
-              body: "Meditations create space for pause, breath, grounding, and inner observation through gentle guidance.",
-            },
-            {
-              title: "Who it is for",
-              body: "For people seeking more calm, focus, and daily connection with the body, breath, and inner sense.",
-            },
-          ],
+          sections: [],
           coordinator: {
-            show: true,
+            show: false,
             title: "Facilitator",
             name: "Inner Glow",
             role: "Meditation facilitator",
@@ -589,6 +576,11 @@ export const dictionaries = {
           pricing: {
             price: "50€",
             note: "The final fee is confirmed during communication before the appointment.",
+          },
+          workshopCta: {
+            title: "Next meditation 20/5/2026, 19:00.",
+            details: ["Theme:", "Participation cost 15€"],
+            button: "REGISTER INTEREST",
           },
         },
       ],

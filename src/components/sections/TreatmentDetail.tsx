@@ -30,6 +30,14 @@ export function TreatmentDetail({
           : "text-sm";
   const announcementWeightClass =
     announcement?.weight === "normal" ? "font-normal" : "font-bold";
+  const hasWrapImageLayout = "layout" in treatment && treatment.layout === "wrapImage";
+  const bodyParagraphs = treatment.body.split("\n\n");
+  const hasDetailSections = treatment.sections.length > 0 || treatment.coordinator.show;
+  const pricing = treatment.pricing as {
+    options?: { label: string; price: string }[];
+    price?: string;
+    note: string;
+  };
 
   return (
     <article className="bg-ivory">
@@ -45,30 +53,61 @@ export function TreatmentDetail({
         </section>
       ) : null}
       <section className="py-14 sm:py-20 lg:py-24">
-        <Container className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
-          <div>
-            <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
-              {dictionary.healing.title}
-            </p>
-            <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
-              {treatment.title}
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-8 text-charcoal/72 sm:text-lg">
-              {treatment.body}
-            </p>
-          </div>
-          <div className="overflow-hidden rounded-bl-[3rem] sm:rounded-bl-[6rem]">
-            <Image
-              src={treatment.image}
-              alt=""
-              width={1000}
-              height={750}
-              className="aspect-[4/3] h-full w-full object-cover"
-              priority
-            />
-          </div>
-        </Container>
+        {hasWrapImageLayout ? (
+          <Container>
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
+                {dictionary.healing.title}
+              </p>
+              <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+                {treatment.title}
+              </h1>
+            </div>
+            <div className="mt-8 text-base leading-8 text-charcoal/72 sm:text-lg">
+              <div className="mb-6 overflow-hidden rounded-bl-[3rem] sm:rounded-bl-[6rem] md:float-right md:mb-8 md:ml-10 md:w-[48%] lg:w-[46%]">
+                <Image
+                  src={treatment.image}
+                  alt=""
+                  width={1000}
+                  height={750}
+                  className="aspect-[4/3] h-full w-full object-cover"
+                  priority
+                />
+              </div>
+              {bodyParagraphs.map((paragraph) => (
+                <p className="mb-5 last:mb-0" key={paragraph}>
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </Container>
+        ) : (
+          <Container className="grid gap-12 md:grid-cols-[1fr_1fr] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
+                {dictionary.healing.title}
+              </p>
+              <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+                {treatment.title}
+              </h1>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-charcoal/72 sm:text-lg">
+                {treatment.body}
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-bl-[3rem] sm:rounded-bl-[6rem]">
+              <Image
+                src={treatment.image}
+                alt=""
+                width={1000}
+                height={750}
+                className="aspect-[4/3] h-full w-full object-cover"
+                priority
+              />
+            </div>
+          </Container>
+        )}
       </section>
+      {hasDetailSections ? (
       <section className="py-14 sm:py-20">
         <Container className={treatment.coordinator.show ? "grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start" : "grid gap-8 sm:grid-cols-2"}>
           <div className={treatment.coordinator.show ? "grid gap-8 sm:grid-cols-2 lg:grid-cols-1" : "contents"}>
@@ -122,13 +161,16 @@ export function TreatmentDetail({
           ) : null}
         </Container>
       </section>
+      ) : null}
       <section className="py-14 sm:py-20 lg:py-24">
         <Container className={"workshopCta" in treatment ? "" : "grid gap-8 md:grid-cols-[0.8fr_1.2fr]"}>
           {"workshopCta" in treatment ? (
             <div>
-              <p className="mb-8 max-w-3xl text-base leading-8 text-charcoal/72 sm:text-lg">
-                {treatment.workshopCta.intro}
-              </p>
+              {"intro" in treatment.workshopCta ? (
+                <p className="mb-8 max-w-3xl text-base leading-8 text-charcoal/72 sm:text-lg">
+                  {treatment.workshopCta.intro}
+                </p>
+              ) : null}
               <div className="rounded-lg bg-clay/20 px-5 py-7 sm:px-8 sm:py-9 lg:px-10 lg:py-10">
                 <h2 className="text-wrap font-serif text-3xl leading-tight text-charcoal sm:text-4xl">
                   {treatment.workshopCta.title}
@@ -151,22 +193,22 @@ export function TreatmentDetail({
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-olive">
                   {dictionary.healing.pricingTitle}
                 </p>
-                {"options" in treatment.pricing ? (
-                  <div className="mt-4 space-y-4">
-                    {treatment.pricing.options.map((option) => (
+                {pricing.options ? (
+                  <div className={`mt-4 ${pricing.options.length > 2 ? "grid gap-x-4 gap-y-0 sm:grid-cols-2" : "space-y-4"}`}>
+                    {pricing.options.map((option) => (
                       <div className="border-t border-olive/20 pt-4" key={option.label}>
                         <p className="text-sm font-semibold uppercase tracking-[0.12em] text-charcoal/60">{option.label}</p>
                         <p className="mt-2 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{option.price}</p>
                       </div>
                     ))}
                   </div>
-                ) : (
+                ) : pricing.price ? (
                   <>
-                    <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{treatment.pricing.price}</p>
+                    <p className="mt-4 font-serif text-5xl leading-none text-charcoal sm:text-6xl">{pricing.price}</p>
                     <p className="mt-2 text-charcoal/65">{dictionary.common.perSession}</p>
                   </>
-                )}
-                <p className="mt-4 max-w-xs text-sm leading-6 text-charcoal/60">{treatment.pricing.note}</p>
+                ) : null}
+                <p className="mt-4 max-w-xs text-sm leading-6 text-charcoal/60">{pricing.note}</p>
               </div>
               <BookingPanel
                 title={dictionary.common.bookHealing}
