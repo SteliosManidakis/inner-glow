@@ -184,7 +184,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "Συνεδρία 60'", price: "50€" },
+              { label: "Συνεδρία 90'", price: "70€" },
+            ],
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
         },
@@ -217,7 +220,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "Συνεδρία 60'", price: "50€" },
+              { label: "Συνεδρία 90'", price: "70€" },
+            ],
             note: "Η τελική χρέωση επιβεβαιώνεται κατά την επικοινωνία πριν το ραντεβού.",
           },
         },
@@ -477,7 +483,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "60-minute session", price: "50€" },
+              { label: "90-minute session", price: "70€" },
+            ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
         },
@@ -510,7 +519,10 @@ export const dictionaries = {
             showImage: false,
           },
           pricing: {
-            price: "50€",
+            options: [
+              { label: "60-minute session", price: "50€" },
+              { label: "90-minute session", price: "70€" },
+            ],
             note: "The final fee is confirmed during communication before the appointment.",
           },
         },
