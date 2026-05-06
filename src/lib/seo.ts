@@ -32,9 +32,9 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
         "Κλείσε ένα τηλεφωνικό ραντεβού γνωριμίας με το Inner Glow ή ξεκίνησε την επικοινωνία για online και δια ζώσης healing συνεδρίες.",
     },
     terms: {
-      title: "Όροι Χρήσης",
+      title: "Όροι & Προϋποθέσεις",
       description:
-        "Όροι χρήσης για το website, το booking, τις συνεδρίες, τις ακυρώσεις και τις υπηρεσίες του Inner Glow.",
+        "Όροι και προϋποθέσεις για τη χρήση του website, τις υπηρεσίες, τα workshops και τις δράσεις της Inner Glow.",
     },
     privacy: {
       title: "Πολιτική Απορρήτου & Cookies",
@@ -66,7 +66,7 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     terms: {
       title: "Terms & Conditions",
       description:
-        "Terms for website use, booking, sessions, cancellations and services offered by Inner Glow.",
+        "Terms and conditions for website use, services, workshops and Inner Glow activities.",
     },
     privacy: {
       title: "Privacy Policy & Cookies",

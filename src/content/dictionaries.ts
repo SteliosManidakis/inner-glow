@@ -14,7 +14,7 @@ export const dictionaries = {
       systemicConstellation: "Συστημική",
       meditations: "Διαλογισμοί",
       contact: "Επικοινωνία",
-      terms: "Όροι χρήσης",
+      terms: "Όροι & Προϋποθέσεις",
       privacy: "Πολιτική απορρήτου",
     },
     common: {
@@ -34,7 +34,7 @@ export const dictionaries = {
       aboutTitle: "Σχετικά",
       healingTitle: "Healing",
       contactTitle: "Επικοινωνία",
-      termsTitle: "Όροι χρήσης",
+      termsTitle: "Όροι & Προϋποθέσεις",
       privacyTitle: "Πολιτική απορρήτου",
     },
     home: {
@@ -48,9 +48,9 @@ export const dictionaries = {
       aboutTitle: "Γνώρισε την Inner Glow",
       aboutBody:
         "Με ήρεμη, ανθρώπινη προσέγγιση, το Inner Glow δημιουργεί χώρο για βαθύτερη ακρόαση, προσωπική φροντίδα και ουσιαστική αλλαγή.",
-      healingTitle: "Ατομικές συνεδρίες Tapping & Reiki",
+      healingTitle: "Θεραπείες και καθοδηγούμενες πρακτικές",
       healingBody:
-        "Μια συνεδρία αφιερωμένη σε εσένα, με καθαρή πρόθεση, πρακτική υποστήριξη και χώρο για όσα ζητούν προσοχή.",
+        "Reiki, Tapping, αναδρομική ύπνωση, NLP coaching, συστημική αναπαράσταση και διαλογισμοί για καθαρότητα, γείωση και βαθύτερη σύνδεση με τον εαυτό.",
     },
     about: {
         title: "Ένας χώρος εσωτερικής εργασίας και μεταμόρφωσης.",
@@ -309,9 +309,9 @@ export const dictionaries = {
       aboutTitle: "Meet Inner Glow",
       aboutBody:
         "With a calm, human approach, Inner Glow creates space for deeper listening, personal care, and meaningful change.",
-      healingTitle: "Individual healing sessions",
+      healingTitle: "Therapies and guided practices",
       healingBody:
-        "A session dedicated to you, with clear intention, practical support, and room for what needs attention.",
+        "Reiki, Tapping, regression hypnosis, NLP coaching, systemic constellation and meditations for clarity, grounding and deeper self-connection.",
     },
     about: {
       title: "About Inner\u00A0Glow",

@@ -24,9 +24,11 @@ export function LegalPage({ title, content }: { title: string; content: LegalPag
           ))}
         </div>
 
-        <p className="mt-12 border-t border-olive/20 pt-6 text-sm leading-7 text-charcoal/60">
-          {content.note}
-        </p>
+        {content.note ? (
+          <p className="mt-12 border-t border-olive/20 pt-6 text-sm leading-7 text-charcoal/60">
+            {content.note}
+          </p>
+        ) : null}
       </Container>
     </section>
   );
