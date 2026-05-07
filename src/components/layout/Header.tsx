@@ -59,6 +59,9 @@ export function Header({
             </Link>
           ))}
         </nav>
+        <div className="ml-auto md:hidden">
+          <LanguageSwitcher locale={locale} label={dictionary.common.switchLanguage} />
+        </div>
         <div className="hidden md:block">
           <LanguageSwitcher locale={locale} label={dictionary.common.switchLanguage} />
         </div>
