@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { Locale } from "@/lib/i18n";
 import { getSiteUrl, siteName } from "@/lib/site";
+import type { TreatmentRouteKey } from "@/lib/treatments";
 
 type SeoRoute = "" | "about" | "healing" | "contact" | "terms" | "privacy";
 
@@ -76,6 +77,73 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
   },
 };
 
+const treatmentSeoCopy: Record<Locale, Record<TreatmentRouteKey, SeoCopy>> = {
+  el: {
+    regressionHypnosis: {
+      title: "Ανάδρομη Ύπνωση | Inner Glow",
+      description:
+        "Συνεδρίες ανάδρομης ύπνωσης στην Inner Glow για βαθύτερη εσωτερική διερεύνηση, αυτογνωσία και σύνδεση με ασφάλεια.",
+    },
+    nlpCoaching: {
+      title: "NLP Coaching & γυναικεία ενδυνάμωση | Inner Glow",
+      description:
+        "NLP Coaching για αυτοπεποίθηση, όρια, προσωπική εξέλιξη και γυναικεία ενδυνάμωση, online ή δια ζώσης.",
+    },
+    tapping: {
+      title: "EFT Tapping συνεδρίες | Inner Glow",
+      description:
+        "EFT Tapping για συναισθηματική αποφόρτιση, άγχος και εσωτερική ασφάλεια, με online και δια ζώσης συνεδρίες.",
+    },
+    reiki: {
+      title: "Reiki στη Βούλα | Inner Glow",
+      description:
+        "Ατομικές συνεδρίες Reiki στη Βούλα για χαλάρωση, ενεργειακή ισορροπία και βαθύτερη σύνδεση με τον εαυτό.",
+    },
+    systemicConstellation: {
+      title: "Συστημική Αναπαράσταση στη Βούλα | Inner Glow",
+      description:
+        "Εργαστήρια Συστημικής Αναπαράστασης στη Βούλα για οικογενειακές σχέσεις, μοτίβα, εμπλοκές και καθαρότερη εικόνα.",
+    },
+    meditations: {
+      title: "Ομαδικοί Διαλογισμοί στη Βούλα | Inner Glow",
+      description:
+        "Εβδομαδιαίοι καθοδηγούμενοι διαλογισμοί σε μικρές ομάδες στη Βούλα για ηρεμία, σύνδεση και εσωτερική παύση.",
+    },
+  },
+  en: {
+    regressionHypnosis: {
+      title: "Regression Hypnosis | Inner Glow",
+      description:
+        "Regression hypnosis sessions at Inner Glow for deeper inner exploration, self-awareness and safe connection.",
+    },
+    nlpCoaching: {
+      title: "NLP Coaching & women’s empowerment | Inner Glow",
+      description:
+        "NLP Coaching for confidence, boundaries, personal growth and women’s empowerment, online or in person.",
+    },
+    tapping: {
+      title: "EFT Tapping sessions | Inner Glow",
+      description:
+        "EFT Tapping sessions for emotional release, anxiety and inner safety, available online and in person.",
+    },
+    reiki: {
+      title: "Reiki in Voula | Inner Glow",
+      description:
+        "Individual Reiki sessions in Voula for relaxation, energetic balance and a deeper connection with yourself.",
+    },
+    systemicConstellation: {
+      title: "Systemic Constellation in Voula | Inner Glow",
+      description:
+        "Systemic Constellation workshops in Voula for family relationships, patterns, entanglements and clearer perspective.",
+    },
+    meditations: {
+      title: "Group Meditations in Voula | Inner Glow",
+      description:
+        "Weekly guided meditations in small groups in Voula for calm, connection and an inner pause.",
+    },
+  },
+};
+
 export function routePath(locale: Locale, route: string) {
   return route ? `/${locale}/${route}` : `/${locale}`;
 }
@@ -128,4 +196,8 @@ export function getSeoMetadata(locale: Locale, route: SeoRoute): Metadata {
       images: [image],
     },
   };
+}
+
+export function getTreatmentSeoMetadata(locale: Locale, treatmentKey: TreatmentRouteKey) {
+  return treatmentSeoCopy[locale][treatmentKey];
 }

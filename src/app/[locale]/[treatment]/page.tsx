@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { TreatmentDetail } from "@/components/sections/TreatmentDetail";
 import { getDictionary } from "@/content/dictionaries";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
-import { absoluteRoute, languageAlternates } from "@/lib/seo";
+import { absoluteRoute, getTreatmentSeoMetadata, languageAlternates } from "@/lib/seo";
 import { getTreatmentRoute, treatmentRoutes } from "@/lib/treatments";
 
 export function generateStaticParams() {
@@ -31,18 +31,19 @@ export async function generateMetadata({
   const locale = rawLocale as Locale;
   const dictionary = getDictionary(locale);
   const treatment = dictionary.healing.treatments[treatmentRoute.treatmentIndex];
+  const seo = getTreatmentSeoMetadata(locale, treatmentRoute.key);
   const path = `${locale}/${treatmentRoute.slug}`;
 
   return {
-    title: `${treatment.title} | ${dictionary.healing.title}`,
-    description: treatment.body,
+    title: seo.title,
+    description: seo.description,
     alternates: {
       canonical: `/${path}`,
       languages: languageAlternates(treatmentRoute.slug),
     },
     openGraph: {
-      title: `${treatment.title} | ${dictionary.common.brand}`,
-      description: treatment.body,
+      title: seo.title,
+      description: seo.description,
       url: absoluteRoute(locale, treatmentRoute.slug),
       siteName: dictionary.common.brand,
       locale: locale === "el" ? "el_GR" : "en_US",
@@ -59,8 +60,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${treatment.title} | ${dictionary.common.brand}`,
-      description: treatment.body,
+      title: seo.title,
+      description: seo.description,
       images: [treatment.image],
     },
   };
