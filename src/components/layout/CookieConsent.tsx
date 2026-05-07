@@ -27,14 +27,13 @@ export function CookieConsent({
   dictionary: Dictionary;
   locale: Locale;
 }) {
-  const [preferences, setPreferences] = useState<ConsentPreferences>(() => readConsent() ?? necessaryOnly);
-  const [visible, setVisible] = useState(() => !readConsent());
+  const savedConsent = typeof window === "undefined" ? null : readConsent();
+  const [preferences, setPreferences] = useState<ConsentPreferences>(savedConsent ?? necessaryOnly);
+  const [visible, setVisible] = useState(!savedConsent);
 
   useEffect(() => {
-    const saved = readConsent();
-    if (saved) {
-      publishConsent(saved);
-    }
+    publishConsent(preferences);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -49,8 +48,8 @@ export function CookieConsent({
   function saveConsent(nextPreferences: ConsentPreferences) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(nextPreferences));
     setPreferences(nextPreferences);
-    publishConsent(nextPreferences);
     setVisible(false);
+    publishConsent(nextPreferences);
   }
 
   function acceptAll() {
