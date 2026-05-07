@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable react-hooks/set-state-in-effect */
+
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Dictionary } from "@/content/dictionaries";
@@ -27,13 +29,19 @@ export function CookieConsent({
   dictionary: Dictionary;
   locale: Locale;
 }) {
-  const savedConsent = typeof window === "undefined" ? null : readConsent();
-  const [preferences, setPreferences] = useState<ConsentPreferences>(savedConsent ?? necessaryOnly);
-  const [visible, setVisible] = useState(!savedConsent);
+  const [mounted, setMounted] = useState(false);
+  const [preferences, setPreferences] = useState<ConsentPreferences>(necessaryOnly);
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    publishConsent(preferences);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const savedConsent = readConsent();
+    if (savedConsent) {
+      setPreferences(savedConsent);
+      publishConsent(savedConsent);
+    } else {
+      setVisible(true);
+    }
+    setMounted(true);
   }, []);
 
   useEffect(() => {
@@ -66,7 +74,7 @@ export function CookieConsent({
 
   return (
     <>
-      {visible ? (
+      {mounted && visible ? (
         <div className="fixed inset-x-0 bottom-0 z-50 border-t border-olive/20 bg-ivory/95 px-4 py-4 shadow-[0_-18px_45px_rgba(41,37,31,0.12)] backdrop-blur sm:px-6">
           <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
             <div>
