@@ -48,8 +48,10 @@ export async function POST(request: Request) {
   }
 
   const fullName = `${firstName} ${lastName}`;
+  const title = "Νέο αίτημα θεραπείας";
+  const preheader = `${title} - ${serviceLabel} από ${fullName}`;
   const textContent = [
-    "Νέο αίτημα θεραπείας",
+    title,
     "",
     `Θεραπεία: ${serviceLabel}`,
     `Όνομα: ${fullName}`,
@@ -74,10 +76,13 @@ export async function POST(request: Request) {
       },
       to: [{ email: toEmail, name: "Inner Glow" }],
       replyTo: { email, name: fullName },
-      subject: `Νέο αίτημα θεραπείας - ${serviceLabel} - ${fullName}`,
+      subject: `${title} - ${serviceLabel} - ${fullName}`,
       textContent,
       htmlContent: `
-        <h2>Νέο αίτημα θεραπείας</h2>
+        <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;mso-hide:all;">
+          ${escapeHtml(preheader)}
+        </div>
+        <h2>${escapeHtml(title)}</h2>
         <p><strong>Θεραπεία:</strong> ${escapeHtml(serviceLabel)}</p>
         <p><strong>Όνομα:</strong> ${escapeHtml(fullName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>

@@ -17,17 +17,17 @@ export const siteImages = {
     reiki: "/images/reikipage.jpeg",
     eft: "/images/tappingpage.jpeg",
     regressionHypnosis: "/images/hypnosispage.jpeg",
-    systemicConstellation: "/images/hypnosispage.jpeg",
+    systemicConstellation: "/images/systemicpage.jpeg",
     nlpCoaching: "/images/nlppage.jpeg",
-    meditations: "/images/placeholders/healing.png",
+    meditations: "/images/dialogismoipage.jpeg",
   },
 
   coordinators: {
     reiki: "/images/crystals.png",
     eft: "/images/placeholders/about.png",
     regressionHypnosis: "/images/valsamos.png",
-    systemicConstellation: "/images/kanaris.png",
-    nlpCoaching: "/images/placeholders/about.png",
-    meditations: "/images/placeholders/about.png",
+    systemicConstellation: "/images/systemicpage.jpeg",
+    nlpCoaching: "/images/nlppage.jpeg",
+    meditations: "/images/dialogismoipage.jpeg",
   },
 } as const;

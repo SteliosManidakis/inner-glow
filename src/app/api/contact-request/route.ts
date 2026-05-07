@@ -32,8 +32,10 @@ export async function POST(request: Request) {
   }
 
   const fullName = `${firstName} ${lastName}`;
+  const title = "Νέο αίτημα για ραντεβού γνωριμίας";
+  const preheader = `${title} από ${fullName}`;
   const textContent = [
-    "Νέο αίτημα για ραντεβού γνωριμίας",
+    title,
     "",
     `Όνομα: ${fullName}`,
     `Email: ${email}`,
@@ -57,10 +59,13 @@ export async function POST(request: Request) {
       },
       to: [{ email: toEmail, name: "Inner Glow" }],
       replyTo: { email, name: fullName },
-      subject: `Νέο αίτημα ραντεβού γνωριμίας - ${fullName}`,
+      subject: `${title} - ${fullName}`,
       textContent,
       htmlContent: `
-        <h2>Νέο αίτημα για ραντεβού γνωριμίας</h2>
+        <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;mso-hide:all;">
+          ${escapeHtml(preheader)}
+        </div>
+        <h2>${escapeHtml(title)}</h2>
         <p><strong>Όνομα:</strong> ${escapeHtml(fullName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
         <p><strong>Κινητό:</strong> ${escapeHtml(phone)}</p>
