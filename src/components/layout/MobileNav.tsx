@@ -5,7 +5,6 @@ import { useState } from "react";
 import type { Dictionary } from "@/content/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath, navRoutes } from "@/lib/routes";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function MobileNav({
   locale,
@@ -44,9 +43,6 @@ export function MobileNav({
                 {dictionary.nav[route.key]}
               </Link>
             ))}
-            <div className="mt-2 flex">
-              <LanguageSwitcher locale={locale} label={dictionary.common.switchLanguage} />
-            </div>
           </nav>
         </div>
       ) : null}
