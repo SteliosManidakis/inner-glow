@@ -532,7 +532,7 @@ export const dictionaries = {
             },
             {
               title: "Ideal for",
-              body: "Ideal for those who feel they repeat patterns in their life without understanding why. Ideal for those carrying intense emotions, fears or blocks that are not easily explained by logic, as well as for those who want to know themselves more deeply.",
+              body: "Those who feel they repeat patterns in their life without understanding why. Ideal for those carrying intense emotions, fears or blocks that are not easily explained by logic, as well as for those who want to know themselves more deeply.",
             },
           ],
           coordinator: {
@@ -661,7 +661,7 @@ export const dictionaries = {
             },
             {
               title: "Ideal for",
-              body: "They are for those who feel the need to pause, release tension and reconnect with themselves. They are suitable for people experiencing intensity, anxiety or tiredness from the pace of everyday life, as well as for anyone who simply wants to offer themselves a moment of calm, care and breath.",
+              body: "For those who feel the need to pause, release tension and reconnect with themselves. They are suitable for people experiencing intensity, anxiety or tiredness from the pace of everyday life, as well as for anyone who simply wants to offer themselves a moment of calm, care and breath.",
             },
           ],
           coordinator: {
