@@ -14,17 +14,17 @@ export type LegalPageContent = {
 
 const termsEl: LegalPageContent = {
   intro:
-    "Καλώς ήρθατε στον ιστότοπο της Inner Glow – ένας χώρος εσωτερικής εργασίας, σύνδεσης και μεταμόρφωσης. Με την πρόσβασή σας στον παρόντα ιστότοπο και τη χρήση των υπηρεσιών μας, αποδέχεστε τους παρακάτω όρους χρήσης. Παρακαλούμε να τους διαβάσετε προσεκτικά.",
-  lastUpdated: "Τελευταία ενημέρωση: 6 Μαΐου 2026",
+    "Καλώς ήρθατε στον ιστότοπο της Inner Glow - έναν χώρο εσωτερικής εργασίας, σύνδεσης και μεταμόρφωσης. Με την πρόσβασή σας στον παρόντα ιστότοπο και τη χρήση των υπηρεσιών μας, αποδέχεστε τους παρακάτω όρους χρήσης. Παρακαλούμε να τους διαβάσετε προσεκτικά.",
+  lastUpdated: "Τελευταία ενημέρωση: 7 Μαΐου 2026",
   note: "",
   sections: [
     {
       title: "1. Περιγραφή Υπηρεσιών",
       body: [
         "Η Inner Glow προσφέρει ατομικές προσωπικές και ενεργειακές συνεδρίες, καθώς και ομαδικές δράσεις.",
-        "• Βιωματικά workshops προσωπικής εξέλιξης (reiki, EFT, ύπνωση)",
+        "• Βιωματικά workshops προσωπικής εξέλιξης (Reiki, EFT, ύπνωση)",
         "• Συστημική αναπαράσταση",
-        "• Διαλογισμός",
+        "• Διαλογισμό",
         "• NLP Coaching",
       ],
     },
@@ -86,8 +86,8 @@ const termsEl: LegalPageContent = {
 
 const termsEn: LegalPageContent = {
   intro:
-    "Welcome to Inner Glow — a space for inner work, connection and transformation. By accessing this website and using our services, you agree to the following terms. Please read them carefully.",
-  lastUpdated: "Last updated: May 6, 2026",
+    "Welcome to Inner Glow - a space for inner work, connection and transformation. By accessing this website and using our services, you agree to the following terms. Please read them carefully.",
+  lastUpdated: "Last updated: May 7, 2026",
   note: "",
   sections: [
     {
@@ -131,7 +131,7 @@ const termsEn: LegalPageContent = {
     {
       title: "6. Personal Data",
       body: [
-        "Inner Glow handles users’ personal data with respect and in accordance with our Privacy Policy.",
+        "Inner Glow handles users' personal data with respect and in accordance with our Privacy Policy.",
         "By using this website you acknowledge that you have read and accepted the Privacy Policy.",
       ],
     },
@@ -149,8 +149,188 @@ const termsEn: LegalPageContent = {
     },
     {
       title: "9. Contact",
+      body: ["For any questions or clarifications, please contact us at: info@inner-glow.gr"],
+    },
+  ],
+};
+
+const privacyEl: LegalPageContent = {
+  intro:
+    "Η παρούσα πολιτική εξηγεί ποια προσωπικά δεδομένα συλλέγονται μέσω του website της Inner Glow, για ποιους σκοπούς χρησιμοποιούνται, ποιοι πάροχοι εμπλέκονται και πώς λειτουργούν τα cookies και οι τεχνολογίες analytics/marketing.",
+  lastUpdated: "Τελευταία ενημέρωση: 7 Μαΐου 2026",
+  note:
+    "Το κείμενο αποτελεί πρακτική ενημέρωση για GDPR/cookies και δεν αποτελεί νομική συμβουλή. Για πλήρη νομική κάλυψη συνιστάται έλεγχος από νομικό σύμβουλο.",
+  sections: [
+    {
+      title: "1. Υπεύθυνος επεξεργασίας",
       body: [
-        "For any questions or clarifications, please contact us at: info@inner-glow.gr",
+        "Υπεύθυνος επεξεργασίας για τα δεδομένα που συλλέγονται μέσω του website είναι η Inner Glow.",
+        "Email επικοινωνίας για θέματα προσωπικών δεδομένων: info@inner-glow.gr.",
+      ],
+    },
+    {
+      title: "2. Δεδομένα που συλλέγουμε",
+      body: [
+        "Όταν συμπληρώνεις φόρμα επικοινωνίας ή φόρμα ενδιαφέροντος για θεραπεία, συλλέγουμε στοιχεία όπως όνομα, επίθετο, email, τηλέφωνο, επιλεγμένη υπηρεσία και το μήνυμα που επιλέγεις να μας στείλεις.",
+        "Όταν εγγράφεσαι στο newsletter, συλλέγουμε όνομα, επίθετο και email.",
+        "Μέσω του website ενδέχεται να συλλέγονται τεχνικά δεδομένα, όπως διεύθυνση IP, τύπος browser, συσκευή, σελίδες που επισκέπτεσαι και βασικές ενέργειες μέσα στο site, εφόσον έχεις δώσει συγκατάθεση για analytics ή marketing cookies.",
+        "Το website φιλοξενείται στη Vercel, η οποία μπορεί να επεξεργάζεται τεχνικά δεδομένα απαραίτητα για τη λειτουργία, την ασφάλεια και την απόδοση του website.",
+      ],
+    },
+    {
+      title: "3. Σκοποί και νομική βάση",
+      body: [
+        "Χρησιμοποιούμε τα στοιχεία των φορμών για να απαντήσουμε στο αίτημά σου, να επικοινωνήσουμε μαζί σου και να οργανώσουμε πιθανή συνεδρία ή τηλεφωνική γνωριμία.",
+        "Χρησιμοποιούμε τα στοιχεία newsletter για να στέλνουμε ενημερώσεις, νέα ή προσκλήσεις σχετικές με την Inner Glow. Η νομική βάση είναι η συγκατάθεσή σου.",
+        "Χρησιμοποιούμε τεχνικά δεδομένα για την ασφαλή λειτουργία του website βάσει έννομου συμφέροντος.",
+        "Χρησιμοποιούμε analytics και marketing τεχνολογίες μόνο μετά από συγκατάθεση, ώστε να μετράμε επισκεψιμότητα, αιτήματα ενδιαφέροντος και την αποτελεσματικότητα ενεργειών επικοινωνίας ή διαφήμισης.",
+      ],
+    },
+    {
+      title: "4. Πάροχοι και εργαλεία",
+      body: [
+        "Χρησιμοποιούμε Brevo για τη διαχείριση του newsletter και την αποστολή email από φόρμες.",
+        "Χρησιμοποιούμε Vercel για τη φιλοξενία και διάθεση του website.",
+        "Χρησιμοποιούμε Google Tag Manager για τη διαχείριση tags και Google Analytics 4 για στατιστικά επισκεψιμότητας και μέτρηση βασικών ενεργειών, όπως επιτυχής υποβολή φόρμας.",
+        "Αν χρησιμοποιήσεις εξωτερικές υπηρεσίες booking ή άλλους συνδέσμους τρίτων, εφαρμόζονται επίσης οι δικοί τους όροι, πολιτικές απορρήτου και cookie πρακτικές.",
+      ],
+    },
+    {
+      title: "5. Cookies και συγκατάθεση",
+      body: [
+        "Το website χρησιμοποιεί απολύτως απαραίτητες τεχνικές λειτουργίες για τη σωστή και ασφαλή λειτουργία του.",
+        "Τα analytics cookies χρησιμοποιούνται μόνο αν τα αποδεχτείς. Μας βοηθούν να κατανοούμε συνολικά την επισκεψιμότητα, τις σελίδες που έχουν ενδιαφέρον και την απόδοση των φορμών, χωρίς να στέλνουμε στο Google προσωπικά δεδομένα όπως όνομα, email ή τηλέφωνο.",
+        "Τα marketing cookies ή tags χρησιμοποιούνται μόνο αν τα αποδεχτείς. Μπορούν να βοηθήσουν στη μέτρηση διαφημιστικών ενεργειών ή μελλοντικών καμπανιών.",
+        "Μπορείς να αλλάξεις τις επιλογές σου οποιαδήποτε στιγμή από το κουμπί «Ρυθμίσεις cookies» στο footer.",
+      ],
+    },
+    {
+      title: "6. Google Analytics 4 και Google Tag Manager",
+      body: [
+        "Το Google Tag Manager φορτώνεται μόνο μετά από συγκατάθεση για analytics ή marketing cookies.",
+        "Το Google Analytics 4 χρησιμοποιείται για συγκεντρωτικά στατιστικά και events, όπως προβολές σελίδων, επιτυχής υποβολή φόρμας γνωριμίας, επιτυχής υποβολή φόρμας θεραπείας και εγγραφή στο newsletter.",
+        "Στα analytics events δεν αποστέλλονται προσωπικά δεδομένα όπως όνομα, email ή τηλέφωνο.",
+        "Η Google μπορεί να επεξεργάζεται δεδομένα σύμφωνα με τις δικές της πολιτικές και ρυθμίσεις απορρήτου.",
+      ],
+    },
+    {
+      title: "7. Διατήρηση δεδομένων",
+      body: [
+        "Τα δεδομένα newsletter διατηρούνται μέχρι να διαγραφείς ή να ζητήσεις τη διαγραφή τους.",
+        "Τα δεδομένα από φόρμες επικοινωνίας και ενδιαφέροντος διατηρούνται για όσο χρειάζεται ώστε να απαντήσουμε στο αίτημά σου, να οργανώσουμε πιθανή συνεργασία ή συνεδρία και να τηρήσουμε εύλογες διοικητικές ή νόμιμες υποχρεώσεις.",
+        "Όταν η διατήρηση δεν είναι πλέον απαραίτητη, τα δεδομένα διαγράφονται ή ανωνυμοποιούνται όπου είναι πρακτικά εφικτό.",
+      ],
+    },
+    {
+      title: "8. Τα δικαιώματά σου",
+      body: [
+        "Έχεις δικαίωμα πρόσβασης, διόρθωσης, διαγραφής, περιορισμού επεξεργασίας, φορητότητας, αντίρρησης και ανάκλησης συγκατάθεσης όπου η επεξεργασία βασίζεται σε συγκατάθεση.",
+        "Μπορείς να ασκήσεις τα δικαιώματά σου στέλνοντας email στο info@inner-glow.gr.",
+        "Έχεις επίσης δικαίωμα υποβολής καταγγελίας στην αρμόδια αρχή προστασίας δεδομένων.",
+      ],
+    },
+    {
+      title: "9. Ασφάλεια",
+      body: [
+        "Λαμβάνονται εύλογα οργανωτικά και τεχνικά μέτρα για την προστασία των προσωπικών δεδομένων.",
+        "Καμία μέθοδος μετάδοσης ή αποθήκευσης στο διαδίκτυο δεν μπορεί να θεωρηθεί απόλυτα ασφαλής, όμως η πρόσβαση στα δεδομένα περιορίζεται σε όσα είναι απαραίτητα για επικοινωνία, newsletter, διαχείριση αιτημάτων και τεχνική λειτουργία.",
+      ],
+    },
+    {
+      title: "10. Αλλαγές στην πολιτική",
+      body: [
+        "Η πολιτική μπορεί να ενημερώνεται όταν αλλάζουν οι υπηρεσίες, οι πάροχοι, οι τεχνολογίες ή οι νομικές απαιτήσεις. Η νεότερη έκδοση εμφανίζεται πάντα σε αυτή τη σελίδα.",
+      ],
+    },
+  ],
+};
+
+const privacyEn: LegalPageContent = {
+  intro:
+    "This policy explains what personal data is collected through the Inner Glow website, why it is used, which providers are involved and how cookies, analytics and marketing technologies work.",
+  lastUpdated: "Last updated: May 7, 2026",
+  note:
+    "This is a practical GDPR/cookies information draft and does not constitute legal advice. For full legal coverage, review by a qualified legal professional is recommended.",
+  sections: [
+    {
+      title: "1. Data controller",
+      body: [
+        "The data controller for data collected through the website is Inner Glow.",
+        "Email for data protection requests: info@inner-glow.gr.",
+      ],
+    },
+    {
+      title: "2. Data we collect",
+      body: [
+        "When you submit a contact form or treatment request form, we collect details such as first name, last name, email, phone, selected service and the message you choose to send.",
+        "When you subscribe to the newsletter, we collect first name, last name and email address.",
+        "Technical data such as IP address, browser type, device, visited pages and basic website actions may be collected if you consent to analytics or marketing cookies.",
+        "The website is hosted on Vercel, which may process technical data necessary for website operation, security and performance.",
+      ],
+    },
+    {
+      title: "3. Purposes and legal basis",
+      body: [
+        "We use form details to respond to your request, contact you and arrange a possible session or introductory call.",
+        "We use newsletter details to send updates, news or invitations related to Inner Glow. The legal basis is your consent.",
+        "We use technical data for secure website operation based on legitimate interest.",
+        "We use analytics and marketing technologies only after consent, in order to measure traffic, lead requests and the effectiveness of communication or advertising activity.",
+      ],
+    },
+    {
+      title: "4. Providers and tools",
+      body: [
+        "We use Brevo to manage the newsletter and send emails from forms.",
+        "We use Vercel to host and deliver the website.",
+        "We use Google Tag Manager to manage tags and Google Analytics 4 for traffic statistics and key event measurement, such as successful form submissions.",
+        "If you use external booking services or third-party links, their own terms, privacy policies and cookie practices also apply.",
+      ],
+    },
+    {
+      title: "5. Cookies and consent",
+      body: [
+        "The website uses strictly necessary technical functionality for proper and secure operation.",
+        "Analytics cookies are used only if you accept them. They help us understand aggregate traffic, page interest and form performance, without sending personal data such as name, email or phone to Google.",
+        "Marketing cookies or tags are used only if you accept them. They may help measure advertising activity or future campaigns.",
+        "You can change your choices at any time through the Cookie settings button in the footer.",
+      ],
+    },
+    {
+      title: "6. Google Analytics 4 and Google Tag Manager",
+      body: [
+        "Google Tag Manager loads only after consent for analytics or marketing cookies.",
+        "Google Analytics 4 is used for aggregate statistics and events, such as page views, successful introductory form submission, successful treatment request form submission and newsletter subscription.",
+        "Analytics events do not send personal data such as name, email or phone.",
+        "Google may process data according to its own privacy policies and settings.",
+      ],
+    },
+    {
+      title: "7. Data retention",
+      body: [
+        "Newsletter data is kept until you unsubscribe or request deletion.",
+        "Contact and treatment request form data is kept for as long as needed to respond to your request, arrange possible cooperation or a session and maintain reasonable administrative or legal records.",
+        "When retention is no longer necessary, data is deleted or anonymised where reasonably practical.",
+      ],
+    },
+    {
+      title: "8. Your rights",
+      body: [
+        "You have rights of access, rectification, erasure, restriction, portability, objection and withdrawal of consent where processing is based on consent.",
+        "You may exercise your rights by emailing info@inner-glow.gr.",
+        "You also have the right to lodge a complaint with the competent data protection authority.",
+      ],
+    },
+    {
+      title: "9. Security",
+      body: [
+        "Reasonable organisational and technical measures are used to protect personal data.",
+        "No method of internet transmission or electronic storage can be considered completely secure, but access to data is limited to what is necessary for communication, newsletter, request handling and technical operation.",
+      ],
+    },
+    {
+      title: "10. Changes to this policy",
+      body: [
+        "This policy may be updated when services, providers, technologies or legal requirements change. The latest version will always be shown on this page.",
       ],
     },
   ],
@@ -159,195 +339,11 @@ const termsEn: LegalPageContent = {
 export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: LegalPageContent }> = {
   el: {
     terms: termsEl,
-    privacy: {
-      intro:
-        "Η παρούσα πολιτική εξηγεί ποια προσωπικά δεδομένα συλλέγονται μέσω του website, γιατί συλλέγονται και ποια δικαιώματα έχεις.",
-      lastUpdated: "Τελευταία ενημέρωση: 5 Μαΐου 2026",
-      note:
-        "Το κείμενο είναι πρακτικό draft για GDPR ενημέρωση και δεν αποτελεί νομική συμβουλή. Πριν από επίσημο launch, συνιστάται έλεγχος από νομικό σύμβουλο.",
-      sections: [
-        {
-          title: "1. Υπεύθυνος επεξεργασίας",
-          body: [
-            "Υπεύθυνος επεξεργασίας για τα δεδομένα που συλλέγονται μέσω του website είναι η Μαργαρίτα Πασχάλη.",
-            "Email επικοινωνίας για θέματα προσωπικών δεδομένων: margaritapaschali@gmail.com.",
-          ],
-        },
-        {
-          title: "2. Δεδομένα που συλλέγουμε",
-          body: [
-            "Όταν εγγράφεσαι στο newsletter, συλλέγουμε όνομα, επίθετο και email.",
-            "Όταν κλείνεις discovery call ή healing appointment μέσω Cal.com, μπορεί να συλλεχθούν στοιχεία όπως όνομα, email, στοιχεία επικοινωνίας, ζώνη ώρας, επιλεγμένη ημερομηνία/ώρα και όσα επιπλέον στοιχεία επιλέξεις να δώσεις στη φόρμα booking.",
-            "Αν σε μεταγενέστερο στάδιο ζητηθούν πληροφορίες σχετικές με υγεία, εγκυμοσύνη, φαρμακευτική αγωγή ή άλλη ευαίσθητη πληροφορία για την καταλληλότητα ή ασφαλή διεξαγωγή συνεδρίας, αυτές θα χρησιμοποιούνται μόνο για τον σχετικό σκοπό και, όπου απαιτείται, με ρητή συγκατάθεση.",
-            "Το website φιλοξενείται στη Vercel, η οποία μπορεί να επεξεργάζεται τεχνικά δεδομένα που είναι απαραίτητα για τη λειτουργία, ασφάλεια και απόδοση του website.",
-          ],
-        },
-        {
-          title: "3. Σκοποί και νομική βάση",
-          body: [
-            "Χρησιμοποιούμε τα στοιχεία newsletter για να σου στέλνουμε ενημερώσεις, νέα ή άλλο σχετικό περιεχόμενο. Η νομική βάση είναι η συγκατάθεσή σου.",
-            "Χρησιμοποιούμε booking δεδομένα για να οργανώνουμε discovery calls και συνεδρίες. Η νομική βάση είναι η λήψη μέτρων πριν από πιθανή παροχή υπηρεσίας ή η εκτέλεση συμφωνίας.",
-            "Χρησιμοποιούμε τεχνικά δεδομένα για τη λειτουργία και ασφάλεια του website, βάσει έννομου συμφέροντος.",
-          ],
-        },
-        {
-          title: "4. Πάροχοι και επεξεργαστές",
-          body: [
-            "Χρησιμοποιούμε Brevo για τη διαχείριση του newsletter.",
-            "Χρησιμοποιούμε Cal.com για τη διαχείριση των bookings. Όταν μεταβαίνεις σε σελίδα booking της Cal.com, εφαρμόζονται επίσης οι όροι, η πολιτική απορρήτου και η cookie πρακτική της Cal.com.",
-            "Χρησιμοποιούμε Vercel για τη φιλοξενία και διάθεση του website.",
-            "Οι πάροχοι αυτοί λειτουργούν ως ανεξάρτητοι πάροχοι ή επεξεργαστές δεδομένων σύμφωνα με τους δικούς τους όρους και πολιτικές.",
-          ],
-        },
-        {
-          title: "5. Προωθητικές επικοινωνίες",
-          body: [
-            "Αν εγγραφείς στο newsletter, μπορείς να λαμβάνεις ενημερώσεις, νέα ή προσκλήσεις σχετικές με τη δραστηριότητα της Inner Glow.",
-            "Μπορείς να διαγραφείς οποιαδήποτε στιγμή μέσω του unsubscribe link στο email ή στέλνοντας μήνυμα στο margaritapaschali@gmail.com.",
-          ],
-        },
-        {
-          title: "6. Διατήρηση δεδομένων",
-          body: [
-            "Τα δεδομένα newsletter διατηρούνται μέχρι να διαγραφείς ή να ζητήσεις τη διαγραφή τους.",
-            "Τα booking δεδομένα διατηρούνται για όσο χρειάζεται για την οργάνωση της συνεδρίας, την επικοινωνία, εύλογη διοικητική παρακολούθηση και τυχόν νόμιμες υποχρεώσεις.",
-            "Όταν δεν είναι πλέον απαραίτητη η διατήρηση, τα δεδομένα διαγράφονται ή ανωνυμοποιούνται όπου είναι πρακτικά εφικτό.",
-          ],
-        },
-        {
-          title: "7. Τα δικαιώματά σου",
-          body: [
-            "Έχεις δικαίωμα πρόσβασης, διόρθωσης, διαγραφής, περιορισμού επεξεργασίας, φορητότητας, αντίρρησης και ανάκλησης συγκατάθεσης όπου η επεξεργασία βασίζεται σε συγκατάθεση.",
-            "Μπορείς να ασκήσεις τα δικαιώματά σου στέλνοντας email στο margaritapaschali@gmail.com.",
-            "Έχεις επίσης δικαίωμα υποβολής καταγγελίας στην αρμόδια αρχή προστασίας δεδομένων.",
-          ],
-        },
-        {
-          title: "8. Ασφάλεια",
-          body: [
-            "Λαμβάνονται εύλογα οργανωτικά και τεχνικά μέτρα για την προστασία των προσωπικών δεδομένων. Καμία μέθοδος μετάδοσης ή αποθήκευσης στο διαδίκτυο δεν μπορεί να θεωρηθεί απόλυτα ασφαλής.",
-            "Η πρόσβαση στα δεδομένα περιορίζεται σε όσα είναι απαραίτητα για τη λειτουργία του newsletter, του booking και της επικοινωνίας.",
-          ],
-        },
-        {
-          title: "9. Σύνδεσμοι προς τρίτους",
-          body: [
-            "Το website περιέχει συνδέσμους προς τρίτες υπηρεσίες, όπως Cal.com. Δεν ελέγχουμε τις πολιτικές απορρήτου ή cookies αυτών των υπηρεσιών και συνιστάται να τις διαβάζεις πριν υποβάλεις προσωπικά δεδομένα.",
-          ],
-        },
-        {
-          title: "10. Cookies",
-          body: [
-            "Αυτή τη στιγμή το website δεν χρησιμοποιεί analytics, advertising pixels ή μη απαραίτητα tracking cookies.",
-            "Μπορεί να χρησιμοποιούνται απολύτως απαραίτητες τεχνικές λειτουργίες από την πλατφόρμα φιλοξενίας ή από υπηρεσίες που απαιτούνται για την ασφαλή λειτουργία του website.",
-            "Οι σελίδες booking της Cal.com μπορεί να χρησιμοποιούν cookies ή παρόμοιες τεχνολογίες σύμφωνα με τη δική της πολιτική.",
-            "Αν στο μέλλον προστεθούν analytics, marketing cookies ή παρόμοιες τεχνολογίες στο ίδιο το website, θα προστεθεί κατάλληλη ενημέρωση και μηχανισμός συγκατάθεσης πριν ενεργοποιηθούν.",
-          ],
-        },
-        {
-          title: "11. Αλλαγές στην πολιτική",
-          body: [
-            "Η πολιτική μπορεί να ενημερώνεται όταν αλλάζουν οι υπηρεσίες, οι πάροχοι ή οι νομικές απαιτήσεις. Η νεότερη έκδοση θα εμφανίζεται πάντα σε αυτή τη σελίδα.",
-          ],
-        },
-      ],
-    },
+    privacy: privacyEl,
   },
   en: {
     terms: termsEn,
-    privacy: {
-      intro:
-        "This policy explains what personal data is collected through the website, why it is collected and what rights you have.",
-      lastUpdated: "Last updated: May 5, 2026",
-      note:
-        "This is a practical GDPR information draft and does not constitute legal advice. Before official launch, review by a qualified legal professional is recommended.",
-      sections: [
-        {
-          title: "1. Data controller",
-          body: [
-            "The data controller for data collected through this website is Margarita Paschali.",
-            "Email for data protection requests: margaritapaschali@gmail.com.",
-          ],
-        },
-        {
-          title: "2. Data we collect",
-          body: [
-            "When you subscribe to the newsletter, we collect first name, last name and email address.",
-            "When you book a discovery call or healing appointment through Cal.com, information such as your name, email address, contact details, time zone, selected date/time and any additional information you choose to provide in the booking form may be collected.",
-            "If at a later stage health-related information, pregnancy information, medication information or other sensitive information is requested for suitability or safe session delivery, it will be used only for that purpose and, where required, with explicit consent.",
-            "The website is hosted on Vercel, which may process technical data necessary for website operation, security and performance.",
-          ],
-        },
-        {
-          title: "3. Purposes and legal basis",
-          body: [
-            "We use newsletter details to send updates, news or related content. The legal basis is your consent.",
-            "We use booking data to arrange discovery calls and sessions. The legal basis is taking steps before a possible service or performing an agreement.",
-            "We use technical data for website operation and security based on legitimate interest.",
-          ],
-        },
-        {
-          title: "4. Providers and processors",
-          body: [
-            "We use Brevo to manage the newsletter.",
-            "We use Cal.com to manage bookings. When you visit a Cal.com booking page, Cal.com's own terms, privacy policy and cookie practices also apply.",
-            "We use Vercel to host and deliver the website.",
-            "These providers act as independent providers or data processors according to their own terms and policies.",
-          ],
-        },
-        {
-          title: "5. Promotional communications",
-          body: [
-            "If you subscribe to the newsletter, you may receive updates, news or invitations related to Inner Glow's activity.",
-            "You can unsubscribe at any time using the unsubscribe link in an email or by contacting margaritapaschali@gmail.com.",
-          ],
-        },
-        {
-          title: "6. Data retention",
-          body: [
-            "Newsletter data is kept until you unsubscribe or request deletion.",
-            "Booking data is kept for as long as needed to arrange the session, communicate with you, maintain reasonable administrative records and comply with any legal obligations.",
-            "When retention is no longer necessary, data is deleted or anonymised where reasonably practical.",
-          ],
-        },
-        {
-          title: "7. Your rights",
-          body: [
-            "You have rights of access, rectification, erasure, restriction, portability, objection and withdrawal of consent where processing is based on consent.",
-            "You may exercise your rights by emailing margaritapaschali@gmail.com.",
-            "You also have the right to lodge a complaint with the competent data protection authority.",
-          ],
-        },
-        {
-          title: "8. Security",
-          body: [
-            "Reasonable organisational and technical measures are used to protect personal data. No method of internet transmission or electronic storage can be considered completely secure.",
-            "Access to data is limited to what is necessary for newsletter management, booking and communication.",
-          ],
-        },
-        {
-          title: "9. Third-party links",
-          body: [
-            "The website contains links to third-party services such as Cal.com. We do not control the privacy or cookie policies of those services and recommend reading them before submitting personal data.",
-          ],
-        },
-        {
-          title: "10. Cookies",
-          body: [
-            "At the moment, the website does not use analytics, advertising pixels or non-essential tracking cookies.",
-            "Strictly necessary technical functionality may be used by the hosting platform or services required for secure website operation.",
-            "Cal.com booking pages may use cookies or similar technologies according to Cal.com's own policy.",
-            "If analytics, marketing cookies or similar technologies are added to this website in the future, appropriate notice and a consent mechanism will be added before they are enabled.",
-          ],
-        },
-        {
-          title: "11. Changes to this policy",
-          body: [
-            "This policy may be updated when services, providers or legal requirements change. The latest version will always be shown on this page.",
-          ],
-        },
-      ],
-    },
+    privacy: privacyEn,
   },
 };
 

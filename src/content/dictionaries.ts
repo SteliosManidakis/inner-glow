@@ -145,7 +145,8 @@ export const dictionaries = {
         {
           title: "Ανάδρομη Ύπνωση",
           body:
-            "Η ανάδρομη ύπνωση είναι μια τεχνική που μας βοηθά να αποκτήσουμε πρόσβαση σε μνήμες και βιώματα που βρίσκονται βαθιά στο υποσυνείδητο. Μέσα από μια φυσική και ασφαλή διαδικασία ύπνωσης, ο θεραπευόμενος μεταφέρεται σε προηγούμενες εμπειρίες — είτε της παρούσας ζωής είτε, σε ορισμένες περιπτώσεις, ακόμη και σε προηγούμενες ενσαρκώσεις. Η ύπνωση μπορεί να λειτουργήσει θεραπευτικά και διερευνητικά σε θέματα ευεξίας· δεν αντικαθιστά την ιατρική.",          image: "/images/placeholders/healing.png",
+            "Η ανάδρομη ύπνωση είναι μια τεχνική που μας βοηθά να αποκτήσουμε πρόσβαση σε μνήμες και βιώματα που βρίσκονται βαθιά στο υποσυνείδητο. Μέσα από μια φυσική και ασφαλή διαδικασία ύπνωσης, ο θεραπευόμενος μεταφέρεται σε προηγούμενες εμπειρίες — είτε της παρούσας ζωής είτε, σε ορισμένες περιπτώσεις, ακόμη και σε προηγούμενες ενσαρκώσεις. Η ύπνωση μπορεί να λειτουργήσει θεραπευτικά και διερευνητικά σε θέματα ευεξίας· δεν αντικαθιστά την ιατρική.",
+          image: "/images/hypnosispage.jpeg",
           sections: [
             {
               title: "Τι προσφέρει",
@@ -181,7 +182,7 @@ export const dictionaries = {
           },
           body:
             "Μια βιωματική μέθοδος που μας βοηθά να «δούμε» δυναμικές που δρουν υποσυνείδητα μέσα στη ζωή μας. Σχέσεις με γονείς, συντρόφους, παιδιά ή θέματα υγείας και επαναλαμβανόμενα μοτίβα συχνά συνδέονται με άγραφους «νόμους» και πιστότητες προς την οικογένεια ή το σύστημα από όπου προερχόμαστε.",
-          image: "/images/placeholders/healing.png",
+          image: "/images/hypnosispage.jpeg",
           sections: [
             {
               title: "Που βοηθά η Συστημική Αναπαράσταση",
@@ -522,7 +523,7 @@ export const dictionaries = {
           title: "Regression Hypnosis",
           body:
             "Regression hypnosis is a technique that helps us access memories and experiences that lie deep in the subconscious. Through a natural and safe hypnosis process, the client is guided into previous experiences - either from the present life or, in some cases, even from previous incarnations. Hypnosis can work therapeutically and exploratively for wellbeing-related themes; it does not replace medical care.",
-          image: "/images/placeholders/healing.png",
+          image: "/images/hypnosispage.jpeg",
           sections: [
             {
               title: "What it offers",

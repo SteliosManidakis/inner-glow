@@ -5,6 +5,7 @@ export function StructuredData() {
   const data = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${siteUrl}/#localbusiness`,
     name: siteName,
     url: siteUrl,
     image: `${siteUrl}/images/placeholders/hero.png`,
@@ -17,14 +18,14 @@ export function StructuredData() {
       addressLocality: "Βούλα",
       addressCountry: "GR",
     },
-    areaServed: ["Βούλα", "Αθήνα", "Ελλάδα", "Online"],
+    areaServed: ["Βούλα", "Αθήνα", "Νότια Προάστια", "Ελλάδα", "Online"],
     priceRange: "€€",
     sameAs: [],
   };
 
   return (
     <script
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
       type="application/ld+json"
     />
   );

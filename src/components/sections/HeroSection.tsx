@@ -29,7 +29,7 @@ export function HeroSection({ dictionary, locale }: { dictionary: Dictionary; lo
         </div>
         <div className="order-1 min-h-[38svh] overflow-hidden rounded-bl-[4rem] rounded-tr-[4rem] sm:rounded-bl-[6rem] sm:rounded-tr-[6rem] md:order-2 md:min-h-[70svh] xl:rounded-bl-[8rem] xl:rounded-tr-[8rem]">
           <Image
-            src="/images/placeholders/hero.png"
+            src="/images/homepage.jpeg"
             alt=""
             width={1400}
             height={1000}

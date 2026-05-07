@@ -2,6 +2,7 @@
 
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { ServiceStructuredData } from "@/components/seo/ServiceStructuredData";
 import { TreatmentDetail } from "@/components/sections/TreatmentDetail";
 import { getDictionary } from "@/content/dictionaries";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
@@ -37,6 +38,7 @@ export async function generateMetadata({
   return {
     title: seo.title,
     description: seo.description,
+    keywords: seo.keywords,
     alternates: {
       canonical: `/${path}`,
       languages: languageAlternates(treatmentRoute.slug),
@@ -83,11 +85,18 @@ export default async function TreatmentPage({
   const treatment = dictionary.healing.treatments[treatmentRoute.treatmentIndex];
 
   return (
-    <TreatmentDetail
-      dictionary={dictionary}
-      locale={locale}
-      treatment={treatment}
-      treatmentKey={treatmentRoute.key}
-    />
+    <>
+      <ServiceStructuredData
+        locale={locale}
+        treatment={treatment}
+        treatmentRoute={treatmentRoute}
+      />
+      <TreatmentDetail
+        dictionary={dictionary}
+        locale={locale}
+        treatment={treatment}
+        treatmentKey={treatmentRoute.key}
+      />
+    </>
   );
 }
