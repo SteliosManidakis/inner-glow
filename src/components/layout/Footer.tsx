@@ -4,6 +4,7 @@ import { SubscribeForm } from "@/components/sections/SubscribeForm";
 import type { Dictionary } from "@/content/dictionaries";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
+import { CookieSettingsButton } from "./CookieSettingsButton";
 
 export function Footer({ locale, dictionary }: { locale: Locale; dictionary: Dictionary }) {
   return (
@@ -19,6 +20,7 @@ export function Footer({ locale, dictionary }: { locale: Locale; dictionary: Dic
             height={96}
             className="mt-6 h-16 w-16 object-contain opacity-90"
           />
+          <CookieSettingsButton dictionary={dictionary} />
         </div>
         <div className="[&_button]:bg-clay [&_button]:text-charcoal [&_button:hover]:bg-sage [&_input]:bg-ivory [&_input]:text-charcoal [&_p]:text-clay">
           <SubscribeForm copy={dictionary.subscribe} />

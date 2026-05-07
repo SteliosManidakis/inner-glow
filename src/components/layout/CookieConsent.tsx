@@ -37,6 +37,15 @@ export function CookieConsent({
     }
   }, []);
 
+  useEffect(() => {
+    function openSettings() {
+      setVisible(true);
+    }
+
+    window.addEventListener("innerGlowOpenCookieSettings", openSettings);
+    return () => window.removeEventListener("innerGlowOpenCookieSettings", openSettings);
+  }, []);
+
   function saveConsent(nextPreferences: ConsentPreferences) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(nextPreferences));
     setPreferences(nextPreferences);
@@ -122,13 +131,6 @@ export function CookieConsent({
           </div>
         </div>
       ) : null}
-      <button
-        className="fixed bottom-4 left-4 z-40 rounded-full border border-olive/25 bg-ivory/90 px-4 py-2 text-xs font-semibold uppercase tracking-[0.08em] text-olive shadow-[0_10px_28px_rgba(41,37,31,0.12)] backdrop-blur transition hover:border-olive hover:bg-sage/20"
-        onClick={() => setVisible(true)}
-        type="button"
-      >
-        {dictionary.cookieConsent.manage}
-      </button>
     </>
   );
 }
