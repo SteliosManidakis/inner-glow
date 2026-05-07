@@ -31,12 +31,14 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             <p className="mt-6 text-base leading-8 text-charcoal/72 sm:text-lg">{dictionary.contact.body}</p>
             <div className="mt-8 grid gap-6 text-base leading-7 text-charcoal/72 sm:grid-cols-3">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">Διεύθυνση</p>
-                <p className="mt-2">Επτανήσου 3, Βούλα</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">
+                  {dictionary.contact.addressLabel}
+                </p>
+                <p className="mt-2">{dictionary.contact.address}</p>
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">
-                  Τηλέφωνο (Whatsapp &amp; Viber)
+                  {dictionary.contact.phoneLabel}
                 </p>
                 <p className="mt-2">
                   <a className="transition hover:text-olive" href="tel:+306931818145">

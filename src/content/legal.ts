@@ -275,7 +275,6 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
             "When you subscribe to the newsletter, we collect first name, last name and email address.",
             "When you book a discovery call or healing appointment through Cal.com, information such as your name, email address, contact details, time zone, selected date/time and any additional information you choose to provide in the booking form may be collected.",
             "If at a later stage health-related information, pregnancy information, medication information or other sensitive information is requested for suitability or safe session delivery, it will be used only for that purpose and, where required, with explicit consent.",
-            "Approximate country information from the website request, provided by the hosting platform, may be used to display location-based pricing. This country information is used to show the price and is not stored by the website.",
             "The website is hosted on Vercel, which may process technical data necessary for website operation, security and performance.",
           ],
         },
@@ -284,7 +283,6 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
           body: [
             "We use newsletter details to send updates, news or related content. The legal basis is your consent.",
             "We use booking data to arrange discovery calls and sessions. The legal basis is taking steps before a possible service or performing an agreement.",
-            "We use approximate country information to display location-based pricing. The legal basis is legitimate interest in presenting relevant pricing information to visitors.",
             "We use technical data for website operation and security based on legitimate interest.",
           ],
         },
@@ -300,7 +298,7 @@ export const legalContent: Record<Locale, { terms: LegalPageContent; privacy: Le
         {
           title: "5. Promotional communications",
           body: [
-            "If you subscribe to the newsletter, you may receive updates, news or invitations related to Margarita's work.",
+            "If you subscribe to the newsletter, you may receive updates, news or invitations related to Inner Glow's activity.",
             "You can unsubscribe at any time using the unsubscribe link in an email or by contacting margaritapaschali@gmail.com.",
           ],
         },

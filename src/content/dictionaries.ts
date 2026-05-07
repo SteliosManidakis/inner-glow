@@ -297,6 +297,9 @@ export const dictionaries = {
       title: "Επικοινωνία",
       body:
         "Αν θέλεις να ενημερωθείς για τις υπηρεσίες μας, μπορείς να προγραμματίσεις ένα δωρεάν 15λεπτο τηλεφωνικό ραντεβού γνωριμίας.",
+      addressLabel: "Διεύθυνση",
+      address: "Επτανήσου 3, Βούλα",
+      phoneLabel: "Τηλέφωνο (Whatsapp & Viber)",
       discoveryTitle: "Τηλεφωνικό ραντεβού γνωριμίας",
       discoveryBody:
         "Ένα απλό πρώτο τηλεφώνημα για να δούμε αν η προσέγγιση μας ταιριάζει σε αυτό που χρειάζεσαι τώρα.",
@@ -375,7 +378,7 @@ export const dictionaries = {
       learnMore: "Learn more",
       price: "€100",
       perSession: "per session",
-      openBooking: "Open booking",
+      openBooking: "Interest Form",
       treatmentDisclaimer:
         "None of the practices offered at Inner Glow replaces medical diagnosis, treatment or psychotherapeutic support, nor is discontinuation of any treatment recommended; they work complementarily, with the aim of self-awareness, emotional release and personal empowerment.",
       submit: "Send",
@@ -392,9 +395,9 @@ export const dictionaries = {
     },
     home: {
       heroKicker: "Healing, presence, inner clarity",
-      heroTitle: "A quiet space to return to yourself.",
+      heroTitle: "ONE STEP CLOSER TO THE LIFE THAT FITS YOU.",
       heroBody:
-        "Inner Glow offers individual healing sessions and gentle guidance for people seeking more connection, grounding, and clarity in everyday life.",
+        "A space for inner work, connection and transformation. At Inner Glow, we create experiences that help you return to yourself. Through hypnosis, meditation, systemic constellation and energy practices, we offer a safe and supportive environment for those seeking meaningful connection with their truth. We do not give ready-made answers. We create space for you to hear your own.",
       introTitle: "An approach that honours your pace.",
       introBody:
         "Sessions combine presence, energetic work, and reflective conversation. This is not about quick fixes, but about creating a safe way to listen to what your body, heart, and intuition need.",
@@ -406,9 +409,9 @@ export const dictionaries = {
         "Reiki, Tapping, regression hypnosis, NLP coaching, systemic constellation and meditations for clarity, grounding and deeper self-connection.",
     },
     about: {
-      title: "About Inner\u00A0Glow",
+      title: "WHAT WE OFFER",
       body:
-        "At Inner Glow, we create experiences that help you return to yourself. Through experiential workshops, hypnosis, meditation, systemic constellation and energetic practices, we offer a safe and supportive environment for those seeking meaningful connection with their truth.",
+        "At Inner Glow, we open a space for inner exploration, care and personal transformation. Through self-awareness practices, therapeutic approaches and experiential meetings, we accompany each person on their own journey toward greater awareness, balance and contact with what they truly need.",
       items: [
         "Individual Reiki treatments",
         "Individual EFT (Emotional Freedom Technique) sessions",
@@ -428,16 +431,16 @@ export const dictionaries = {
         {
           title: "Reiki",
           body:
-            "A gentle energetic session for relaxation, inner balance, and a deeper connection with the body.",
-          image: "/images/placeholders/healing.png",
+            "Reiki is an energy healing practice of Japanese origin, based on the idea that a universal life energy flows within and around us. When this energy becomes blocked - because of stress, trauma, exhaustion or inner conflict - the body and soul lose their harmony. Through gentle touch, Reiki helps this energy flow again, activating the body's natural ability to heal.",
+          image: "/images/crystals.png",
           sections: [
             {
               title: "What it offers",
-              body: "The session adapts to your needs and may include gentle conversation, energetic work, and grounding practices.",
+              body: "It reduces stress and tension, restores inner peace, supports emotional release, strengthens clarity and connection with the body, and promotes wellbeing on all levels: physical, emotional and energetic.",
             },
             {
               title: "Who it is for",
-              body: "For people who need calm, release, or a supportive space to return to their center.",
+              body: "Reiki is for everyone. It does not require belief or preparation - only the willingness to connect with yourself. It is for those who feel blocked or exhausted, those going through change or transition, those experiencing anxiety, overstrain or insomnia, and anyone looking for a gentle, supportive self-care practice.",
             },
           ],
           coordinator: {
@@ -445,8 +448,8 @@ export const dictionaries = {
             title: "Facilitator",
             name: "Margarita Paschali",
             role: "Reiki Master",
-            body: "The session holds a calm, safe space with grounded presence and guidance adapted to your pace.",
-            image: "/images/placeholders/about.png",
+            body: "Sessions at Inner Glow are offered by Margarita Paschali, Reiki Master, with many years of experience, deep empathy and respect for your personal pace.",
+            image: "/images/crystals.png",
             showImage: false,
           },
           pricing: {
@@ -454,14 +457,14 @@ export const dictionaries = {
               { label: "60-minute session", price: "50€" },
               { label: "90-minute session", price: "70€" },
             ],
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
         },
         {
           title: "EFT — Emotional Freedom Techniques",
           layout: "wrapImage",
           body:
-            "EFT (Emotional Freedom Technique), also known as tapping, is a gentle method for emotional release that combines elements of modern psychology with an energetic understanding of the body.\n\nDuring the session, the person focuses on a specific emotion, thought, memory or physical sensation while gently tapping with the fingers on specific points of the body. These points are related to the energy channels also used in traditional Chinese medicine.\n\nThe aim of EFT is not to force the emotion to disappear or ignore it. Instead, we create a safe space where we can observe it, acknowledge it and gradually reduce its intensity.\n\nEFT can support people experiencing anxiety, intense emotional charge, fears, limiting beliefs, inner conflicts or difficulty managing specific situations. Through the process, the body and nervous system are invited to relax, while the person gains more connection with themselves and with what they truly feel.\n\nAt Inner Glow, EFT is approached with respect, softness and attention to each person’s personal pace. A session may include brief relaxation or meditation, discussion around the theme you want to work on and guided tapping, so you can feel more calm, grounded and internally safe.\n\nEFT does not replace medical or psychotherapeutic care, but it can work supportively as a tool for self-awareness, emotional regulation and personal empowerment.\n\nSessions take place in person and online.",
+            "Tapping, or EFT (Emotional Freedom Techniques), is a simple emotional release technique where we gently tap specific points of the body with the fingers while focusing on an emotion, thought or difficulty that concerns us. Through this process, the body and mind begin to relax, helping us reduce tension, anxiety or emotional charge. It is a gentle way to come closer to what we feel and manage it with more acceptance and calm. Through conversation and specific tapping practices, we focus on what concerns you and try to identify the source of the problem or the emotion that has been activated. In a gentle and safe way, we give space to what you feel so the intensity can soften, the emotion can become lighter and more calm, acceptance and inner relief can emerge.",
           image: "/images/placeholders/healing.png",
           sections: [],
           coordinator: {
@@ -480,31 +483,31 @@ export const dictionaries = {
               { label: "Online · 60-minute session", price: "50€" },
               { label: "Online · 90-minute session", price: "80€" },
             ],
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
         },
         {
           title: "Regression Hypnosis",
           body:
-            "A guided deep-relaxation experience for exploring memory, symbolism, and inner patterns.",
+            "Regression hypnosis is a technique that helps us access memories and experiences that lie deep in the subconscious. Through a natural and safe hypnosis process, the client is guided into previous experiences - either from the present life or, in some cases, even from previous incarnations. Hypnosis can work therapeutically and exploratively for wellbeing-related themes; it does not replace medical care.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
               title: "What it offers",
-              body: "The session includes preparation, guided relaxation, and calm integration of what emerges through the experience.",
+              body: "It can help you see the root of a problem or pattern that troubles you, release fears or unexplained burdens, feel deeper understanding of yourself and your path, and connect with the deeper meaning of your soul.",
             },
             {
               title: "Who it is for",
-              body: "For people who want to explore deeper inner themes, repeating patterns, or emotional connections.",
+              body: "It is for those who feel they repeat patterns in their life without understanding why. It is for those carrying intense emotions, fears or blocks that are not easily explained by logic, as well as for those who want to know themselves more deeply.",
             },
           ],
           coordinator: {
             show: false,
             title: "Facilitator",
-            name: "Inner Glow",
-            role: "Regression hypnosis facilitator",
-            body: "Facilitation emphasizes preparation, presence, and a gentle return after the experience.",
-            image: "/images/placeholders/about.png",
+            name: "Takis Valsamos",
+            role: "Hypnotherapist",
+            body: "Takis is a certified hypnotherapist, trained in QHHT (Quantum Healing Hypnosis Technique), with experience in the field since 2011. He has accompanied many people on deep, therapeutic journeys of inner discovery and shares his experience through Regression Hypnosis trainings.",
+            image: "/images/valsamos.png",
             showImage: false,
           },
           pricing: {
@@ -512,7 +515,7 @@ export const dictionaries = {
               { label: "1 session (3 hours)", price: "150€" },
               { label: "Session (1.5 hours)", price: "85€" },
             ],
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
         },
         {
@@ -523,7 +526,7 @@ export const dictionaries = {
             weight: "bold",
           },
           body:
-            "An experiential approach for bringing relationships, dynamics, and patterns within family or personal systems into clearer view.",
+            "An experiential method that helps us 'see' dynamics acting subconsciously within our lives. Relationships with parents, partners, children, health themes and repeated patterns are often connected with unwritten 'laws' and loyalties toward the family or system we come from.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
@@ -544,10 +547,10 @@ export const dictionaries = {
           coordinator: {
             show: false,
             title: "Facilitator",
-            name: "Inner Glow",
-            role: "Systemic constellation facilitator",
-            body: "The process is facilitated with respect for the system, its boundaries, and the pace at which information can emerge.",
-            image: "/images/placeholders/about.png",
+            name: "Kanaris Karalis",
+            role: "Psychologist | Certified Systemic Constellation Facilitator",
+            body: "The Constellation is facilitated by psychologist and certified Systemic Constellation facilitator Kanaris Karalis.",
+            image: "/images/kanaris.png",
             showImage: false,
           },
           pricing: {
@@ -555,34 +558,34 @@ export const dictionaries = {
               { label: "60-minute session", price: "50€" },
               { label: "90-minute session", price: "70€" },
             ],
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
           workshopCta: {
             intro:
-              "The Systemic Constellation is facilitated by psychologist and certified Systemic Constellation facilitator Kanaris Karalis.",
+              "The Systemic Constellation is facilitated by psychologist and Recognized Systemic Constellator E.I.S.A.® (DGfS), Kanaris Karalis.",
             title: "NEXT WORKSHOP 31/5/2026, 10:30–20:00",
-            details: ["Simple participation: 60€", "Participation with request: 100€"],
+            details: ["Simple participation: 60€", "Participation with request: 85€"],
             button: "REGISTER INTEREST",
             download: {
-              show: false,
+              show: true,
               label: "DOWNLOAD PDF",
-              href: "/pdfs/systemic-constellation.pdf",
+              href: "/pdfs/systemic.pdf",
             },
           },
         },
         {
           title: "NLP & Coaching",
           body:
-            "A focused personal guidance session using NLP tools for more clarity, choice, and practical change.",
+            "NLP (Neuro-Linguistic Programming), combined with Coaching, is a modern, dynamic personal development approach that focuses on how we think, how we communicate and how we create our reality. Through targeted techniques and guidance, it helps you recognize limiting beliefs, redefine your inner dialogue and activate the strength that already exists within you. When the mind becomes blocked by fear, doubt or old patterns, growth can feel difficult. NLP & Coaching helps unlock these inner processes, creating space for change, confidence and conscious choices.",
           image: "/images/placeholders/healing.png",
           sections: [
             {
               title: "What it offers",
-              body: "It helps you recognize thought patterns, clarify goals, and work with practical techniques around beliefs, behaviors, and inner dialogue.",
+              body: "A session is a safe and supportive space where you can explore yourself and reconnect with your strength. More specifically, it strengthens confidence and self-esteem, helps with managing stress and emotions, releases limiting beliefs, cultivates clear goals and direction, improves communication with yourself and others, and empowers decision-making.",
             },
             {
               title: "Who it is for",
-              body: "For people who want to move more consciously toward change, strengthen confidence, or see a personal or professional theme from a new perspective.",
+              body: "NLP & Coaching is for every woman who wishes to grow and live more consciously. No previous experience is required, only willingness for change and personal development. It is ideal for women who feel blocked or doubt themselves, are in a period of personal or professional change, find it difficult to set boundaries or express themselves, want to strengthen their self-esteem and voice, and seek meaningful connection with themselves.",
             },
             {
               title: "Women’s empowerment & NLP",
@@ -603,7 +606,7 @@ export const dictionaries = {
               { label: "60-minute session", price: "50€" },
               { label: "90-minute session", price: "70€" },
             ],
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
         },
         {
@@ -615,9 +618,18 @@ export const dictionaries = {
           },
           layout: "wrapImage",
           body:
-            "Our meditations take place in small groups, once a week, in a calm and safe space for inner connection and sharing.\n\nEach meeting lasts approximately 1.5 hours and includes a themed guided meditation, designed to help us relax, turn inward and come closer to what we feel, need or are ready to release.\n\nAfter the meditation there is time for discussion and sharing, where anyone who wishes can express their experience: what they felt, what they noticed, what message or awareness they are taking with them. This process creates a supportive field of connection, understanding and personal growth.\n\nNo previous meditation experience is needed. All that is needed is the intention to dedicate a little time to ourselves, calm the mind and listen more clearly to our inner voice.\n\nA weekly pause. A space for breath, connection and return to the self.",
+            "Group meditations are small gatherings of a few people, held in a calm and safe space, with the purpose of taking a pause from the intensity of everyday life. Through guided meditation, relaxation and inner observation, we give ourselves the breath we so often forget to take. It is a moment of release, reconnection and calm - time dedicated to ourselves, to listen to the body, quiet the mind and return to daily life a little lighter.",
           image: "/images/placeholders/healing.png",
-          sections: [],
+          sections: [
+            {
+              title: "What it offers",
+              body: "Group meditations offer the experience of being together in a calm and supportive environment. The presence of the group creates a sense of connection and shared intention, helping each participant surrender more easily to the process, feel that they are not alone and cultivate deeper contact with themselves.",
+            },
+            {
+              title: "Who it is for",
+              body: "They are for those who feel the need to pause, release tension and reconnect with themselves. They are suitable for people experiencing intensity, anxiety or tiredness from the pace of everyday life, as well as for anyone who simply wants to offer themselves a moment of calm, care and breath.",
+            },
+          ],
           coordinator: {
             show: false,
             title: "Facilitator",
@@ -629,7 +641,7 @@ export const dictionaries = {
           },
           pricing: {
             price: "50€",
-            note: "The final fee is confirmed during communication before the appointment.",
+            note: "",
           },
           workshopCta: {
             title: "Next meditation 20/5/2026, 19:00.",
@@ -640,12 +652,15 @@ export const dictionaries = {
       ],
       pricingTitle: "Pricing",
       pricingBody:
-        "There is no online payment at this stage. Booking simply reserves your time.",
+        "Fill in the interest form for the treatment you are interested in and we will contact you.",
     },
     contact: {
       title: "Contact",
       body:
-        "If you would like to meet us before booking a session, you can schedule a short introductory phone appointment.",
+        "If you would like to learn more about our services, you can schedule a free 15-minute introductory phone appointment.",
+      addressLabel: "Address",
+      address: "3 Eptanisou Street, Voula",
+      phoneLabel: "Phone (Whatsapp & Viber)",
       discoveryTitle: "Introductory phone appointment",
       discoveryBody:
         "A simple first call to see whether our approach fits what you need right now.",
