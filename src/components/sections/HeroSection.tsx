@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import type { Dictionary } from "@/content/dictionaries";
-import { bookingLinks } from "@/lib/booking";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 
@@ -20,7 +19,7 @@ export function HeroSection({ dictionary, locale }: { dictionary: Dictionary; lo
             {dictionary.home.heroBody}
           </p>
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-start">
-            <Button href={bookingLinks.discovery} external>
+            <Button href={localizedPath(locale, "appointment-request")}>
               {dictionary.common.bookDiscovery}
             </Button>
             <Button href={localizedPath(locale, "about")} variant="secondary">

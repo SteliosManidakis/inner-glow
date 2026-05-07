@@ -5,17 +5,24 @@ import { BookingPanel } from "@/components/sections/BookingPanel";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import type { Dictionary } from "@/content/dictionaries";
-import { bookingLinks } from "@/lib/booking";
+import type { Locale } from "@/lib/i18n";
+import { localizedPath } from "@/lib/routes";
+import type { TreatmentRouteKey } from "@/lib/treatments";
 
 type Treatment = Dictionary["healing"]["treatments"][number];
 
 export function TreatmentDetail({
   dictionary,
+  locale,
   treatment,
+  treatmentKey,
 }: {
   dictionary: Dictionary;
+  locale: Locale;
   treatment: Treatment;
+  treatmentKey: TreatmentRouteKey;
 }) {
+  const treatmentRequestHref = `${localizedPath(locale, "treatment-request")}?service=${treatmentKey}`;
   const announcement =
     "announcement" in treatment
       ? typeof treatment.announcement === "string"
@@ -177,7 +184,7 @@ export function TreatmentDetail({
                   ))}
                 </div>
                 <div className="mt-7 flex flex-wrap items-center gap-4 sm:justify-between">
-                  <Button href={bookingLinks.healing} external>
+                  <Button href={treatmentRequestHref}>
                     {treatment.workshopCta.button}
                   </Button>
                   {"download" in treatment.workshopCta && treatment.workshopCta.download.show ? (
@@ -219,7 +226,8 @@ export function TreatmentDetail({
                 title={dictionary.common.bookHealing}
                 body={dictionary.healing.pricingBody}
                 button={dictionary.common.openBooking}
-                href={bookingLinks.healing}
+                external={false}
+                href={treatmentRequestHref}
               />
             </>
           )}

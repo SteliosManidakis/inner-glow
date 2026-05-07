@@ -81,5 +81,12 @@ export default async function TreatmentPage({
   const dictionary = getDictionary(locale);
   const treatment = dictionary.healing.treatments[treatmentRoute.treatmentIndex];
 
-  return <TreatmentDetail dictionary={dictionary} treatment={treatment} />;
+  return (
+    <TreatmentDetail
+      dictionary={dictionary}
+      locale={locale}
+      treatment={treatment}
+      treatmentKey={treatmentRoute.key}
+    />
+  );
 }

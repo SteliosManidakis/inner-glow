@@ -27,9 +27,10 @@ export const dictionaries = {
       learnMore: "Μάθε περισσότερα",
       price: "100€",
       perSession: "ανά συνεδρία",
-      openBooking: "Άνοιγμα booking",
+      openBooking: "Φόρμα Ενδιαφέροντος",
       treatmentDisclaimer:
         "Καμία από τις πρακτικές που παρέχονται στην Inner Glow δεν αντικαθιστά την ιατρική διάγνωση, θεραπεία ή ψυχοθεραπευτική υποστήριξη, ούτε προτείνεται η διακοπή οποιασδήποτε αγωγής· λειτουργούν συμπληρωματικά, με στόχο την αυτογνωσία, τη συναισθηματική αποφόρτιση και την προσωπική ενδυνάμωση.",
+      submit: "Αποστολή",
     },
     seo: {
       homeTitle: "Healing sessions and personal guidance",
@@ -290,7 +291,7 @@ export const dictionaries = {
       ],
       pricingTitle: "Τιμή",
       pricingBody:
-        "Η συνεδρία γίνεται χωρίς online πληρωμή σε αυτό το στάδιο. Το booking απλώς κρατάει την ώρα σου.",
+        "Συμπλήρωσε τη φόρμα ενδιαφέροντος για την θεραπεία που σε ενδιαφέρει και θα επικοινωνήσουμε μαζί σου.",
     },
     contact: {
       title: "Επικοινωνία",
@@ -299,6 +300,34 @@ export const dictionaries = {
       discoveryTitle: "Τηλεφωνικό ραντεβού γνωριμίας",
       discoveryBody:
         "Ένα απλό πρώτο τηλεφώνημα για να δούμε αν η προσέγγιση μας ταιριάζει σε αυτό που χρειάζεσαι τώρα.",
+    },
+    contactRequest: {
+      title: "Ραντεβού γνωριμίας",
+      body:
+        "Συμπλήρωσε τα στοιχεία σου και θα επικοινωνήσουμε μαζί σου για ένα σύντομο τηλεφωνικό ραντεβού γνωριμίας.",
+      firstNameLabel: "Όνομα",
+      firstNamePlaceholder: "Όνομα",
+      lastNameLabel: "Επίθετο",
+      lastNamePlaceholder: "Επίθετο",
+      emailLabel: "Email",
+      emailPlaceholder: "you@example.com",
+      phoneLabel: "Κινητό τηλέφωνο",
+      phonePlaceholder: "69...",
+      messageLabel: "Μήνυμα",
+      messagePlaceholder: "Γράψε μας προαιρετικά τι θα ήθελες να συζητήσουμε.",
+      success: "Το μήνυμα στάλθηκε. Θα επικοινωνήσουμε μαζί σου σύντομα.",
+      error: "Κάτι πήγε στραβά. Δοκίμασε ξανά σε λίγο.",
+      submitting: "Αποστολή...",
+    },
+    treatmentRequest: {
+      title: "Αίτημα θεραπείας",
+      body:
+        "Συμπλήρωσε τα στοιχεία σου, επίλεξε τη θεραπεία που σε ενδιαφέρει και θα επικοινωνήσουμε μαζί σου για τις λεπτομέρειες.",
+      serviceLabel: "Θεραπεία",
+      servicePlaceholder: "Επίλεξε θεραπεία",
+      success: "Το αίτημα στάλθηκε. Θα επικοινωνήσουμε μαζί σου σύντομα.",
+      error: "Κάτι πήγε στραβά. Δοκίμασε ξανά σε λίγο.",
+      submitting: "Αποστολή...",
     },
     subscribe: {
       title: "Μείνε σε επαφή",
@@ -349,6 +378,7 @@ export const dictionaries = {
       openBooking: "Open booking",
       treatmentDisclaimer:
         "None of the practices offered at Inner Glow replaces medical diagnosis, treatment or psychotherapeutic support, nor is discontinuation of any treatment recommended; they work complementarily, with the aim of self-awareness, emotional release and personal empowerment.",
+      submit: "Send",
     },
     seo: {
       homeTitle: "Healing sessions and personal guidance",
@@ -619,6 +649,34 @@ export const dictionaries = {
       discoveryTitle: "Introductory phone appointment",
       discoveryBody:
         "A simple first call to see whether our approach fits what you need right now.",
+    },
+    contactRequest: {
+      title: "Introductory appointment",
+      body:
+        "Fill in your details and we will contact you for a short introductory phone appointment.",
+      firstNameLabel: "First name",
+      firstNamePlaceholder: "First name",
+      lastNameLabel: "Last name",
+      lastNamePlaceholder: "Last name",
+      emailLabel: "Email",
+      emailPlaceholder: "you@example.com",
+      phoneLabel: "Mobile phone",
+      phonePlaceholder: "Phone number",
+      messageLabel: "Message",
+      messagePlaceholder: "Optionally write what you would like to discuss.",
+      success: "Your message was sent. We will contact you soon.",
+      error: "Something went wrong. Please try again in a moment.",
+      submitting: "Sending...",
+    },
+    treatmentRequest: {
+      title: "Treatment request",
+      body:
+        "Fill in your details, choose the treatment you are interested in and we will contact you with the details.",
+      serviceLabel: "Treatment",
+      servicePlaceholder: "Choose treatment",
+      success: "Your request was sent. We will contact you soon.",
+      error: "Something went wrong. Please try again in a moment.",
+      submitting: "Sending...",
     },
     subscribe: {
       title: "Stay in touch",

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { getDictionary } from "@/content/dictionaries";
 import { isLocale, locales, type Locale } from "@/lib/i18n";
 
@@ -24,6 +25,7 @@ export default async function LocaleLayout({
   return (
     <>
       <Header locale={locale} dictionary={dictionary} />
+      <ScrollToTop />
       <main className="flex-1">{children}</main>
       <Footer locale={locale} dictionary={dictionary} />
     </>

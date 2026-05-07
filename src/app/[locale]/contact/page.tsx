@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { BookingPanel } from "@/components/sections/BookingPanel";
 import { Container } from "@/components/ui/Container";
 import { getDictionary } from "@/content/dictionaries";
-import { bookingLinks } from "@/lib/booking";
-import { isLocale } from "@/lib/i18n";
+import { isLocale, type Locale } from "@/lib/i18n";
+import { localizedPath } from "@/lib/routes";
 import { getSeoMetadata } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -13,8 +13,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const dictionary = getDictionary(isLocale(locale) ? locale : "el");
+  const { locale: rawLocale } = await params;
+  const locale = (isLocale(rawLocale) ? rawLocale : "el") as Locale;
+  const dictionary = getDictionary(locale);
 
   return (
     <>
@@ -28,13 +29,38 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               {dictionary.contact.title}
             </h1>
             <p className="mt-6 text-base leading-8 text-charcoal/72 sm:text-lg">{dictionary.contact.body}</p>
+            <div className="mt-8 grid gap-6 text-base leading-7 text-charcoal/72 sm:grid-cols-3">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">Διεύθυνση</p>
+                <p className="mt-2">Επτανήσου 3, Βούλα</p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">
+                  Τηλέφωνο (Whatsapp &amp; Viber)
+                </p>
+                <p className="mt-2">
+                  <a className="transition hover:text-olive" href="tel:+306931818145">
+                    +30 693 1818145
+                  </a>
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-olive">Email</p>
+                <p className="mt-2">
+                  <a className="transition hover:text-olive" href="mailto:info@inner-glow.gr">
+                    info@inner-glow.gr
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
           <div className="mt-12">
             <BookingPanel
               title={dictionary.contact.discoveryTitle}
               body={dictionary.contact.discoveryBody}
               button={dictionary.common.bookDiscovery}
-              href={bookingLinks.discovery}
+              external={false}
+              href={localizedPath(locale, "appointment-request")}
             />
           </div>
         </Container>

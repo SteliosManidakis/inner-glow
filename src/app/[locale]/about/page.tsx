@@ -51,7 +51,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           </ul>
           <p className="mt-8 text-base leading-8 text-charcoal/72">{dictionary.about.closing}</p>
           <div className="mt-8">
-            <Button href={localizedPath(locale, "contact")} variant="secondary">
+            <Button href={localizedPath(locale, "appointment-request")} variant="secondary">
               {dictionary.common.bookDiscovery}
             </Button>
           </div>
