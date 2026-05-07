@@ -14,23 +14,25 @@ export function Header({
   dictionary: Dictionary;
 }) {
   return (
-    <header className="sticky top-0 z-30 border-b border-olive/10 bg-ivory/90 backdrop-blur">
-      <div className="relative mx-auto flex min-h-20 w-full max-w-[95rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link className="inline-flex shrink-0 items-center gap-3 whitespace-nowrap font-serif text-xl leading-tight text-charcoal sm:text-2xl" href={localizedPath(locale)}>
+    <header className="sticky top-0 z-30 overflow-visible border-b border-olive/10 bg-ivory/90 backdrop-blur">
+      <div className="relative mx-auto flex min-h-20 w-full max-w-[100rem] items-center justify-between gap-4 px-4 py-3 sm:px-6 md:justify-end md:pl-[24rem] lg:px-8 lg:pl-[25rem] xl:pl-[26rem]">
+        <Link
+          className="inline-flex shrink-0 items-center overflow-hidden rounded-b-lg rounded-t-sm shadow-[0_16px_32px_rgba(41,37,31,0.12)] md:absolute md:left-10 md:top-0 lg:left-12"
+          href={localizedPath(locale)}
+        >
           <Image
-            src="/images/small_logo_cropped.png"
-            alt=""
-            width={66}
-            height={66}
-            className="h-14 w-14 object-contain sm:h-[3.75rem] sm:w-[3.75rem]"
+            src="/images/full_green_logo.png"
+            alt={dictionary.common.brand}
+            width={320}
+            height={140}
+            className="h-auto w-44 md:w-[19.25rem] lg:w-[20.25rem]"
             priority
           />
-          <span>{dictionary.common.brand}</span>
         </Link>
-        <nav className="hidden min-w-0 flex-1 flex-wrap items-center justify-end gap-x-3 gap-y-3 lg:gap-x-4 xl:gap-x-5 md:flex" aria-label="Main navigation">
+        <nav className="hidden min-w-0 flex-1 flex-nowrap items-center justify-end gap-x-2 lg:gap-x-3 xl:gap-x-4 md:flex" aria-label="Main navigation">
           {navRoutes.map((route) => (
             <Link
-              className="inline-flex min-h-10 items-center text-xs uppercase tracking-[0.1em] text-charcoal/75 transition hover:text-olive xl:tracking-[0.12em]"
+              className="inline-flex min-h-10 shrink-0 items-center text-[0.7rem] uppercase tracking-[0.08em] text-charcoal/75 transition hover:text-olive xl:text-xs xl:tracking-[0.1em]"
               href={localizedPath(locale, route.href)}
               key={route.key}
               title={route.key === "contact" ? dictionary.nav[route.key] : undefined}
