@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
@@ -28,6 +29,7 @@ export default async function LocaleLayout({
       <ScrollToTop />
       <main className="flex-1">{children}</main>
       <Footer locale={locale} dictionary={dictionary} />
+      <CookieConsent dictionary={dictionary} locale={locale} />
     </>
   );
 }

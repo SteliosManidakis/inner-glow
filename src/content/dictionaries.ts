@@ -32,6 +32,22 @@ export const dictionaries = {
         "Καμία από τις πρακτικές που παρέχονται στην Inner Glow δεν αντικαθιστά την ιατρική διάγνωση, θεραπεία ή ψυχοθεραπευτική υποστήριξη, ούτε προτείνεται η διακοπή οποιασδήποτε αγωγής· λειτουργούν συμπληρωματικά, με στόχο την αυτογνωσία, τη συναισθηματική αποφόρτιση και την προσωπική ενδυνάμωση.",
       submit: "Αποστολή",
     },
+    cookieConsent: {
+      title: "Ρυθμίσεις cookies",
+      body:
+        "Χρησιμοποιούμε απαραίτητα cookies για τη λειτουργία του site. Με τη συγκατάθεσή σου, μπορούμε επίσης να χρησιμοποιήσουμε analytics και marketing cookies για να βελτιώνουμε το site και να μετράμε διαφημιστικές ενέργειες.",
+      necessary: "Απαραίτητα",
+      necessaryBody: "Πάντα ενεργά. Χρειάζονται για τη βασική λειτουργία του site.",
+      analytics: "Analytics",
+      analyticsBody: "Μας βοηθούν να κατανοούμε ανώνυμα την επισκεψιμότητα και τη χρήση του site.",
+      marketing: "Marketing",
+      marketingBody: "Χρησιμοποιούνται για διαφημίσεις, pixels και μέτρηση καμπανιών.",
+      acceptAll: "Αποδοχή όλων",
+      rejectAll: "Μόνο απαραίτητα",
+      save: "Αποθήκευση επιλογών",
+      manage: "Ρυθμίσεις cookies",
+      privacy: "Πολιτική απορρήτου",
+    },
     seo: {
       homeTitle: "Healing sessions and personal guidance",
       homeDescription:
@@ -382,6 +398,22 @@ export const dictionaries = {
       treatmentDisclaimer:
         "None of the practices offered at Inner Glow replaces medical diagnosis, treatment or psychotherapeutic support, nor is discontinuation of any treatment recommended; they work complementarily, with the aim of self-awareness, emotional release and personal empowerment.",
       submit: "Send",
+    },
+    cookieConsent: {
+      title: "Cookie settings",
+      body:
+        "We use necessary cookies for the website to function. With your consent, we may also use analytics and marketing cookies to improve the site and measure advertising activity.",
+      necessary: "Necessary",
+      necessaryBody: "Always active. Required for the basic operation of the website.",
+      analytics: "Analytics",
+      analyticsBody: "Help us understand website traffic and usage in an aggregated way.",
+      marketing: "Marketing",
+      marketingBody: "Used for advertising, pixels and campaign measurement.",
+      acceptAll: "Accept all",
+      rejectAll: "Necessary only",
+      save: "Save choices",
+      manage: "Cookie settings",
+      privacy: "Privacy policy",
     },
     seo: {
       homeTitle: "Healing sessions and personal guidance",
