@@ -203,6 +203,11 @@ export const dictionaries = {
             title: "ΕΠΟΜΕΝΟ ΕΡΓΑΣΤΗΡΙΟ 31/5/2026, 10:30–20:00",
             details: ["Απλή συμμετοχή: 60€", "Συμμετοχή με αίτημα: 85€"],
             button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
+            download: {
+              show: true,
+              label: "ΚΑΤΕΒΑΣΕ ΤΟ PDF",
+              href: "/pdfs/systemic.pdf",
+            },
           },
         },
         {
@@ -528,6 +533,11 @@ export const dictionaries = {
             title: "NEXT WORKSHOP 31/5/2026, 10:30–20:00",
             details: ["Simple participation: 60€", "Participation with request: 100€"],
             button: "REGISTER INTEREST",
+            download: {
+              show: false,
+              label: "DOWNLOAD PDF",
+              href: "/pdfs/systemic-constellation.pdf",
+            },
           },
         },
         {

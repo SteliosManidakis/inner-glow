@@ -54,7 +54,7 @@ export function TreatmentDetail({
           </Container>
         </section>
       ) : null}
-      <section className="py-14 sm:py-20 lg:py-24">
+      <section className="pt-14 pb-7 sm:pt-20 sm:pb-10 lg:pt-24 lg:pb-12">
         {hasWrapImageLayout ? (
           <Container>
             <div className="max-w-3xl">
@@ -104,7 +104,7 @@ export function TreatmentDetail({
         )}
       </section>
       {hasDetailSections ? (
-      <section className="py-14 sm:py-20">
+      <section className="py-7 sm:py-10 lg:py-12">
         <Container className={treatment.coordinator.show ? "grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start" : "grid gap-8 sm:grid-cols-2"}>
           <div className={treatment.coordinator.show ? "grid gap-8 sm:grid-cols-2 lg:grid-cols-1" : "contents"}>
             {treatment.sections.map((section) => (
@@ -158,7 +158,7 @@ export function TreatmentDetail({
         </Container>
       </section>
       ) : null}
-      <section className="py-14 sm:py-20 lg:py-24">
+      <section className="pt-7 pb-14 sm:pt-10 sm:pb-20 lg:pt-12 lg:pb-24">
         <Container className={"workshopCta" in treatment ? "" : "grid gap-8 md:grid-cols-[0.8fr_1.2fr]"}>
           {"workshopCta" in treatment ? (
             <div>
@@ -176,10 +176,19 @@ export function TreatmentDetail({
                     <p key={detail}>{detail}</p>
                   ))}
                 </div>
-                <div className="mt-7 flex">
+                <div className="mt-7 flex flex-wrap items-center gap-4 sm:justify-between">
                   <Button href={bookingLinks.healing} external>
                     {treatment.workshopCta.button}
                   </Button>
+                  {"download" in treatment.workshopCta && treatment.workshopCta.download.show ? (
+                    <a
+                      className="inline-flex min-h-12 max-w-full items-center justify-center rounded-full border border-olive/40 px-6 py-3 text-center text-sm font-semibold uppercase leading-tight tracking-[0.08em] text-olive transition hover:border-olive hover:bg-sage/20 focus:outline-none focus:ring-2 focus:ring-olive focus:ring-offset-2"
+                      download
+                      href={treatment.workshopCta.download.href}
+                    >
+                      {treatment.workshopCta.download.label}
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </div>
