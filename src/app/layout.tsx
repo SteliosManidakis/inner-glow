@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
 import { LangSync } from "@/components/layout/LangSync";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { getSiteUrl, siteName } from "@/lib/site";
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <LangSync />
         <StructuredData />
+        <GoogleTagManager />
         {children}
       </body>
     </html>
