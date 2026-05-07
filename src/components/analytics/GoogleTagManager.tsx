@@ -16,7 +16,6 @@ declare global {
     dataLayer?: unknown[];
   }
 }
-
 export function GoogleTagManager() {
   const loaded = useRef(false);
 

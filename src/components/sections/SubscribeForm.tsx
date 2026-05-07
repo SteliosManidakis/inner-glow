@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 type SubscribeCopy = {
   title: string;
@@ -34,11 +35,14 @@ export function SubscribeForm({ copy }: { copy: SubscribeCopy }) {
         lastName: formData.get("lastName"),
         email: formData.get("email"),
       }),
-    });
+    }).catch(() => null);
 
     setLoading(false);
-    setMessage(response.ok ? copy.success : copy.error);
-    if (response.ok) form.reset();
+    setMessage(response?.ok ? copy.success : copy.error);
+    if (response?.ok) {
+      form.reset();
+      trackAnalyticsEvent("newsletter_subscribe");
+    }
   }
 
   return (

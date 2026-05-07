@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import type { Dictionary } from "@/content/dictionaries";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 import { treatmentRoutes, type TreatmentRouteKey } from "@/lib/treatments";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
@@ -43,6 +44,9 @@ export function TreatmentRequestForm({
     }
 
     form.reset();
+    trackAnalyticsEvent("treatment_request_submit", {
+      service: String(formData.get("service") ?? ""),
+    });
     setStatus("success");
   }
 

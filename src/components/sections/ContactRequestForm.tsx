@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import type { Dictionary } from "@/content/dictionaries";
+import { trackAnalyticsEvent } from "@/lib/analytics";
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
@@ -35,6 +36,7 @@ export function ContactRequestForm({ dictionary }: { dictionary: Dictionary }) {
     }
 
     form.reset();
+    trackAnalyticsEvent("contact_request_submit");
     setStatus("success");
   }
 
