@@ -111,7 +111,7 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     contact: {
       title: "Contact | Inner Glow Voula",
       description:
-        "Contact Inner Glow in Voula or request a free introductory phone appointment to learn more about the services and sessions.",
+        "Contact Inner Glow in Voula or request a free of charge 15min call to learn more about the services and sessions.",
       keywords: [
         "Inner Glow contact",
         "therapies Voula contact",

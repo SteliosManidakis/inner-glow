@@ -391,7 +391,7 @@ export const dictionaries = {
     common: {
       brand: "Inner Glow",
       switchLanguage: "EL",
-      bookDiscovery: "Book an introductory appointment",
+      bookDiscovery: "Book an acquaintance 15min call",
       bookHealing: "Book a healing session",
       learnMore: "Learn more",
       price: "€100",
@@ -452,7 +452,7 @@ export const dictionaries = {
         "Individual hypnosis sessions",
         "Individual NLP & Coaching sessions",
         "Systemic constellation workshops",
-        "Meditations",
+        "Group Meditations",
       ],
       closing:
         "The practices and sessions at Inner Glow do not replace medical, psychological or psychotherapeutic care. They do, however, create a safe and supportive space for self-awareness, emotional release and inner connection, helping each person come closer to themselves and their own rhythm.",
@@ -473,7 +473,7 @@ export const dictionaries = {
               body: "It reduces stress and tension, restores inner peace, supports emotional release, strengthens clarity and connection with the body, and promotes wellbeing on all levels: physical, emotional and energetic.",
             },
             {
-              title: "Who it is for",
+              title: "It is for",
               body: "Reiki is for everyone. It does not require belief or preparation - only the willingness to connect with yourself. It is for those who feel blocked or exhausted, those going through change or transition, those experiencing anxiety, overstrain or insomnia, and anyone looking for a gentle, supportive self-care practice.",
             },
           ],
@@ -531,7 +531,7 @@ export const dictionaries = {
               body: "It can help you see the root of a problem or pattern that troubles you, release fears or unexplained burdens, feel deeper understanding of yourself and your path, and connect with the deeper meaning of your soul.",
             },
             {
-              title: "Who it is for",
+              title: "It is for",
               body: "It is for those who feel they repeat patterns in their life without understanding why. It is for those carrying intense emotions, fears or blocks that are not easily explained by logic, as well as for those who want to know themselves more deeply.",
             },
           ],
@@ -618,7 +618,7 @@ export const dictionaries = {
               body: "A session is a safe and supportive space where you can explore yourself and reconnect with your strength. More specifically, it strengthens confidence and self-esteem, helps with managing stress and emotions, releases limiting beliefs, cultivates clear goals and direction, improves communication with yourself and others, and empowers decision-making.",
             },
             {
-              title: "Who it is for",
+              title: "It is for",
               body: "NLP & Coaching is for every woman who wishes to grow and live more consciously. No previous experience is required, only willingness for change and personal development. It is ideal for women who feel blocked or doubt themselves, are in a period of personal or professional change, find it difficult to set boundaries or express themselves, want to strengthen their self-esteem and voice, and seek meaningful connection with themselves.",
             },
             {
@@ -660,7 +660,7 @@ export const dictionaries = {
               body: "Group meditations offer the experience of being together in a calm and supportive environment. The presence of the group creates a sense of connection and shared intention, helping each participant surrender more easily to the process, feel that they are not alone and cultivate deeper contact with themselves.",
             },
             {
-              title: "Who it is for",
+              title: "It is for",
               body: "They are for those who feel the need to pause, release tension and reconnect with themselves. They are suitable for people experiencing intensity, anxiety or tiredness from the pace of everyday life, as well as for anyone who simply wants to offer themselves a moment of calm, care and breath.",
             },
           ],
@@ -691,18 +691,18 @@ export const dictionaries = {
     contact: {
       title: "Contact",
       body:
-        "If you would like to learn more about our services, you can schedule a free 15-minute introductory phone appointment.",
+        "If you would like to learn more about our services, you can schedule a free 15-minute phone appointment.",
       addressLabel: "Address",
       address: "3 Eptanisou Street, Voula",
       phoneLabel: "Phone (Whatsapp & Viber)",
-      discoveryTitle: "Introductory phone appointment",
+      discoveryTitle: "Acquaintance free of charge 15min call",
       discoveryBody:
         "A simple first call to see whether our approach fits what you need right now.",
     },
     contactRequest: {
       title: "Introductory appointment",
       body:
-        "Fill in your details and we will contact you for a short introductory phone appointment.",
+        "Fill in your details and we will contact you for a short free of charge 15min call.",
       firstNameLabel: "First name",
       firstNamePlaceholder: "First name",
       lastNameLabel: "Last name",
