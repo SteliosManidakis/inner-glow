@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { getDictionary } from "@/content/dictionaries";
+import { siteImages } from "@/content/images";
 import { isLocale, type Locale } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import { getSeoMetadata } from "@/lib/seo";
@@ -32,7 +33,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <div className="mt-8 text-base leading-8 text-charcoal/72 sm:text-lg">
           <div className="mb-6 overflow-hidden rounded-tr-[3rem] sm:rounded-tr-[6rem] md:float-left md:mb-8 md:mr-10 md:w-[42%] lg:w-[40%]">
             <Image
-              src="/images/placeholders/about.png"
+              src={siteImages.aboutHero}
               alt=""
               width={900}
               height={1100}

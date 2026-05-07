@@ -1,3 +1,4 @@
+import { siteImages } from "@/content/images";
 import { getSiteUrl, siteName } from "@/lib/site";
 
 export function StructuredData() {
@@ -8,8 +9,8 @@ export function StructuredData() {
     "@id": `${siteUrl}/#localbusiness`,
     name: siteName,
     url: siteUrl,
-    image: `${siteUrl}/images/placeholders/hero.png`,
-    logo: `${siteUrl}/images/full_green_logo.png`,
+    image: `${siteUrl}${siteImages.socialShare}`,
+    logo: `${siteUrl}${siteImages.logos.header}`,
     email: "info@inner-glow.gr",
     telephone: "+306931818145",
     address: {

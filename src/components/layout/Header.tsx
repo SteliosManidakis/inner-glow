@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Dictionary } from "@/content/dictionaries";
+import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath, navRoutes } from "@/lib/routes";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -21,7 +22,7 @@ export function Header({
           href={localizedPath(locale)}
         >
           <Image
-            src="/images/full_green_logo.png"
+            src={siteImages.logos.header}
             alt={dictionary.common.brand}
             width={320}
             height={140}

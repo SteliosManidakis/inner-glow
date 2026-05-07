@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SubscribeForm } from "@/components/sections/SubscribeForm";
 import type { Dictionary } from "@/content/dictionaries";
+import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 import { CookieSettingsButton } from "./CookieSettingsButton";
@@ -14,7 +15,7 @@ export function Footer({ locale, dictionary }: { locale: Locale; dictionary: Dic
           <p className="font-serif text-3xl leading-tight">{dictionary.common.brand}</p>
           <p className="mt-4 max-w-xl text-base leading-7 text-ivory/70">{dictionary.subscribe.body}</p>
           <Image
-            src="/images/small_logo_cropped.png"
+            src={siteImages.logos.footer}
             alt=""
             width={96}
             height={96}

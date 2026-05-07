@@ -1,5 +1,6 @@
 ﻿//C:\dev\inner-glow\src\content\dictionaries.ts
 
+import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 
 export const dictionaries = {
@@ -88,7 +89,7 @@ export const dictionaries = {
           title: "Reiki",
           body:
             "Το Ρέικι είναι μια ενεργειακή θεραπεία ιαπωνικής προέλευσης που βασίζεται στην ιδέα ότι μέσα μας και γύρω μας ρέει μια συμπαντική ενέργεια ζωής. Όταν αυτή η ενέργεια μπλοκάρεται — λόγω άγχους, τραύματος, εξάντλησης ή εσωτερικών συγκρούσεων — το σώμα και η ψυχή χάνουν την αρμονία τους. Το Ρέικι, μέσω απαλής επαφής, βοηθά στη ροή αυτής της ενέργειας, ενεργοποιώντας την φυσική ικανότητα του οργανισμού να θεραπευτεί.",
-          image: "/images/crystals.png",
+          image: siteImages.treatments.reiki,
           sections: [
             {
               title: "Τι προσφέρει",
@@ -105,7 +106,7 @@ export const dictionaries = {
             name: "Μαργαρίτα Πασχάλη",
             role: "Reiki Master",
             body: "Οι συνεδρίες στην Inner Glow γίνονται από την Μαργαρίτα Πασχάλη, Reiki Master με πολυετή εμπειρία, βαθιά ενσυναίσθηση και σεβασμό στον προσωπικό σου ρυθμό..",
-            image: "/images/crystals.png",
+            image: siteImages.coordinators.reiki,
             showImage: false,
           },
           pricing: {
@@ -121,7 +122,7 @@ export const dictionaries = {
           layout: "wrapImage",
           body:
             "Το Tapping ή EFT (Emotional Freedom Techniques) είναι μια απλή τεχνική συναισθηματικής αποφόρτισης, όπου αγγίζουμε απαλά συγκεκριμένα σημεία του σώματος με τα δάχτυλα, ενώ εστιάζουμε σε ένα συναίσθημα, μια σκέψη ή μια δυσκολία που μας απασχολεί. Μέσα από αυτή τη διαδικασία, το σώμα και ο νους αρχίζουν να χαλαρώνουν, βοηθώντας μας να μειώσουμε την ένταση, το άγχος ή τη συναισθηματική φόρτιση. Είναι ένας ήπιος τρόπος να έρθουμε πιο κοντά σε αυτό που νιώθουμε και να το διαχειριστούμε με περισσότερη αποδοχή και ηρεμία. Τι προσφέρουμε μέσα από συζήτηση και συγκεκριμένες πρακτικές tapping, εστιάζουμε σε αυτό που σε απασχολεί και προσπαθούμε να εντοπίσουμε την πηγή του προβλήματος ή του συναισθήματος που έχει ενεργοποιηθεί. Με ήπιο και ασφαλή τρόπο, δίνουμε χώρο σε αυτό που νιώθεις, ώστε να μειωθεί η ένταση, να ελαφρύνει το συναίσθημα και να δημιουργηθεί περισσότερη ηρεμία, αποδοχή και εσωτερική ανακούφιση.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.eft,
           sections: [],
           coordinator: {
             show: false,
@@ -129,7 +130,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Tapping facilitator",
             body: "Η καθοδήγηση γίνεται με απλότητα, σταθερότητα και προσοχή στο τι μπορεί να υποστηριχθεί με ασφάλεια σε κάθε βήμα.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.eft,
             showImage: false,
           },
           pricing: {
@@ -146,7 +147,7 @@ export const dictionaries = {
           title: "Ανάδρομη Ύπνωση",
           body:
             "Η ανάδρομη ύπνωση είναι μια τεχνική που μας βοηθά να αποκτήσουμε πρόσβαση σε μνήμες και βιώματα που βρίσκονται βαθιά στο υποσυνείδητο. Μέσα από μια φυσική και ασφαλή διαδικασία ύπνωσης, ο θεραπευόμενος μεταφέρεται σε προηγούμενες εμπειρίες — είτε της παρούσας ζωής είτε, σε ορισμένες περιπτώσεις, ακόμη και σε προηγούμενες ενσαρκώσεις. Η ύπνωση μπορεί να λειτουργήσει θεραπευτικά και διερευνητικά σε θέματα ευεξίας· δεν αντικαθιστά την ιατρική.",
-          image: "/images/hypnosispage.jpeg",
+          image: siteImages.treatments.regressionHypnosis,
           sections: [
             {
               title: "Τι προσφέρει",
@@ -162,7 +163,7 @@ export const dictionaries = {
             name: "Τάκης Βάλσαμος",
             role: "Υπνοθεραπευτής",
             body: "Ο Τάκης είναι πιστοποιημένος υπνοθεραπευτής, εκπαιδευμένος στην τεχνική QHHT (Quantum Healing Hypnosis Technique), με πορεία στον χώρο από το 2011. Έχει συνοδεύσει πολλούς ανθρώπους σε βαθιά, θεραπευτικά ταξίδια εσωτερικής ανακάλυψης και μοιράζεται την εμπειρία του μέσα από εκπαιδεύσεις στο Regression Hypnosis.",
-            image: "/images/valsamos.png",
+            image: siteImages.coordinators.regressionHypnosis,
             showImage: false,
           },
           pricing: {
@@ -182,7 +183,7 @@ export const dictionaries = {
           },
           body:
             "Μια βιωματική μέθοδος που μας βοηθά να «δούμε» δυναμικές που δρουν υποσυνείδητα μέσα στη ζωή μας. Σχέσεις με γονείς, συντρόφους, παιδιά ή θέματα υγείας και επαναλαμβανόμενα μοτίβα συχνά συνδέονται με άγραφους «νόμους» και πιστότητες προς την οικογένεια ή το σύστημα από όπου προερχόμαστε.",
-          image: "/images/hypnosispage.jpeg",
+          image: siteImages.treatments.systemicConstellation,
           sections: [
             {
               title: "Που βοηθά η Συστημική Αναπαράσταση",
@@ -205,7 +206,7 @@ export const dictionaries = {
             name: "Κανάρης Κάραλης",
             role: "Ψυχολόγος | Πιστοποιημένος Συντονιστής Συστημικής Αναπαράστασης",
             body: "Την Αναπαράσταση συντονίζει ο ψυχολόγος και πιστοποιημένος συντονιστής Συστημικής Αναπαράστασης, Κανάρης Κάραλης.",
-            image: "/images/kanaris.png",
+            image: siteImages.coordinators.systemicConstellation,
             showImage: false,
           },
           pricing: {
@@ -232,7 +233,7 @@ export const dictionaries = {
           title: "NLP & Coaching",
           body:
             "Το NLP (Νευρο-Γλωσσικός Προγραμματισμός) σε συνδυασμό με το Coaching αποτελεί μια σύγχρονη, δυναμική προσέγγιση προσωπικής ανάπτυξης που εστιάζει στο πώς σκεφτόμαστε, πώς επικοινωνούμε και πώς δημιουργούμε την πραγματικότητά μας. Μέσα από στοχευμένες τεχνικές και καθοδήγηση, βοηθά να αναγνωρίσεις περιοριστικές πεποιθήσεις, να επαναπροσδιορίσεις τον εσωτερικό σου διάλογο και να ενεργοποιήσεις τη δύναμη που ήδη υπάρχει μέσα σου. Όταν ο νους «μπλοκάρεται» από φόβο, αμφιβολία ή παλιά μοτίβα, η εξέλιξη μοιάζει δύσκολη. Το NLP & Coaching έρχεται να ξεκλειδώσει αυτές τις εσωτερικές διεργασίες, δημιουργώντας χώρο για αλλαγή, αυτοπεποίθηση και συνειδητές επιλογές.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.nlpCoaching,
           sections: [
             {
               title: "Τι προσφέρει",
@@ -253,7 +254,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "NLP & coaching facilitator",
             body: "Η καθοδήγηση κρατά πρακτική κατεύθυνση, με σεβασμό στον ρυθμό σου και έμφαση σε μικρά, εφαρμόσιμα βήματα.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.nlpCoaching,
             showImage: false,
           },
           pricing: {
@@ -274,7 +275,7 @@ export const dictionaries = {
           layout: "wrapImage",
           body:
             "Οι ομαδικοί διαλογισμοί είναι μικρές συναντήσεις λίγων ατόμων, σε έναν ήρεμο και ασφαλή χώρο, με σκοπό να κάνουμε μια παύση από την ένταση της καθημερινότητας. Μέσα από καθοδηγούμενο διαλογισμό, χαλάρωση και εσωτερική παρατήρηση, δίνουμε στον εαυτό μας την ανάσα που τόσο συχνά ξεχνάμε να πάρουμε. Είναι μια στιγμή αποσυμφόρησης, επανασύνδεσης και ηρεμίας — ένας χρόνος αφιερωμένος σε εμάς, για να ακούσουμε το σώμα, να ησυχάσουμε τον νου και να επιστρέψουμε λίγο πιο ανάλαφροι στην καθημερινή ζωή. ",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.meditations,
           
           sections: [
             {
@@ -292,7 +293,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Meditation facilitator",
             body: "Ο συντονισμός είναι ήπιος και γειωμένος, ώστε η πρακτική να παραμένει προσβάσιμη, σταθερή και υποστηρικτική.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.meditations,
             showImage: false,
           },
           pricing: {
@@ -465,7 +466,7 @@ export const dictionaries = {
           title: "Reiki",
           body:
             "Reiki is an energy healing practice of Japanese origin, based on the idea that a universal life energy flows within and around us. When this energy becomes blocked - because of stress, trauma, exhaustion or inner conflict - the body and soul lose their harmony. Through gentle touch, Reiki helps this energy flow again, activating the body's natural ability to heal.",
-          image: "/images/crystals.png",
+          image: siteImages.treatments.reiki,
           sections: [
             {
               title: "What it offers",
@@ -482,7 +483,7 @@ export const dictionaries = {
             name: "Margarita Paschali",
             role: "Reiki Master",
             body: "Sessions at Inner Glow are offered by Margarita Paschali, Reiki Master, with many years of experience, deep empathy and respect for your personal pace.",
-            image: "/images/crystals.png",
+            image: siteImages.coordinators.reiki,
             showImage: false,
           },
           pricing: {
@@ -498,7 +499,7 @@ export const dictionaries = {
           layout: "wrapImage",
           body:
             "Tapping, or EFT (Emotional Freedom Techniques), is a simple emotional release technique where we gently tap specific points of the body with the fingers while focusing on an emotion, thought or difficulty that concerns us. Through this process, the body and mind begin to relax, helping us reduce tension, anxiety or emotional charge. It is a gentle way to come closer to what we feel and manage it with more acceptance and calm. Through conversation and specific tapping practices, we focus on what concerns you and try to identify the source of the problem or the emotion that has been activated. In a gentle and safe way, we give space to what you feel so the intensity can soften, the emotion can become lighter and more calm, acceptance and inner relief can emerge.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.eft,
           sections: [],
           coordinator: {
             show: false,
@@ -506,7 +507,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Tapping facilitator",
             body: "Guidance is simple, steady, and attentive to what can be supported safely at each step.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.eft,
             showImage: false,
           },
           pricing: {
@@ -523,7 +524,7 @@ export const dictionaries = {
           title: "Regression Hypnosis",
           body:
             "Regression hypnosis is a technique that helps us access memories and experiences that lie deep in the subconscious. Through a natural and safe hypnosis process, the client is guided into previous experiences - either from the present life or, in some cases, even from previous incarnations. Hypnosis can work therapeutically and exploratively for wellbeing-related themes; it does not replace medical care.",
-          image: "/images/hypnosispage.jpeg",
+          image: siteImages.treatments.regressionHypnosis,
           sections: [
             {
               title: "What it offers",
@@ -540,7 +541,7 @@ export const dictionaries = {
             name: "Takis Valsamos",
             role: "Hypnotherapist",
             body: "Takis is a certified hypnotherapist, trained in QHHT (Quantum Healing Hypnosis Technique), with experience in the field since 2011. He has accompanied many people on deep, therapeutic journeys of inner discovery and shares his experience through Regression Hypnosis trainings.",
-            image: "/images/valsamos.png",
+            image: siteImages.coordinators.regressionHypnosis,
             showImage: false,
           },
           pricing: {
@@ -560,7 +561,7 @@ export const dictionaries = {
           },
           body:
             "An experiential method that helps us 'see' dynamics acting subconsciously within our lives. Relationships with parents, partners, children, health themes and repeated patterns are often connected with unwritten 'laws' and loyalties toward the family or system we come from.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.systemicConstellation,
           sections: [
             {
               title: "Where Systemic Constellation can help",
@@ -583,7 +584,7 @@ export const dictionaries = {
             name: "Kanaris Karalis",
             role: "Psychologist | Certified Systemic Constellation Facilitator",
             body: "The Constellation is facilitated by psychologist and certified Systemic Constellation facilitator Kanaris Karalis.",
-            image: "/images/kanaris.png",
+            image: siteImages.coordinators.systemicConstellation,
             showImage: false,
           },
           pricing: {
@@ -610,7 +611,7 @@ export const dictionaries = {
           title: "NLP & Coaching",
           body:
             "NLP (Neuro-Linguistic Programming), combined with Coaching, is a modern, dynamic personal development approach that focuses on how we think, how we communicate and how we create our reality. Through targeted techniques and guidance, it helps you recognize limiting beliefs, redefine your inner dialogue and activate the strength that already exists within you. When the mind becomes blocked by fear, doubt or old patterns, growth can feel difficult. NLP & Coaching helps unlock these inner processes, creating space for change, confidence and conscious choices.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.nlpCoaching,
           sections: [
             {
               title: "What it offers",
@@ -631,7 +632,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "NLP & coaching facilitator",
             body: "Guidance stays practical and paced, with emphasis on small, applicable steps.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.nlpCoaching,
             showImage: false,
           },
           pricing: {
@@ -652,7 +653,7 @@ export const dictionaries = {
           layout: "wrapImage",
           body:
             "Group meditations are small gatherings of a few people, held in a calm and safe space, with the purpose of taking a pause from the intensity of everyday life. Through guided meditation, relaxation and inner observation, we give ourselves the breath we so often forget to take. It is a moment of release, reconnection and calm - time dedicated to ourselves, to listen to the body, quiet the mind and return to daily life a little lighter.",
-          image: "/images/placeholders/healing.png",
+          image: siteImages.treatments.meditations,
           sections: [
             {
               title: "What it offers",
@@ -669,7 +670,7 @@ export const dictionaries = {
             name: "Inner Glow",
             role: "Meditation facilitator",
             body: "Facilitation is gentle and grounded so the practice remains accessible, steady, and supportive.",
-            image: "/images/placeholders/about.png",
+            image: siteImages.coordinators.meditations,
             showImage: false,
           },
           pricing: {

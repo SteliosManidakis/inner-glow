@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import type { Dictionary } from "@/content/dictionaries";
+import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 import { localizedPath } from "@/lib/routes";
 
@@ -29,7 +30,7 @@ export function HeroSection({ dictionary, locale }: { dictionary: Dictionary; lo
         </div>
         <div className="order-1 min-h-[38svh] overflow-hidden rounded-bl-[4rem] rounded-tr-[4rem] sm:rounded-bl-[6rem] sm:rounded-tr-[6rem] md:order-2 md:min-h-[70svh] xl:rounded-bl-[8rem] xl:rounded-tr-[8rem]">
           <Image
-            src="/images/homepage.jpeg"
+            src={siteImages.homeHero}
             alt=""
             width={1400}
             height={1000}

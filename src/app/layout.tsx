@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
 import { LangSync } from "@/components/layout/LangSync";
 import { StructuredData } from "@/components/seo/StructuredData";
+import { siteImages } from "@/content/images";
 import { getSiteUrl, siteName } from "@/lib/site";
 import "./globals.css";
 
@@ -20,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     siteName,
     type: "website",
-    images: [{ url: "/images/placeholders/hero.png", width: 1200, height: 630, alt: siteName }],
+    images: [{ url: siteImages.socialShare, width: 1200, height: 630, alt: siteName }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/placeholders/hero.png"],
+    images: [siteImages.socialShare],
   },
 };
 

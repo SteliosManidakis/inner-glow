@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 import { getSiteUrl, siteName } from "@/lib/site";
 import type { TreatmentRouteKey } from "@/lib/treatments";
@@ -290,7 +291,7 @@ export function languageAlternates(route: string) {
 export function getSeoMetadata(locale: Locale, route: SeoRoute): Metadata {
   const copy = seoCopy[locale][route];
   const path = routePath(locale, route);
-  const image = "/images/placeholders/hero.png";
+  const image = siteImages.socialShare;
 
   return {
     title: copy.title,
