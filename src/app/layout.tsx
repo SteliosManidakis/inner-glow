@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LangSync } from "@/components/layout/LangSync";
+import { StructuredData } from "@/components/seo/StructuredData";
 import { getSiteUrl, siteName } from "@/lib/site";
 import "./globals.css";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="el" className="h-full scroll-smooth antialiased">
       <body className="min-h-full flex flex-col">
         <LangSync />
+        <StructuredData />
         {children}
       </body>
     </html>

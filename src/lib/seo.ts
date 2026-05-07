@@ -12,24 +12,24 @@ type SeoCopy = {
 const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
   el: {
     "": {
-      title: "Inner Glow | Healing & προσωπική καθοδήγηση",
+      title: "Inner Glow | Θεραπείες, διαλογισμοί & προσωπική ενδυνάμωση",
       description:
-        "Ατομικές συνεδρίες healing, τηλεφωνικά ραντεβού γνωριμίας και ήπια προσωπική καθοδήγηση online ή δια ζώσης στην Ελλάδα με το Inner Glow.",
+        "Η Inner Glow προσφέρει Reiki, EFT, ύπνωση, NLP coaching, συστημική αναπαράσταση και διαλογισμούς στη Βούλα και online.",
     },
     about: {
       title: "Σχετικά με την Inner Glow",
       description:
-        "Γνώρισε την Inner Glow και την ήρεμη, γειωμένη προσέγγισή της σε θεραπείες, παρουσία και προσωπική φροντίδα.",
+        "Γνώρισε την Inner Glow και τις πρακτικές αυτογνωσίας, συναισθηματικής αποφόρτισης και εσωτερικής σύνδεσης που προσφέρει.",
     },
     healing: {
-      title: "Healing Sessions",
+      title: "Θεραπείες & καθοδηγούμενες πρακτικές",
       description:
-        "Ατομικές healing συνεδρίες με το Inner Glow για καθαρότητα, γείωση και βαθύτερη σύνδεση με τον εαυτό.",
+        "Ατομικές θεραπείες και ομαδικές δράσεις Inner Glow: Reiki, EFT, ύπνωση, NLP coaching, συστημική αναπαράσταση και διαλογισμοί.",
     },
     contact: {
-      title: "Επικοινωνία & τηλεφωνικό ραντεβού γνωριμίας",
+      title: "Επικοινωνία | Inner Glow",
       description:
-        "Κλείσε ένα τηλεφωνικό ραντεβού γνωριμίας με το Inner Glow ή ξεκίνησε την επικοινωνία για online και δια ζώσης healing συνεδρίες.",
+        "Επικοινώνησε με την Inner Glow στη Βούλα ή κλείσε δωρεάν τηλεφωνικό ραντεβού γνωριμίας για να ενημερωθείς για τις υπηρεσίες.",
     },
     terms: {
       title: "Όροι & Προϋποθέσεις",
@@ -39,29 +39,29 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     privacy: {
       title: "Πολιτική Απορρήτου & Cookies",
       description:
-        "Πολιτική απορρήτου και cookies για το website του Inner Glow, το newsletter, το booking και την επεξεργασία προσωπικών δεδομένων.",
+        "Πολιτική απορρήτου και cookies για το website της Inner Glow, το newsletter, τις φόρμες επικοινωνίας και τα προσωπικά δεδομένα.",
     },
   },
   en: {
     "": {
-      title: "Inner Glow | Healing & personal guidance",
+      title: "Inner Glow | Healing, meditation & personal empowerment",
       description:
-        "Individual healing sessions, introductory phone appointments and gentle personal guidance online or in person in Greece with Inner Glow.",
+        "Inner Glow offers Reiki, EFT, hypnosis, NLP coaching, systemic constellation and meditations in Voula and online.",
     },
     about: {
       title: "About Inner Glow",
       description:
-        "Meet Inner Glow and its calm, grounded approach to healing sessions, presence and personal care.",
+        "Meet Inner Glow and its approach to self-awareness, emotional release and inner connection.",
     },
     healing: {
-      title: "Therapies",
+      title: "Therapies & guided practices",
       description:
-        "Individual healing sessions with Inner Glow for clarity, grounding and a deeper connection with yourself.",
+        "Individual therapies and group practices at Inner Glow: Reiki, EFT, hypnosis, NLP coaching, systemic constellation and meditations.",
     },
     contact: {
-      title: "Contact & introductory phone appointment",
+      title: "Contact | Inner Glow",
       description:
-        "Book an introductory phone appointment with Inner Glow or get started with online and in-person healing sessions.",
+        "Contact Inner Glow in Voula or request a free introductory phone appointment to learn more about the services.",
     },
     terms: {
       title: "Terms & Conditions",
@@ -71,7 +71,7 @@ const seoCopy: Record<Locale, Record<SeoRoute, SeoCopy>> = {
     privacy: {
       title: "Privacy Policy & Cookies",
       description:
-        "Privacy and cookies policy for the Inner Glow website, newsletter, booking and personal data processing.",
+        "Privacy and cookies policy for the Inner Glow website, newsletter, contact forms and personal data processing.",
     },
   },
 };
