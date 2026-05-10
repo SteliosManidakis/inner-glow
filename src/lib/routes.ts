@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\lib\routes.ts
+
 import type { Locale } from "./i18n";
 import { treatmentRoutes } from "./treatments";
 

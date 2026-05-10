@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\app\api\contact-request\route.ts
+
 import { NextResponse } from "next/server";
 
 const BREVO_EMAIL_ENDPOINT = "https://api.brevo.com/v3/smtp/email";

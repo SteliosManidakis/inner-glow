@@ -1,3 +1,5 @@
+//C:\dev\inner-glow\src\app\[locale]\contact\page.tsx
+
 import type { Metadata } from "next";
 import { BookingPanel } from "@/components/sections/BookingPanel";
 import { Container } from "@/components/ui/Container";
@@ -56,13 +58,23 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               </div>
             </div>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 grid gap-6 lg:grid-cols-2">
             <BookingPanel
               title={dictionary.contact.discoveryTitle}
               body={dictionary.contact.discoveryBody}
               button={dictionary.common.bookDiscovery}
               external={false}
               href={localizedPath(locale, "appointment-request")}
+              alignContent
+            />
+
+            <BookingPanel
+              title={dictionary.common.bookHealing}
+              body={dictionary.healing.pricingBody}
+              button={dictionary.common.openBooking}
+              external={false}
+              href={localizedPath(locale, "treatment-request")}
+              alignContent
             />
           </div>
         </Container>
