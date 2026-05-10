@@ -138,7 +138,7 @@ export const dictionaries = {
               { label: "Δια ζώσης · 60’ συνεδρία", price: "70€" },
               { label: "Δια ζώσης · 90’ συνεδρία", price: "100€" },
               { label: "Online · 60’ συνεδρία", price: "50€" },
-              { label: "Online · 90’ συνεδρία", price: "80€" },
+              { label: "Online · 90’ συνεδρία", price: "70€" },
             ],
             note: "",
           },
