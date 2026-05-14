@@ -17,7 +17,7 @@ export const siteImages = {
     reiki: "/images/reikipage.jpeg",
     eft: "/images/tappingpage.jpeg",
     regressionHypnosis: "/images/hypnosispage.jpeg",
-    systemicConstellation: "/images/systemicpage.jpeg",
+    systemicConstellation: "/images/systemicpage2.jpeg",
     nlpCoaching: "/images/nlppage.jpeg",
     meditations: "/images/dialogismoipage.jpeg",
   },
