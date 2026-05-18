@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { BookingPanel } from "@/components/sections/BookingPanel";
+import { SystemicConstellationLanding } from "@/components/sections/SystemicConstellationLanding";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import type { Dictionary } from "@/content/dictionaries";
@@ -22,6 +23,10 @@ export function TreatmentDetail({
   treatment: Treatment;
   treatmentKey: TreatmentRouteKey;
 }) {
+  if (treatmentKey === "systemicConstellation") {
+    return <SystemicConstellationLanding dictionary={dictionary} locale={locale} />;
+  }
+
   const treatmentRequestHref = `${localizedPath(locale, "treatment-request")}?service=${treatmentKey}`;
   const announcement =
     "announcement" in treatment

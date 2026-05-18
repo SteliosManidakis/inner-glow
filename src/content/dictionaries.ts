@@ -321,6 +321,9 @@ export const dictionaries = {
       discoveryTitle: "Τηλεφωνικό ραντεβού γνωριμίας",
       discoveryBody:
         "Ένα απλό πρώτο τηλεφώνημα για να δούμε αν η προσέγγιση μας ταιριάζει σε αυτό που χρειάζεσαι τώρα.",
+      treatmentTitle: "Κλείσε την θεραπεία που σου ταιριάζει",
+      treatmentBody:
+        "Συμπλήρωσε τη φόρμα ενδιαφέροντος, διάλεξε την υπηρεσία που σε ενδιαφέρει και θα επικοινωνήσουμε μαζί σου με τις λεπτομέρειες.",
     },
     contactRequest: {
       title: "Ραντεβού γνωριμίας",
@@ -698,6 +701,9 @@ export const dictionaries = {
       discoveryTitle: "Acquaintance free of charge 15min call",
       discoveryBody:
         "A simple first call to see whether our approach fits what you need right now.",
+      treatmentTitle: "Book the treatment that fits you",
+      treatmentBody:
+        "Fill in the interest form, choose the service you are interested in and we will contact you with the details.",
     },
     contactRequest: {
       title: "Introductory appointment",

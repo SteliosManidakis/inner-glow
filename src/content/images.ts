@@ -22,6 +22,10 @@ export const siteImages = {
     meditations: "/images/dialogismoipage.jpeg",
   },
 
+  landingPages: {
+    systemicConstellationHero: "/images/systemicpage2.jpeg",
+  },
+
   coordinators: {
     reiki: "/images/crystals.png",
     eft: "/images/placeholders/about.png",

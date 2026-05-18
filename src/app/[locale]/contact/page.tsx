@@ -69,8 +69,8 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
             />
 
             <BookingPanel
-              title={dictionary.common.bookHealing}
-              body={dictionary.healing.pricingBody}
+              title={dictionary.contact.treatmentTitle}
+              body={dictionary.contact.treatmentBody}
               button={dictionary.common.openBooking}
               external={false}
               href={localizedPath(locale, "treatment-request")}
