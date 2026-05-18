@@ -161,8 +161,11 @@ function EventDetailsCard({ copy }: { copy: ReturnType<typeof getSystemicLanding
           </div>
         </div>
 
-        <p className="rounded-lg bg-[var(--systemic-red-tint)] px-4 py-3 text-center text-sm font-bold text-red-950">
-          {copy.event.urgency}
+        <p className="inline-flex items-center justify-center gap-2 text-center text-sm font-bold uppercase tracking-[0.08em] text-[var(--systemic-green)]">
+          <span className="inline-flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-[var(--systemic-orange)] text-sm leading-none text-white shadow-[0_0_0_4px_rgba(255,107,53,0.16)]">
+            !
+          </span>
+          <span>{copy.event.urgency}</span>
         </p>
 
         <p className="text-sm font-semibold leading-6 text-charcoal">{copy.event.instructor}</p>

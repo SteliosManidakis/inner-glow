@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 
 const BREVO_EMAIL_ENDPOINT = "https://api.brevo.com/v3/smtp/email";
+const CONSENT_TEXT =
+  "Συμφωνώ να χρησιμοποιηθούν τα στοιχεία μου για επικοινωνία σχετικά με τη δήλωση συμμετοχής.";
 
 type SystemicWorkshopPayload = {
   name?: unknown;
@@ -43,6 +45,11 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Contact email is not configured" }, { status: 501 });
   }
 
+  const submittedAt = new Intl.DateTimeFormat("el-GR", {
+    dateStyle: "short",
+    timeStyle: "medium",
+    timeZone: "Europe/Athens",
+  }).format(new Date());
   const title = "Νέα δήλωση συμμετοχής - Συστημική Αναπαράσταση";
   const preheader = `${title} από ${name}`;
   const textContent = [
@@ -54,6 +61,10 @@ export async function POST(request: Request) {
     `Τύπος συμμετοχής: ${participationLabel}`,
     "",
     "Εργαστήριο: 31/5/2026, 10:30-20:00",
+    "",
+    "Συναίνεση επικοινωνίας: Ναι",
+    `Χρόνος δήλωσης: ${submittedAt}`,
+    `Κείμενο συναίνεσης: ${CONSENT_TEXT}`,
   ].join("\n");
   const htmlContent = `
     <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;mso-hide:all;">
@@ -65,6 +76,10 @@ export async function POST(request: Request) {
     <p><strong>Email:</strong> ${escapeHtml(email || "-")}</p>
     <p><strong>Τύπος συμμετοχής:</strong> ${escapeHtml(participationLabel)}</p>
     <p><strong>Εργαστήριο:</strong> 31/5/2026, 10:30-20:00</p>
+    <hr />
+    <p><strong>Συναίνεση επικοινωνίας:</strong> Ναι</p>
+    <p><strong>Χρόνος δήλωσης:</strong> ${escapeHtml(submittedAt)}</p>
+    <p><strong>Κείμενο συναίνεσης:</strong> ${escapeHtml(CONSENT_TEXT)}</p>
   `;
 
   const response = await fetch(BREVO_EMAIL_ENDPOINT, {
