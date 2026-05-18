@@ -216,21 +216,21 @@ export const systemicLandingContent = {
         {
           quote:
             "I never thought I could understand my relationship problems this way. Revealing.",
-          name: "Maria K.",
-          meta: "35 years old",
+          name: "Stelios M.",
+          meta: "39 years old",
           date: "Previous participation",
         },
         {
           quote:
             "I was sceptical, but Kanaris created a truly safe space. I would come again.",
-          name: "Nikos P.",
-          meta: "42 years old",
+          name: "Eleni P.",
+          meta: "55 years old",
           date: "Previous participation",
         },
         {
           quote:
             "I did not expect such deep work. But it felt natural and transformative.",
-          name: "Eleni V.",
+          name: "Takis V.",
           meta: "38 years old",
           date: "Previous participation",
         },
