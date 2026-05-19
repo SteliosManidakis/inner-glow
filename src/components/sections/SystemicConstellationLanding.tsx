@@ -26,7 +26,7 @@ export function SystemicConstellationLanding({
 
   return (
     <article className="bg-ivory" style={themeStyle}>
-      <section className="sticky top-20 z-20 bg-[var(--systemic-green)] px-4 py-2 text-white shadow-[0_12px_24px_rgba(41,37,31,0.18)]">
+      <section className="sticky top-[5.5rem] z-20 bg-[var(--systemic-green)] px-4 py-2 text-white shadow-[0_12px_24px_rgba(41,37,31,0.18)] md:top-20">
         <div className="mx-auto flex min-h-9 max-w-6xl flex-wrap items-center justify-center gap-3 text-center text-sm font-semibold sm:text-base">
           <span>{copy.stickyBar.text}</span>
           <a
