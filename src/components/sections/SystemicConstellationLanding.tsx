@@ -37,24 +37,24 @@ export function SystemicConstellationLanding({
           </a>
         </div>
       </section>
-      <section className="relative isolate min-h-[68svh] overflow-hidden bg-[var(--systemic-green)] text-white">
+      <section className="relative isolate min-h-[68svh] overflow-hidden bg-[var(--systemic-cream)] text-charcoal">
         <Image
           alt=""
-          className="absolute inset-0 -z-20 h-full w-full object-cover opacity-34"
+          className="absolute inset-0 -z-20 h-full w-full object-cover opacity-25"
           fill
           priority
           src={copy.hero.image}
         />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(45,80,22,0.88),rgba(45,80,22,0.76))]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(245,241,235,0.88),rgba(245,241,235,0.94))]" />
         <Container className="flex min-h-[68svh] items-center py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-5xl text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-white/82">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-olive">
               {copy.hero.kicker}
             </p>
             <h1 className="mt-5 text-wrap font-serif text-5xl font-bold leading-[1.02] sm:text-6xl lg:text-7xl">
               {copy.hero.title}
             </h1>
-            <p className="mx-auto mt-5 max-w-3xl text-xl leading-8 text-white/88 sm:text-2xl">
+            <p className="mx-auto mt-5 max-w-3xl text-xl leading-8 text-charcoal/78 sm:text-2xl">
               {copy.hero.subtitle}
             </p>
             <div className="mt-7 flex flex-col items-center justify-center gap-3">
@@ -64,7 +64,7 @@ export function SystemicConstellationLanding({
               >
                 {copy.hero.cta}
               </a>
-              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--systemic-red-tint)]">
+              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--systemic-green)]">
                 <span className="inline-flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-[var(--systemic-orange)] text-sm leading-none text-white shadow-[0_0_0_4px_rgba(255,107,53,0.16)]">
                   !
                 </span>
@@ -74,11 +74,11 @@ export function SystemicConstellationLanding({
             <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
               {copy.hero.benefits.map((benefit) => (
                 <div
-                  className="rounded-lg border border-white/18 bg-white/10 p-5 backdrop-blur"
+                  className="rounded-lg border border-olive/18 bg-white/55 p-5 shadow-[0_12px_30px_rgba(41,37,31,0.08)] backdrop-blur"
                   key={benefit.title}
                 >
-                  <h2 className="text-lg font-bold leading-6 text-white">{benefit.title}</h2>
-                  <p className="mt-3 text-sm leading-6 text-white/78">{benefit.body}</p>
+                  <h2 className="text-lg font-bold leading-6 text-charcoal">{benefit.title}</h2>
+                  <p className="mt-3 text-sm leading-6 text-charcoal/72">{benefit.body}</p>
                 </div>
               ))}
             </div>
