@@ -4,7 +4,7 @@ import type { Locale } from "@/lib/i18n";
 export const systemicLandingTheme = {
   darkGreen: "#2D5016",
   cream: "#F5F1EB",
-  orange: "#FF6B35",
+  orange: "#FF7F50",
   white: "#FFFFFF",
   redTint: "#FFE4D6",
 } as const;
@@ -22,7 +22,7 @@ export const systemicLandingContent = {
     hero: {
       image: siteImages.landingPages.systemicConstellationHero,
       kicker: "Συστημική Αναπαράσταση",
-      title: "Δες Αυτό Που Άλλοι Δεν Βλέπουν",
+      title: "Κάθε σύστημα έχει τη δική του αλήθεια",
       subtitle: "Ένα εργαστήριο που κλείνει κύκλους και ανοίγει πόρτες",
       cta: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ ΤΩΡΑ",
       urgency: "Μόνο 3 θέσεις απομένουν",
@@ -47,10 +47,10 @@ export const systemicLandingContent = {
       dateNote: "Πανσέληνος & Ολοκλήρωση",
       timeLabel: "Ώρα",
       time: "10:30 π.μ. - 20:00 μ.μ.",
-      timeNote: "Ολοήμερο + coffee break",
+      timeNote: "Ωρα προσέλευσης 10:00\nΟλοήμερο + coffee break",
       locationLabel: "Τοποθεσία",
       location: "Βούλα, Αθήνα",
-      locationNote: "Ακριβής διεύθυνση κατόπιν δήλωσης",
+      locationNote: "Επτανήσου 3, Βούλα, 16673",
       simplePrice: "60€",
       simpleLabel: "Απλή",
       requestPrice: "85€",
@@ -64,11 +64,11 @@ export const systemicLandingContent = {
     main: {
       title: "Τι μπορεί να αλλάξει όταν δεις το σύστημα καθαρά",
       body:
-        "Η Συστημική Αναπαράσταση είναι μια βιωματική μέθοδος που φέρνει στο φως δυναμικές που συχνά λειτουργούν κάτω από την επιφάνεια: οικογενειακές σχέσεις, επαναλαμβανόμενα μοτίβα, εσωτερικές συγκρούσεις, επαγγελματικά αδιέξοδα ή βάρη που δεν εξηγούνται μόνο με τη λογική.",
+        "Η Συστημική Αναπαράσταση είναι μια βιωματική μέθοδος που φέρνει στο φως δυναμικές που συχνά λειτουργούν κάτω από την επιφάνεια — οικογενειακές σχέσεις, επαναλαμβανόμενα μοτίβα, εσωτερικές συγκρούσεις, επαγγελματικά αδιέξοδα ή συναισθηματικά βάρη που δεν εξηγούνται πάντα με τη λογική. Μέσα από τη διαδικασία, δημιουργείται χώρος για να παρατηρήσεις πιο καθαρά αυτό που συμβαίνει μέσα σου και γύρω σου.",
       bullets: [
-        "Σε οικογενειακές σχέσεις και επαναλαμβανόμενες εμπλοκές",
-        "Σε σχέσεις, επαγγελματικά μπλοκαρίσματα ή αδιέξοδα ζωής",
-        "Όταν θέλεις να δεις πιο καθαρά μια κατάσταση και τη θέση σου μέσα σε αυτή",
+        "Κατανόηση σχέσεων και συναισθηματικών εμπλοκών",
+        "Φωτισμός εσωτερικών συγκρούσεων και αδιεξόδων",
+        "Επανασύνδεση με τη δική σου θέση και αλήθεια",
       ],
     },
     testimonials: {
@@ -105,19 +105,47 @@ export const systemicLandingContent = {
           answer:
             "Όχι απαραίτητα. Μπορείς να συμμετάσχεις ως αντιπρόσωπος ή απλώς να παρατηρήσεις. Η ασφάλεια και τα όρια κάθε συμμετέχοντα διατηρούνται ασφαλή.",
         },
+
         {
-          question: "Πόσο γρήγορα θα δω αποτελέσματα;",
+          question: "Τι είναι η Συστημική Αναπαράσταση;",
           answer:
-            "Πολλοί νιώθουν αλλαγή ήδη μέσα στο εργαστήριο. Συχνά όμως η πραγματική μετατόπιση συνεχίζεται στις εβδομάδες που ακολουθούν.",
+            "Η Συστημική Αναπαράσταση είναι μια βιωματική ομαδική διαδικασία που βοηθά στην αποκάλυψη κρυφών δυναμικών, μοτίβων και σχέσεων που επηρεάζουν τη ζωή ενός ανθρώπου. Μέσα από τη συμβολική αναπαράσταση ενός θέματος, δημιουργείται η δυνατότητα να δει κανείς πιο καθαρά όσα λειτουργούν κάτω από την επιφάνεια και να αποκτήσει βαθύτερη κατανόηση του εαυτού και των σχέσεών του.",
         },
+
         {
-          question: "Χρειάζονται προϋποθέσεις;",
-          answer: "Καθόλου. Απλώς έλα με ανοιχτό μυαλό και σεβασμό στη διαδικασία.",
+          question: "Ποια είναι τα οφέλη της Συστημικής Αναπαράστασης;",
+          answer:
+            "Η διαδικασία βοηθά στην κατανόηση επαναλαμβανόμενων μοτίβων, εσωτερικών συγκρούσεων και δυσκολιών σε σχέσεις, εργασία ή προσωπική ζωή. Μέσα από τη βιωματική εμπειρία, το άτομο μπορεί να αποκτήσει νέα οπτική, μεγαλύτερη επίγνωση και μια βαθύτερη αίσθηση ισορροπίας και σύνδεσης με τον εαυτό του.",
         },
+
+        {
+          question: "Χρειάζεται κάποια προετοιμασία πριν τη συμμετοχή;",
+          answer:
+            "Δεν απαιτείται κάποια ειδική προετοιμασία ή προηγούμενη εμπειρία. Αρκεί να έρθεις με ανοιχτότητα και σεβασμό προς τη διαδικασία. Ο συντονιστής καθοδηγεί την ομάδα σε κάθε στάδιο και βοηθά όλους τους συμμετέχοντες να νιώσουν ασφαλείς και ενταγμένοι στο βίωμα.",
+        },
+
+        {
+          question: "Μπορεί η Συστημική Αναπαράσταση να αντικαταστήσει την ιατρική ή την ψυχοθεραπεία;",
+          answer:
+            "Όχι. Η Συστημική Αναπαράσταση δεν αντικαθιστά την ιατρική ή την ψυχοθεραπεία. Λειτουργεί συμπληρωματικά, προσφέροντας έναν διαφορετικό τρόπο κατανόησης των συναισθηματικών και συστημικών δυναμικών που μπορεί να σχετίζονται με μια κατάσταση.",
+        },
+
+        {
+          question: "Σε ποιες καταστάσεις μπορεί να βοηθήσει;",
+          answer:
+            "Η Συστημική Αναπαράσταση μπορεί να εφαρμοστεί σε ζητήματα σχέσεων, οικογένειας, επαγγελματικών δυσκολιών, συναισθηματικών μπλοκαρισμάτων, προσωπικής ανάπτυξης και επαναλαμβανόμενων μοτίβων ζωής. Συχνά βοηθά το άτομο να αποκτήσει μεγαλύτερη σαφήνεια και να δει νέες δυνατότητες κίνησης και αλλαγής.",
+        },
+
         {
           question: "Ποια η διαφορά 60€ vs 85€;",
           answer:
-            "60€ σημαίνει συμμετοχή ως παρατηρητής ή αντιπρόσωπος. 85€ σημαίνει συμμετοχή με δυνατότητα να δουλευτεί το δικό σου αίτημα.",
+            "60€ σημαίνει συμμετοχή ως παρατηρητής ή αντιπρόσωπος. 85€ σημαίνει συμμετοχή με δυνατότητα να δουλευτεί το δικό σου αίτημα, το οποίο καθορίζεται κατά την διάρκεια του εργαστηρίου",
+        },
+
+        {
+          question: "Πότε γίνεται η πληρωμή;",
+          answer:
+            "Η πληρωμή πραγματοποιείται με την ολοκλήρωση του εργαστηρίου.",
         },
       ],
     },
@@ -161,7 +189,7 @@ export const systemicLandingContent = {
     hero: {
       image: siteImages.landingPages.systemicConstellationHero,
       kicker: "Systemic Constellation",
-      title: "See What Others Cannot See",
+      title: "Every system has its one truth",
       subtitle: "A workshop that closes cycles and opens doors",
       cta: "REGISTER YOUR INTEREST NOW",
       urgency: "Only 3 spots left",
@@ -186,10 +214,10 @@ export const systemicLandingContent = {
       dateNote: "Full moon & completion",
       timeLabel: "Time",
       time: "10:30 a.m. - 8:00 p.m.",
-      timeNote: "Full day + coffee break",
+      timeNote: "Arrival time: 10:00 AM\nFull day + coffee break",
       locationLabel: "Location",
       location: "Voula, Athens",
-      locationNote: "Exact address after registration",
+      locationNote: "3 eptanisou, Voula, 16673",
       simplePrice: "60€",
       simpleLabel: "Simple",
       requestPrice: "85€",
@@ -203,11 +231,11 @@ export const systemicLandingContent = {
     main: {
       title: "What can shift when you see the system clearly",
       body:
-        "Systemic Constellation is an experiential method that brings to light dynamics often operating beneath the surface: family relationships, repeated patterns, inner conflicts, professional dead ends or burdens that cannot be explained only through logic.",
+        "Systemic Constellation is an experiential method that brings hidden dynamics to light — family relationships, recurring patterns, inner conflicts, professional dead ends, or emotional burdens that cannot always be explained through logic alone. Through the process, space is created for you to observe more clearly what is happening within you and around you.",
       bullets: [
-        "Family relationships and recurring entanglements",
-        "Relationships, professional blocks or life dead ends",
-        "When you want to see a situation and your place in it more clearly",
+        "Understanding relationships and emotional entanglements",
+        "Bringing awareness to inner conflicts and life dead ends",
+        "Reconnecting with your own place and truth",
       ],
     },
     testimonials: {
@@ -242,21 +270,49 @@ export const systemicLandingContent = {
         {
           question: "Will I have to talk about my personal issues in front of others?",
           answer:
-            "Not necessarily. You can participate as a representative or simply observe. Safety and personal boundaries are respected.",
+            "Not necessarily. You can participate as a representative or simply observe. Safety and personal boundaries are respected throughout the process.",
         },
+
         {
-          question: "How quickly will I see results?",
+          question: "What is Systemic Constellation?",
           answer:
-            "Many people feel a shift during the workshop itself. Often, the deeper movement continues in the following weeks.",
+            "Systemic Constellation is an experiential group process that helps reveal hidden dynamics, patterns and relationships influencing a person's life. Through symbolic representation, participants are given the opportunity to observe what may be operating beneath the surface and gain deeper understanding of themselves and their relationships.",
         },
+
         {
-          question: "Are there any prerequisites?",
-          answer: "No. Just come with an open mind and respect for the process.",
+          question: "What are the benefits of Systemic Constellation?",
+          answer:
+            "The process can help bring awareness to recurring patterns, inner conflicts and difficulties in relationships, work or personal life. Through the experiential nature of the work, participants often gain new perspectives, greater clarity and a deeper sense of inner balance and connection.",
         },
+
+        {
+          question: "Do I need any preparation before participating?",
+          answer:
+            "No special preparation or previous experience is required. Simply come with openness and respect for the process. The facilitator guides the group throughout every stage and helps participants feel safe and supported.",
+        },
+
+        {
+          question: "Can Systemic Constellation replace medical treatment or psychotherapy?",
+          answer:
+            "No. Systemic Constellation does not replace medical treatment or psychotherapy. It works as a complementary approach, offering a different perspective on emotional and systemic dynamics that may be connected to a situation.",
+        },
+
+        {
+          question: "What kinds of situations can it help with?",
+          answer:
+            "Systemic Constellation may support people dealing with relationship issues, family dynamics, professional difficulties, emotional blocks, personal growth and recurring life patterns. It often helps participants gain clarity and discover new possibilities for movement and change.",
+        },
+
         {
           question: "What is the difference between 60€ and 85€?",
           answer:
-            "60€ is participation as an observer or representative. 85€ includes the possibility of working with your own request.",
+            "60€ is participation as an observer or representative. 85€ includes the possibility of working with your own personal request.",
+        },
+
+        {
+          question: "When does the payment take place?",
+          answer:
+            "Payment is made upon completion of the workshop.",
         },
       ],
     },

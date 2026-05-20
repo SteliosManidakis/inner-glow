@@ -61,7 +61,7 @@ export const dictionaries = {
     },
     home: {
       heroKicker: "Healing, presence, inner clarity",
-      heroTitle: "ΕΝΑ ΒΗΜΑ ΠΙΟ ΚΟΝΤΑ ΣΤΗ ΖΩΗ ΠΟΥ ΣΟΥ ΤΑΙΡΙΑΖΕΙ.",
+      heroTitle: "Ένα βήμα πιο κοντά στη ζωή που σου ταιριάζει",
       heroBody:
         "Ένας χώρος εσωτερικής εργασίας, σύνδεσης και μεταμόρφωσης. Στην Inner Glow δημιουργούμε εμπειρίες που σε βοηθούν να επιστρέψεις στον εαυτό σου. Μέσα από ύπνωση, διαλογισμό, συστημική αναπαράσταση και ενεργειακές πρακτικές, προσφέρουμε ένα ασφαλές και υποστηρικτικό περιβάλλον για όσους αναζητούν ουσιαστική σύνδεση με την αλήθεια τους. Δεν δίνουμε έτοιμες απαντήσεις. Δημιουργούμε χώρο για να ακούσεις τις δικές σου.",
     },
@@ -268,7 +268,7 @@ export const dictionaries = {
         {
           title: "Διαλογισμοί",
           announcement: {
-            text: "Επόμενος διαλογισμός 20/5/2026, 19:00.",
+            text: "Επόμενος διαλογισμός 03/06/2026",
             size: "base",
             weight: "bold",
           },
@@ -301,7 +301,7 @@ export const dictionaries = {
             note: "",
           },
           workshopCta: {
-            title: "Επόμενος διαλογισμός 20/5/2026, 19:00.",
+            title: "Επόμενος διαλογισμός 03/06/2026",
             details: ["Θέμα:", "Κόστος συμμετοχής 15€"],
             button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
           },
@@ -356,7 +356,7 @@ export const dictionaries = {
     subscribe: {
       title: "Μείνε σε επαφή",
       body:
-        "Εγγράψου για ήρεμες σημειώσεις, νέα και μελλοντικές ενημερώσεις από την Inner Glow.",
+        "Εγγράψου για νέα και μελλοντικές ενημερώσεις από την Inner Glow.",
       firstNameLabel: "Όνομα",
       firstNamePlaceholder: "Όνομα",
       lastNameLabel: "Επίθετο",
@@ -432,7 +432,7 @@ export const dictionaries = {
     },
     home: {
       heroKicker: "Healing, presence, inner clarity",
-      heroTitle: "ONE STEP CLOSER TO THE LIFE THAT FITS YOU.",
+      heroTitle: "One step closer to the life that fits you",
       heroBody:
         "A space for inner work, connection and transformation. At Inner Glow, we create experiences that help you return to yourself. Through hypnosis, meditation, systemic constellation and energy practices, we offer a safe and supportive environment for those seeking meaningful connection with their truth. We do not give ready-made answers. We create space for you to hear your own.",
       introTitle: "An approach that honours your pace.",
@@ -649,7 +649,7 @@ export const dictionaries = {
         {
           title: "Meditations",
           announcement: {
-            text: "Next meditation 20/5/2026, 19:00.",
+            text: "Next meditation 03/06/2026",
             size: "base",
             weight: "bold",
           },
@@ -681,7 +681,7 @@ export const dictionaries = {
             note: "",
           },
           workshopCta: {
-            title: "Next meditation 20/5/2026, 19:00.",
+            title: "Next meditation 03/06/2026",
             details: ["Theme:", "Participation cost 15€"],
             button: "REGISTER INTEREST",
           },
@@ -736,7 +736,7 @@ export const dictionaries = {
     subscribe: {
       title: "Stay in touch",
       body:
-        "Subscribe for quiet notes, news, and future updates from Inner Glow.",
+        "Subscribe for news, and future updates from Inner Glow.",
       firstNameLabel: "First name",
       firstNamePlaceholder: "First name",
       lastNameLabel: "Last name",
