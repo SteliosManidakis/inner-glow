@@ -45,7 +45,7 @@ export function SystemicConstellationLanding({
           priority
           src={copy.hero.image}
         />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(245,241,235,0.45),rgba(245,241,235,0.60))]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(245,241,235,0.22),rgba(245,241,235,0.38))]" />
         <Container className="flex min-h-[68svh] items-center py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-5xl text-center">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-olive">
