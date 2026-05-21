@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@/components/analytics/GoogleTagManager";
+import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { LangSync } from "@/components/layout/LangSync";
 import { StructuredData } from "@/components/seo/StructuredData";
 import { siteImages } from "@/content/images";
@@ -40,6 +41,7 @@ export default function RootLayout({
         <LangSync />
         <StructuredData />
         <GoogleTagManager />
+        <MetaPixel />
         {children}
       </body>
     </html>

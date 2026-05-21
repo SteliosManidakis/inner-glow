@@ -113,13 +113,17 @@ Required in Vercel:
 
 ```txt
 NEXT_PUBLIC_SITE_URL
-NEXT_PUBLIC_CAL_DISCOVERY_URL
-NEXT_PUBLIC_CAL_HEALING_URL
 BREVO_API_KEY
 BREVO_LIST_ID
+CONTACT_TO_EMAIL
+BREVO_SENDER_EMAIL
+BREVO_SENDER_NAME
+NEXT_PUBLIC_GTM_ID
+NEXT_PUBLIC_META_PIXEL_ID
 ```
 
 `BREVO_API_KEY` is secret and must never be committed.
+`NEXT_PUBLIC_META_PIXEL_ID` can stay empty until the Meta Pixel ID is available.
 
 `.env.local` is ignored by git. `.env.example` is committed as documentation.
 

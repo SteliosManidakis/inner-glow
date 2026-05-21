@@ -192,6 +192,7 @@ const privacyEl: LegalPageContent = {
         "Χρησιμοποιούμε Brevo για τη διαχείριση του newsletter και την αποστολή email από φόρμες.",
         "Χρησιμοποιούμε Vercel για τη φιλοξενία και διάθεση του website.",
         "Χρησιμοποιούμε Google Tag Manager για τη διαχείριση tags και Google Analytics 4 για στατιστικά επισκεψιμότητας και μέτρηση βασικών ενεργειών, όπως επιτυχής υποβολή φόρμας.",
+        "Χρησιμοποιούμε Meta Pixel μόνο μετά από συγκατάθεση για marketing cookies, για μέτρηση διαφημιστικών ενεργειών, βασικά lead events και δυνατότητα remarketing.",
         "Αν χρησιμοποιήσεις εξωτερικές υπηρεσίες booking ή άλλους συνδέσμους τρίτων, εφαρμόζονται επίσης οι δικοί τους όροι, πολιτικές απορρήτου και cookie πρακτικές.",
       ],
     },
@@ -200,7 +201,7 @@ const privacyEl: LegalPageContent = {
       body: [
         "Το website χρησιμοποιεί απολύτως απαραίτητες τεχνικές λειτουργίες για τη σωστή και ασφαλή λειτουργία του.",
         "Τα analytics cookies χρησιμοποιούνται μόνο αν τα αποδεχτείς. Μας βοηθούν να κατανοούμε συνολικά την επισκεψιμότητα, τις σελίδες που έχουν ενδιαφέρον και την απόδοση των φορμών, χωρίς να στέλνουμε στο Google προσωπικά δεδομένα όπως όνομα, email ή τηλέφωνο.",
-        "Τα marketing cookies ή tags χρησιμοποιούνται μόνο αν τα αποδεχτείς. Μπορούν να βοηθήσουν στη μέτρηση διαφημιστικών ενεργειών ή μελλοντικών καμπανιών.",
+        "Τα marketing cookies ή tags χρησιμοποιούνται μόνο αν τα αποδεχτείς. Μπορούν να βοηθήσουν στη μέτρηση διαφημιστικών ενεργειών, στη βελτιστοποίηση καμπανιών και σε ενέργειες remarketing, όπως μέσω Meta Pixel.",
         "Μπορείς να αλλάξεις τις επιλογές σου οποιαδήποτε στιγμή από το κουμπί «Ρυθμίσεις cookies» στο footer.",
       ],
     },
@@ -283,6 +284,7 @@ const privacyEn: LegalPageContent = {
         "We use Brevo to manage the newsletter and send emails from forms.",
         "We use Vercel to host and deliver the website.",
         "We use Google Tag Manager to manage tags and Google Analytics 4 for traffic statistics and key event measurement, such as successful form submissions.",
+        "We use Meta Pixel only after consent for marketing cookies, for advertising measurement, basic lead events and remarketing capabilities.",
         "If you use external booking services or third-party links, their own terms, privacy policies and cookie practices also apply.",
       ],
     },
@@ -291,7 +293,7 @@ const privacyEn: LegalPageContent = {
       body: [
         "The website uses strictly necessary technical functionality for proper and secure operation.",
         "Analytics cookies are used only if you accept them. They help us understand aggregate traffic, page interest and form performance, without sending personal data such as name, email or phone to Google.",
-        "Marketing cookies or tags are used only if you accept them. They may help measure advertising activity or future campaigns.",
+        "Marketing cookies or tags are used only if you accept them. They may help measure advertising activity, optimise campaigns and support remarketing, including through Meta Pixel.",
         "You can change your choices at any time through the Cookie settings button in the footer.",
       ],
     },
