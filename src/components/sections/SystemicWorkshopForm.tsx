@@ -98,6 +98,7 @@ export function SystemicWorkshopForm({
           label={copy.emailLabel}
           name="email"
           placeholder={copy.emailPlaceholder}
+          required
           type="email"
         />
 

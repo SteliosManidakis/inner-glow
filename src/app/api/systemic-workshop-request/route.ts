@@ -37,9 +37,10 @@ export async function POST(request: Request) {
   if (
     !name ||
     !phone ||
+    !email ||
     !participationLabel ||
     !privacyAccepted ||
-    (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
   ) {
     return NextResponse.json({ error: "Invalid systemic workshop request" }, { status: 400 });
   }
@@ -106,27 +107,25 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Systemic workshop email failed" }, { status: response.status });
   }
 
-  if (email) {
-    const confirmation = getConfirmationEmail({
-      locale,
-      name,
-      participationLabel,
-    });
-    const confirmationResponse = await sendBrevoEmail(apiKey, {
-      sender: {
-        email: senderEmail,
-        name: senderName,
-      },
-      to: [{ email, name }],
-      replyTo: { email: toEmail, name: "Inner Glow" },
-      subject: confirmation.subject,
-      textContent: confirmation.textContent,
-      htmlContent: confirmation.htmlContent,
-    });
+  const confirmation = getConfirmationEmail({
+    locale,
+    name,
+    participationLabel,
+  });
+  const confirmationResponse = await sendBrevoEmail(apiKey, {
+    sender: {
+      email: senderEmail,
+      name: senderName,
+    },
+    to: [{ email, name }],
+    replyTo: { email: toEmail, name: "Inner Glow" },
+    subject: confirmation.subject,
+    textContent: confirmation.textContent,
+    htmlContent: confirmation.htmlContent,
+  });
 
-    if (!confirmationResponse.ok) {
-      console.error("Systemic workshop confirmation email failed", confirmationResponse.status);
-    }
+  if (!confirmationResponse.ok) {
+    console.error("Systemic workshop confirmation email failed", confirmationResponse.status);
   }
 
   return NextResponse.json({ ok: true });
