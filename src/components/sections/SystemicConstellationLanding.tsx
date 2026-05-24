@@ -109,7 +109,7 @@ export function SystemicConstellationLanding({
           <Faq copy={copy.faq} />
 
           <section>
-            <SystemicWorkshopForm copy={copy.form} />
+            <SystemicWorkshopForm copy={copy.form} locale={locale} />
           </section>
         </div>
 

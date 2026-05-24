@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { trackAnalyticsEvent } from "@/lib/analytics";
+import type { Locale } from "@/lib/i18n";
 
 type WorkshopFormCopy = {
   title: string;
@@ -24,7 +25,13 @@ type WorkshopFormCopy = {
 
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
-export function SystemicWorkshopForm({ copy }: { copy: WorkshopFormCopy }) {
+export function SystemicWorkshopForm({
+  copy,
+  locale,
+}: {
+  copy: WorkshopFormCopy;
+  locale: Locale;
+}) {
   const [status, setStatus] = useState<FormStatus>("idle");
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -41,6 +48,7 @@ export function SystemicWorkshopForm({ copy }: { copy: WorkshopFormCopy }) {
         name: formData.get("name"),
         phone: formData.get("phone"),
         email: formData.get("email"),
+        locale,
         participationType: formData.get("participationType"),
         privacyAccepted: formData.get("privacyAccepted") === "on",
       }),

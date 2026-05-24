@@ -8,13 +8,20 @@ type SystemicWorkshopPayload = {
   name?: unknown;
   phone?: unknown;
   email?: unknown;
+  locale?: unknown;
   participationType?: unknown;
   privacyAccepted?: unknown;
 };
 
-const participationLabels: Record<string, string> = {
-  simple: "Απλή συμμετοχή - 60€",
-  with_request: "Συμμετοχή με αίτημα - 85€",
+const participationLabels = {
+  el: {
+    simple: "Απλή συμμετοχή - 60€",
+    with_request: "Συμμετοχή με αίτημα - 85€",
+  },
+  en: {
+    simple: "Simple participation - 60€",
+    with_request: "Participation with request - 85€",
+  },
 };
 
 export async function POST(request: Request) {
@@ -22,8 +29,9 @@ export async function POST(request: Request) {
   const name = clean(payload.name);
   const phone = clean(payload.phone);
   const email = clean(payload.email);
+  const locale = clean(payload.locale) === "en" ? "en" : "el";
   const participationType = clean(payload.participationType);
-  const participationLabel = participationLabels[participationType];
+  const participationLabel = participationLabels[locale][participationType as "simple" | "with_request"];
   const privacyAccepted = payload.privacyAccepted === true;
 
   if (
@@ -82,31 +90,124 @@ export async function POST(request: Request) {
     <p><strong>Κείμενο συναίνεσης:</strong> ${escapeHtml(CONSENT_TEXT)}</p>
   `;
 
-  const response = await fetch(BREVO_EMAIL_ENDPOINT, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-      "api-key": apiKey,
+  const response = await sendBrevoEmail(apiKey, {
+    sender: {
+      email: senderEmail,
+      name: senderName,
     },
-    body: JSON.stringify({
-      sender: {
-        email: senderEmail,
-        name: senderName,
-      },
-      to: [{ email: toEmail, name: "Inner Glow" }],
-      ...(email ? { replyTo: { email, name } } : {}),
-      subject: `${title} - ${participationLabel} - ${name}`,
-      textContent,
-      htmlContent,
-    }),
+    to: [{ email: toEmail, name: "Inner Glow" }],
+    ...(email ? { replyTo: { email, name } } : {}),
+    subject: `${title} - ${participationLabel} - ${name}`,
+    textContent,
+    htmlContent,
   });
 
   if (!response.ok) {
     return NextResponse.json({ error: "Systemic workshop email failed" }, { status: response.status });
   }
 
+  if (email) {
+    const confirmation = getConfirmationEmail({
+      locale,
+      name,
+      participationLabel,
+    });
+    const confirmationResponse = await sendBrevoEmail(apiKey, {
+      sender: {
+        email: senderEmail,
+        name: senderName,
+      },
+      to: [{ email, name }],
+      replyTo: { email: toEmail, name: "Inner Glow" },
+      subject: confirmation.subject,
+      textContent: confirmation.textContent,
+      htmlContent: confirmation.htmlContent,
+    });
+
+    if (!confirmationResponse.ok) {
+      console.error("Systemic workshop confirmation email failed", confirmationResponse.status);
+    }
+  }
+
   return NextResponse.json({ ok: true });
+}
+
+function sendBrevoEmail(apiKey: string, body: unknown) {
+  return fetch(BREVO_EMAIL_ENDPOINT, {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+      "api-key": apiKey,
+    },
+    body: JSON.stringify(body),
+  });
+}
+
+function getConfirmationEmail({
+  locale,
+  name,
+  participationLabel,
+}: {
+  locale: "el" | "en";
+  name: string;
+  participationLabel: string;
+}) {
+  if (locale === "en") {
+    const subject = "We received your registration for the Systemic Constellation workshop";
+    const textContent = [
+      `Hello ${name},`,
+      "",
+      "Thank you for your interest. We have received your registration for the Systemic Constellation workshop.",
+      "",
+      "Registration details:",
+      "Workshop: 31/5/2026, 10:30-20:00",
+      `Participation type: ${participationLabel}`,
+      "",
+      "We will contact you soon for final confirmation and practical details.",
+      "",
+      "Inner Glow",
+      "info@inner-glow.gr",
+    ].join("\n");
+    const htmlContent = `
+      <h2>${escapeHtml(subject)}</h2>
+      <p>Hello ${escapeHtml(name)},</p>
+      <p>Thank you for your interest. We have received your registration for the Systemic Constellation workshop.</p>
+      <p><strong>Workshop:</strong> 31/5/2026, 10:30-20:00</p>
+      <p><strong>Participation type:</strong> ${escapeHtml(participationLabel)}</p>
+      <p>We will contact you soon for final confirmation and practical details.</p>
+      <p>Inner Glow<br />info@inner-glow.gr</p>
+    `;
+
+    return { subject, textContent, htmlContent };
+  }
+
+  const subject = "Λάβαμε τη δήλωσή σας για τη Συστημική Αναπαράσταση";
+  const textContent = [
+    `Γεια σας ${name},`,
+    "",
+    "Ευχαριστούμε για το ενδιαφέρον σας. Λάβαμε τη δήλωσή σας για το εργαστήριο Συστημικής Αναπαράστασης.",
+    "",
+    "Στοιχεία δήλωσης:",
+    "Εργαστήριο: 31/5/2026, 10:30-20:00",
+    `Τύπος συμμετοχής: ${participationLabel}`,
+    "",
+    "Θα επικοινωνήσουμε μαζί σας σύντομα για την τελική επιβεβαίωση και τις πρακτικές λεπτομέρειες.",
+    "",
+    "Inner Glow",
+    "info@inner-glow.gr",
+  ].join("\n");
+  const htmlContent = `
+    <h2>${escapeHtml(subject)}</h2>
+    <p>Γεια σας ${escapeHtml(name)},</p>
+    <p>Ευχαριστούμε για το ενδιαφέρον σας. Λάβαμε τη δήλωσή σας για το εργαστήριο Συστημικής Αναπαράστασης.</p>
+    <p><strong>Εργαστήριο:</strong> 31/5/2026, 10:30-20:00</p>
+    <p><strong>Τύπος συμμετοχής:</strong> ${escapeHtml(participationLabel)}</p>
+    <p>Θα επικοινωνήσουμε μαζί σας σύντομα για την τελική επιβεβαίωση και τις πρακτικές λεπτομέρειες.</p>
+    <p>Inner Glow<br />info@inner-glow.gr</p>
+  `;
+
+  return { subject, textContent, htmlContent };
 }
 
 function clean(value: unknown) {
