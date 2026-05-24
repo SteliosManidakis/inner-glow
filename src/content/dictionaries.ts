@@ -182,7 +182,7 @@ export const dictionaries = {
             weight: "bold",
           },
           body:
-            "Μια βιωματική μέθοδος που μας βοηθά να «δούμε» δυναμικές που δρουν υποσυνείδητα μέσα στη ζωή μας. Σχέσεις με γονείς, συντρόφους, παιδιά ή θέματα υγείας και επαναλαμβανόμενα μοτίβα συχνά συνδέονται με άγραφους «νόμους» και πιστότητες προς την οικογένεια ή το σύστημα από όπου προερχόμαστε.",
+            "Μια βιωματική μέθοδος που μας βοηθά να «δούμε» δυναμικές που δρουν υποσυνείδητα μέσα στη ζωή μας. Σχέσεις με γονείς, συντρόφους, παιδιά ή θέματα υγείας και επαναλαμβανόμενα μοτίβα συχνά συνδέονται με άγραφους «νόμους» και κρυφές δυναμικές προς την οικογένεια ή το σύστημα από όπου προερχόμαστε.",
           image: siteImages.treatments.systemicConstellation,
           sections: [
             {
@@ -563,7 +563,7 @@ export const dictionaries = {
             weight: "bold",
           },
           body:
-            "An experiential method that helps us 'see' dynamics acting subconsciously within our lives. Relationships with parents, partners, children, health themes and repeated patterns are often connected with unwritten 'laws' and loyalties toward the family or system we come from.",
+            "An experiential method that helps us 'see' dynamics acting subconsciously within our lives. Relationships with parents, partners, children, health themes and repeated patterns are often connected with unwritten 'laws' and underlying dynamics toward the family or system we come from.",
           image: siteImages.treatments.systemicConstellation,
           sections: [
             {
