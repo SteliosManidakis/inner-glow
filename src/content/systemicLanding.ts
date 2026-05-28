@@ -14,7 +14,7 @@ export const systemicLandingTheme = {
 export const systemicLandingContent = {
   el: {
     // Change to "interest" or "scheduled".
-    mode: "scheduled" as SystemicLandingMode,
+    mode: "interest" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
@@ -195,7 +195,7 @@ export const systemicLandingContent = {
   },
   en: {
     // Change to "interest" or "scheduled".
-    mode: "scheduled" as SystemicLandingMode,
+    mode: "interest" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
