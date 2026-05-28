@@ -4,7 +4,7 @@
 // Στον κώδικα τα γράφουμε χωρίς το public, π.χ. "/images/homepage.jpeg".
 
 export const siteImages = {
-  homeHero: "/images/homepage.jpeg",
+  homeHero: "/images/homepage2.jpeg",
   aboutHero: "/images/placeholders/about.png",
   socialShare: "/images/placeholders/hero.png",
 
