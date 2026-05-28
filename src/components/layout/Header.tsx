@@ -26,7 +26,7 @@ export function Header({
             alt={dictionary.common.brand}
             width={320}
             height={140}
-            className="h-auto w-44 md:w-[19.25rem] lg:w-[20.25rem]"
+            className="h-auto w-44 md:w-[17rem] lg:w-[18rem]"
             priority
           />
         </Link>
