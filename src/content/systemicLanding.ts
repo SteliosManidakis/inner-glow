@@ -1,6 +1,8 @@
 import { siteImages } from "@/content/images";
 import type { Locale } from "@/lib/i18n";
 
+type SystemicLandingMode = "scheduled" | "interest";
+
 export const systemicLandingTheme = {
   darkGreen: "#2D5016",
   cream: "#F5F1EB",
@@ -12,7 +14,7 @@ export const systemicLandingTheme = {
 export const systemicLandingContent = {
   el: {
     // Change to "interest" or "scheduled".
-    mode: "interest",
+    mode: "interest" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
@@ -193,7 +195,7 @@ export const systemicLandingContent = {
   },
   en: {
     // Change to "interest" or "scheduled".
-    mode: "interest",
+    mode: "interest" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
