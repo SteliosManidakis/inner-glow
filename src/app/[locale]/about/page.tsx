@@ -23,10 +23,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
     <section className="bg-ivory py-14 sm:py-20 lg:py-24">
       <Container>
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-olive sm:tracking-[0.18em]">
-            {dictionary.common.brand}
-          </p>
-          <h1 className="mt-5 text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
+          <h1 className="text-wrap font-serif text-4xl leading-tight text-charcoal sm:text-5xl lg:text-6xl">
             {dictionary.about.title}
           </h1>
         </div>
