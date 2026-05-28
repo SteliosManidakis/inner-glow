@@ -8,6 +8,7 @@ import {
   systemicLandingTheme,
 } from "@/content/systemicLanding";
 import type { Locale } from "@/lib/i18n";
+import { localizedPath } from "@/lib/routes";
 
 export function SystemicConstellationLanding({
   dictionary,
@@ -17,6 +18,8 @@ export function SystemicConstellationLanding({
   locale: Locale;
 }) {
   const copy = getSystemicLandingContent(locale);
+  const isScheduled = copy.mode === "scheduled";
+  const interestHref = localizedPath(locale, "appointment-request");
   const themeStyle = {
     "--systemic-green": systemicLandingTheme.darkGreen,
     "--systemic-cream": systemicLandingTheme.cream,
@@ -28,7 +31,7 @@ export function SystemicConstellationLanding({
     <article className="bg-ivory" style={themeStyle}>
       <section className="sticky top-[5.5rem] z-20 bg-[var(--systemic-green)] px-4 py-2 text-white shadow-[0_12px_24px_rgba(41,37,31,0.18)] md:top-20">
         <div className="mx-auto flex min-h-9 max-w-6xl flex-wrap items-center justify-center gap-3 text-center text-sm font-semibold sm:text-base">
-          <span>{copy.stickyBar.text}</span>
+          <span>{isScheduled ? copy.stickyBar.text : copy.interest.stickyText}</span>
           <a
             className="inline-flex min-h-9 items-center justify-center rounded-full bg-[var(--systemic-orange)] px-4 text-xs font-bold uppercase tracking-[0.08em] text-white transition hover:brightness-95"
             href={copy.phoneHref}
@@ -60,16 +63,18 @@ export function SystemicConstellationLanding({
             <div className="mt-7 flex flex-col items-center justify-center gap-3">
               <a
                 className="inline-flex min-h-13 items-center justify-center rounded-full bg-[var(--systemic-orange)] px-7 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white shadow-[0_12px_28px_rgba(255,107,53,0.28)] transition hover:scale-[1.02] hover:brightness-95"
-                href="#signup-form"
+                href={isScheduled ? "#signup-form" : interestHref}
               >
-                {copy.hero.cta}
+                {isScheduled ? copy.hero.cta : copy.interest.heroCta}
               </a>
-              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--systemic-green)]">
-                <span className="inline-flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-[var(--systemic-orange)] text-sm leading-none text-white shadow-[0_0_0_4px_rgba(255,107,53,0.16)]">
-                  !
-                </span>
-                <span>{copy.hero.urgency}</span>
-              </p>
+              {isScheduled ? (
+                <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.08em] text-[var(--systemic-green)]">
+                  <span className="inline-flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-[var(--systemic-orange)] text-sm leading-none text-white shadow-[0_0_0_4px_rgba(255,107,53,0.16)]">
+                    !
+                  </span>
+                  <span>{copy.hero.urgency}</span>
+                </p>
+              ) : null}
             </div>
             <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
               {copy.hero.benefits.map((benefit) => (
@@ -86,7 +91,11 @@ export function SystemicConstellationLanding({
         </Container>
       </section>
 
-      <Container className="grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_21rem] lg:items-start lg:py-16">
+      <Container
+        className={`grid gap-10 py-12 lg:items-start lg:py-16 ${
+          isScheduled ? "lg:grid-cols-[minmax(0,1fr)_21rem]" : ""
+        }`}
+      >
         <div className="space-y-12">
           <section>
             <h2 className="font-serif text-3xl leading-tight text-charcoal sm:text-4xl">
@@ -108,15 +117,19 @@ export function SystemicConstellationLanding({
           <Testimonials copy={copy.testimonials} />
           <Faq copy={copy.faq} />
 
-          <section>
-            <SystemicWorkshopForm copy={copy.form} locale={locale} />
-          </section>
+          {isScheduled ? (
+            <section>
+              <SystemicWorkshopForm copy={copy.form} locale={locale} />
+            </section>
+          ) : (
+            <InterestPanel copy={copy} href={interestHref} />
+          )}
         </div>
 
-        <EventDetailsCard copy={copy} />
+        {isScheduled ? <EventDetailsCard copy={copy} /> : null}
       </Container>
 
-      <FinalCta copy={copy} />
+      <FinalCta copy={copy} href={isScheduled ? "#signup-form" : interestHref} scheduled={isScheduled} />
 
       <section className="pb-14 sm:pb-20 lg:pb-24">
         <Container>
@@ -200,6 +213,31 @@ function Detail({ label, note, value }: { label: string; note: string; value: st
   );
 }
 
+function InterestPanel({
+  copy,
+  href,
+}: {
+  copy: ReturnType<typeof getSystemicLandingContent>;
+  href: string;
+}) {
+  return (
+    <section className="rounded-lg border-l-4 border-[var(--systemic-green)] bg-[var(--systemic-cream)] p-5 shadow-[0_18px_45px_rgba(41,37,31,0.12)] sm:p-8">
+      <h2 className="font-serif text-3xl leading-tight text-charcoal sm:text-4xl">
+        {copy.interest.panelTitle}
+      </h2>
+      <p className="mt-4 max-w-2xl text-base leading-7 text-charcoal/72">
+        {copy.interest.panelBody}
+      </p>
+      <a
+        className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-[var(--systemic-orange)] px-6 py-3 text-sm font-bold uppercase tracking-[0.08em] text-white shadow-[0_10px_25px_rgba(255,107,53,0.22)] transition hover:scale-[1.02] hover:brightness-95"
+        href={href}
+      >
+        {copy.interest.panelCta}
+      </a>
+    </section>
+  );
+}
+
 function Testimonials({ copy }: { copy: ReturnType<typeof getSystemicLandingContent>["testimonials"] }) {
   return (
     <section className="rounded-lg bg-[var(--systemic-green)] p-5 text-white sm:p-8">
@@ -237,15 +275,27 @@ function Faq({ copy }: { copy: ReturnType<typeof getSystemicLandingContent>["faq
   );
 }
 
-function FinalCta({ copy }: { copy: ReturnType<typeof getSystemicLandingContent> }) {
+function FinalCta({
+  copy,
+  href,
+  scheduled,
+}: {
+  copy: ReturnType<typeof getSystemicLandingContent>;
+  href: string;
+  scheduled: boolean;
+}) {
+  const title = scheduled ? copy.finalCta.title : copy.interest.finalTitle;
+  const subtitle = scheduled ? copy.finalCta.subtitle : copy.interest.finalSubtitle;
+  const onlineText = scheduled ? copy.finalCta.online : copy.interest.finalOnline;
+
   return (
     <section className="bg-[linear-gradient(135deg,var(--systemic-green),#1c340e)] px-5 py-14 text-center text-white sm:px-8 sm:py-16">
       <div className="mx-auto max-w-4xl">
-        <h2 className="font-serif text-4xl leading-tight sm:text-5xl">{copy.finalCta.title}</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-white/80">{copy.finalCta.subtitle}</p>
+        <h2 className="font-serif text-4xl leading-tight sm:text-5xl">{title}</h2>
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-white/80">{subtitle}</p>
         <div className="mt-8 grid gap-3 sm:grid-cols-3">
           <LinkButton href={copy.phoneHref} tone="orange">{copy.finalCta.call}</LinkButton>
-          <LinkButton href="#signup-form" tone="white">{copy.finalCta.online}</LinkButton>
+          <LinkButton href={href} tone="white">{onlineText}</LinkButton>
           <LinkButton href={copy.whatsAppHref} tone="green" external>{copy.finalCta.whatsApp}</LinkButton>
         </div>
       </div>

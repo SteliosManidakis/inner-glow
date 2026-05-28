@@ -11,6 +11,8 @@ export const systemicLandingTheme = {
 
 export const systemicLandingContent = {
   el: {
+    // Change to "interest" when there is no scheduled workshop.
+    mode: "scheduled",
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
@@ -60,6 +62,18 @@ export const systemicLandingContent = {
       instructor: "Κανάρης Κάραλης | Ψυχολόγος | DGfS®",
       callButton: "Κάλεσε",
       whatsAppButton: "WhatsApp",
+    },
+    interest: {
+      stickyText: "Έχεις απορίες για τη Συστημική; Κάλεσε: +30 6931 81 81 45",
+      heroCta: "ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ",
+      panelTitle: "Δεν υπάρχει προγραμματισμένο εργαστήριο αυτή τη στιγμή",
+      panelBody:
+        "Μπορείς να αφήσεις τα στοιχεία σου και θα επικοινωνήσουμε μαζί σου όταν οριστεί η επόμενη ημερομηνία.",
+      panelCta: "ΘΕΛΩ ΝΑ ΕΝΗΜΕΡΩΘΩ",
+      finalTitle: "Θέλεις να ενημερωθείς για το επόμενο εργαστήριο;",
+      finalSubtitle:
+        "Άφησε τα στοιχεία σου ή επικοινώνησε μαζί μας για να σε ενημερώσουμε όταν ανακοινωθεί νέα ημερομηνία.",
+      finalOnline: "ΕΚΔΗΛΩΣΗ ΕΝΔΙΑΦΕΡΟΝΤΟΣ",
     },
     main: {
       title: "Τι μπορεί να αλλάξει όταν δεις το σύστημα καθαρά",
@@ -178,6 +192,8 @@ export const systemicLandingContent = {
     },
   },
   en: {
+    // Change to "interest" when there is no scheduled workshop.
+    mode: "scheduled",
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
@@ -227,6 +243,18 @@ export const systemicLandingContent = {
       instructor: "Kanaris Karalis | Psychologist | DGfS®",
       callButton: "Call",
       whatsAppButton: "WhatsApp",
+    },
+    interest: {
+      stickyText: "Questions about Systemic Constellation? Call: +30 6931 81 81 45",
+      heroCta: "REGISTER INTEREST",
+      panelTitle: "There is no scheduled workshop at the moment",
+      panelBody:
+        "You can leave your details and we will contact you when the next date is announced.",
+      panelCta: "KEEP ME UPDATED",
+      finalTitle: "Would you like to know about the next workshop?",
+      finalSubtitle:
+        "Leave your details or contact us and we will let you know when a new date is announced.",
+      finalOnline: "REGISTER INTEREST",
     },
     main: {
       title: "What can shift when you see the system clearly",
