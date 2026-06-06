@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 const BREVO_EMAIL_ENDPOINT = "https://api.brevo.com/v3/smtp/email";
+const WORKSHOP_DETAILS = "4/7/2026, 11:00-20:30";
 const CONSENT_TEXT =
   "Συμφωνώ να χρησιμοποιηθούν τα στοιχεία μου για επικοινωνία σχετικά με τη δήλωση συμμετοχής.";
 
@@ -69,7 +70,7 @@ export async function POST(request: Request) {
     `Email: ${email || "-"}`,
     `Τύπος συμμετοχής: ${participationLabel}`,
     "",
-    "Εργαστήριο: 31/5/2026, 10:30-20:00",
+    `Εργαστήριο: ${WORKSHOP_DETAILS}`,
     "",
     "Συναίνεση επικοινωνίας: Ναι",
     `Χρόνος δήλωσης: ${submittedAt}`,
@@ -84,7 +85,7 @@ export async function POST(request: Request) {
     <p><strong>Τηλέφωνο:</strong> ${escapeHtml(phone)}</p>
     <p><strong>Email:</strong> ${escapeHtml(email || "-")}</p>
     <p><strong>Τύπος συμμετοχής:</strong> ${escapeHtml(participationLabel)}</p>
-    <p><strong>Εργαστήριο:</strong> 31/5/2026, 10:30-20:00</p>
+    <p><strong>Εργαστήριο:</strong> ${escapeHtml(WORKSHOP_DETAILS)}</p>
     <hr />
     <p><strong>Συναίνεση επικοινωνίας:</strong> Ναι</p>
     <p><strong>Χρόνος δήλωσης:</strong> ${escapeHtml(submittedAt)}</p>
@@ -160,7 +161,7 @@ function getConfirmationEmail({
       "Thank you for your interest. We have received your registration for the Systemic Constellation workshop.",
       "",
       "Registration details:",
-      "Workshop: 31/5/2026, 10:30-20:00",
+      `Workshop: ${WORKSHOP_DETAILS}`,
       `Participation type: ${participationLabel}`,
       "",
       "We will contact you soon for final confirmation and practical details.",
@@ -172,7 +173,7 @@ function getConfirmationEmail({
       <h2>${escapeHtml(subject)}</h2>
       <p>Hello ${escapeHtml(name)},</p>
       <p>Thank you for your interest. We have received your registration for the Systemic Constellation workshop.</p>
-      <p><strong>Workshop:</strong> 31/5/2026, 10:30-20:00</p>
+      <p><strong>Workshop:</strong> ${escapeHtml(WORKSHOP_DETAILS)}</p>
       <p><strong>Participation type:</strong> ${escapeHtml(participationLabel)}</p>
       <p>We will contact you soon for final confirmation and practical details.</p>
       <p>Inner Glow<br />info@inner-glow.gr</p>
@@ -188,7 +189,7 @@ function getConfirmationEmail({
     "Ευχαριστούμε για το ενδιαφέρον σας. Λάβαμε τη δήλωσή σας για το εργαστήριο Συστημικής Αναπαράστασης.",
     "",
     "Στοιχεία δήλωσης:",
-    "Εργαστήριο: 31/5/2026, 10:30-20:00",
+    `Εργαστήριο: ${WORKSHOP_DETAILS}`,
     `Τύπος συμμετοχής: ${participationLabel}`,
     "",
     "Θα επικοινωνήσουμε μαζί σας σύντομα για την τελική επιβεβαίωση και τις πρακτικές λεπτομέρειες.",
@@ -200,7 +201,7 @@ function getConfirmationEmail({
     <h2>${escapeHtml(subject)}</h2>
     <p>Γεια σας ${escapeHtml(name)},</p>
     <p>Ευχαριστούμε για το ενδιαφέρον σας. Λάβαμε τη δήλωσή σας για το εργαστήριο Συστημικής Αναπαράστασης.</p>
-    <p><strong>Εργαστήριο:</strong> 31/5/2026, 10:30-20:00</p>
+    <p><strong>Εργαστήριο:</strong> ${escapeHtml(WORKSHOP_DETAILS)}</p>
     <p><strong>Τύπος συμμετοχής:</strong> ${escapeHtml(participationLabel)}</p>
     <p>Θα επικοινωνήσουμε μαζί σας σύντομα για την τελική επιβεβαίωση και τις πρακτικές λεπτομέρειες.</p>
     <p>Inner Glow<br />info@inner-glow.gr</p>

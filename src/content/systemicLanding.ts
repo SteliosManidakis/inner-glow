@@ -14,11 +14,11 @@ export const systemicLandingTheme = {
 export const systemicLandingContent = {
   el: {
     // Change to "interest" or "scheduled".
-    mode: "interest" as SystemicLandingMode,
+    mode: "scheduled" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
-      "https://wa.me/306931818145?text=%CE%9A%CE%B1%CE%BB%CE%B7%CF%83%CF%80%CE%AD%CF%81%CE%B1%2C%20%CE%B5%CE%BD%CE%B4%CE%B9%CE%B1%CF%86%CE%AD%CF%81%CE%BF%CE%BC%CE%B1%CE%B9%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CF%84%CE%AE%CF%81%CE%B9%CE%BF%20%CE%A3%CF%85%CF%83%CF%84%CE%B7%CE%BC%CE%B9%CE%BA%CE%AE%CF%82%20%CE%91%CE%BD%CE%B1%CF%80%CE%B1%CF%81%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7%CF%82%20%CF%83%CF%84%CE%B9%CF%82%2031%2F5.",
+      "https://wa.me/306931818145?text=%CE%9A%CE%B1%CE%BB%CE%B7%CF%83%CF%80%CE%AD%CF%81%CE%B1%2C%20%CE%B5%CE%BD%CE%B4%CE%B9%CE%B1%CF%86%CE%AD%CF%81%CE%BF%CE%BC%CE%B1%CE%B9%20%CE%B3%CE%B9%CE%B1%20%CF%84%CE%BF%20%CE%B5%CF%81%CE%B3%CE%B1%CF%83%CF%84%CE%AE%CF%81%CE%B9%CE%BF%20%CE%A3%CF%85%CF%83%CF%84%CE%B7%CE%BC%CE%B9%CE%BA%CE%AE%CF%82%20%CE%91%CE%BD%CE%B1%CF%80%CE%B1%CF%81%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7%CF%82%20%CF%83%CF%84%CE%B9%CF%82%204%2F7.",
     stickyBar: {
       text: "Καλέσε: +30 6931 81 81 45",
       button: "Κλήση",
@@ -47,11 +47,11 @@ export const systemicLandingContent = {
     },
     event: {
       dateLabel: "Ημερομηνία",
-      date: "Κυριακή, 31 Μαΐου 2026",
-      dateNote: "Πανσέληνος & Ολοκλήρωση",
+      date: "Σάββατο 4 Ιουλίου 2026",
+      dateNote: "Νέο προγραμματισμένο εργαστήριο",
       timeLabel: "Ώρα",
-      time: "10:30 π.μ. - 20:00 μ.μ.",
-      timeNote: "Ωρα προσέλευσης 10:00\nΟλοήμερο + coffee break",
+      time: "11:00 π.μ. - 20:30 μ.μ.",
+      timeNote: "Ωρα προσέλευσης 10:30\nΟλοήμερο + coffee break",
       locationLabel: "Τοποθεσία",
       location: "Βούλα, Αθήνα",
       locationNote: "Επτανήσου 3, Βούλα, 16673",
@@ -187,7 +187,7 @@ export const systemicLandingContent = {
     finalCta: {
       title: "Είσαι Έτοιμος να Δεις Καθαρά;",
       subtitle:
-        "31 Μαΐου. Πανσέληνος & Ολοκλήρωση. Ένα εργαστήριο που κλείνει κύκλους.",
+        "4 Ιουλίου. Ένα εργαστήριο που κλείνει κύκλους.",
       call: "Καλέσε Τώρα",
       online: "Δήλωσε Online",
       whatsApp: "WhatsApp",
@@ -195,11 +195,11 @@ export const systemicLandingContent = {
   },
   en: {
     // Change to "interest" or "scheduled".
-    mode: "interest" as SystemicLandingMode,
+    mode: "scheduled" as SystemicLandingMode,
     phone: "+30 693 1818145",
     phoneHref: "tel:+306931818145",
     whatsAppHref:
-      "https://wa.me/306931818145?text=Hello%2C%20I%20am%20interested%20in%20the%20Systemic%20Constellation%20workshop%20on%2031%2F5.",
+      "https://wa.me/306931818145?text=Hello%2C%20I%20am%20interested%20in%20the%20Systemic%20Constellation%20workshop%20on%204%2F7.",
     stickyBar: {
       text: "Call: +30 6931 81 81 45",
       button: "Call",
@@ -228,11 +228,11 @@ export const systemicLandingContent = {
     },
     event: {
       dateLabel: "Date",
-      date: "Sunday, May 31, 2026",
-      dateNote: "Full moon & completion",
+      date: "Saturday, July 4, 2026",
+      dateNote: "New scheduled workshop",
       timeLabel: "Time",
-      time: "10:30 a.m. - 8:00 p.m.",
-      timeNote: "Arrival time: 10:00 AM\nFull day + coffee break",
+      time: "11:00 a.m. - 8:30 p.m.",
+      timeNote: "Arrival time: 10:30 AM\nFull day + coffee break",
       locationLabel: "Location",
       location: "Voula, Athens",
       locationNote: "3 eptanisou, Voula, 16673",
@@ -368,7 +368,7 @@ export const systemicLandingContent = {
     finalCta: {
       title: "Are You Ready to See Clearly?",
       subtitle:
-        "May 31. Full moon & completion. A workshop that closes cycles.",
+        "July 4. A workshop that closes cycles.",
       call: "Call Now",
       online: "Register Online",
       whatsApp: "WhatsApp",
