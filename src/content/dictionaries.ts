@@ -268,7 +268,7 @@ export const dictionaries = {
         {
           title: "Διαλογισμοί",
           announcement: {
-            text: "Επόμενος διαλογισμός 03/06/2026",
+            text: "Επόμενος διαλογισμός 10/06/2026 - 18:45",
             size: "base",
             weight: "bold",
           },
@@ -301,7 +301,7 @@ export const dictionaries = {
             note: "",
           },
           workshopCta: {
-            title: "Επόμενος διαλογισμός 03/06/2026",
+            title: "Επόμενος διαλογισμός 10/06/2026 - 18:45",
             details: ["Θέμα:", "Κόστος συμμετοχής 15€"],
             button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
           },
