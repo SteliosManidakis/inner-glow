@@ -302,7 +302,7 @@ export const dictionaries = {
           },
           workshopCta: {
             title: "Επόμενος διαλογισμός 10/06/2026 - 18:45",
-            details: ["Θέμα:", "Κόστος συμμετοχής 15€"],
+            details: ["Θέμα: Επιστροφή στον εαυτό σου", "Κόστος συμμετοχής 15€"],
             button: "ΔΗΛΩΣΕ ΣΥΜΜΕΤΟΧΗ",
           },
         },
@@ -649,7 +649,7 @@ export const dictionaries = {
         {
           title: "Meditations",
           announcement: {
-            text: "Next meditation 03/06/2026",
+            text: "Next meditation 10/06/2026 - 18:45",
             size: "base",
             weight: "bold",
           },
@@ -681,7 +681,7 @@ export const dictionaries = {
             note: "",
           },
           workshopCta: {
-            title: "Next meditation 03/06/2026",
+            title: "Next meditation 10/06/2026 - 18:45",
             details: ["Theme:", "Participation cost 15€"],
             button: "REGISTER INTEREST",
           },
